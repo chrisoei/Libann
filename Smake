@@ -1,0 +1,111 @@
+# Top level makefile
+# Copyright 2003 John Darrington
+
+comma:= ,
+empty:=
+space:= $(empty) $(empty)
+
+configure_dot_in=$(shell aesub '$${s configure.in}' )
+
+ac_output:=${shell sed -n -e 's/^AC_OUTPUT(\([^)]*\))/\1/gp'  $(configure_dot_in) }
+
+
+AEPATH=$(shell aesub '$$sp')
+
+SUBMAKEFILES=$(subst $(comma),$(space), $(ac_output)) 
+
+CXX=$(patsubst %-%,%,$(arch))
+
+export CXX
+
+     
+here:=$(shell pwd)
+builddir:=build/dir/$(arch)/
+installdir:=$(here)/inst/
+top_srcdir:=$(here)
+
+
+
+# The following code generates the archive name.
+# It has the following format:
+# In the case of a second level branch:
+#   libann-x.y.C<change_number>
+# In lower level branches (and the trunk)
+#   libann-x.<change number>
+LEVEL2=$(shell echo $(project) | awk -F'.' '{print $$3}')
+
+ifeq ($(LEVEL2),)
+archive_name=lib$(project).$(change)
+else
+archive_name=libann$(shell aesub '$$vers')
+endif
+
+
+all: build $(archive_name).tar.gz doc/libann.dvi developer-documentation
+
+build: $(builddir)/Makefile $(builddir)/ann/vers.cc
+	cd $(builddir) && make all && make install && make demo && make demo-install
+
+$(builddir)/Makefile $(builddir)/ann/vers.cc: ann/vers.cc.in configure $(builddir) vp
+	@$(RM) $@
+	@$(RM) $(builddir)/config.log
+	$(MAKE) -f Smake vvp
+	cd $(builddir) && $(here)/configure --prefix=$(installdir) --with-aegis=$(project) # --enable-leak-detector
+	touch -c $(builddir)/Makefile $(builddir)/ann/vers.cc
+
+
+configure: configure.in aclocal.m4 
+	@$(RM) $@
+	autoconf 
+
+$(builddir):
+	mkdir -p $@
+
+
+PACKAGE=$(shell aesub '$${p trunk_name}')
+VERSION=$(shell aesub '$$vers')
+
+vp: vpp
+
+.PHONY: vpp
+vvp:
+	tempfile=/tmp/vp$$ ;\
+	echo PACKAGE=$(PACKAGE) > $$tempfile ;\
+	echo VERSION=$(VERSION) >> $$tempfile ;\
+	if test ! -r vp || ! diff $$tempfile vp ; then \
+		echo Replacing vp with $$tempfile ;\
+		mv $$tempfile vp ;\
+	else \
+		$(RM) $$tempfile ;\
+	fi
+		
+
+#change=$(shell aesub '$$change')
+sourcefiles=$(shell aegis -l -c $(change) -terse ProjectFiles) \
+	$(shell aegis -l -c $(change) -terse ChangeFiles) 
+
+archivefiles=$(sourcefiles) \
+	configure vp changelog
+
+$(archive_name).tar: $(archivefiles)
+	@$(RM) $@
+	$(RM) $(archive_name)
+	ln -s . $(archive_name)
+	tar -chf $@ $(patsubst %,$(archive_name)/%,$^)
+
+%.tar.gz: %.tar
+	@$(RM) $@
+	gzip $<
+
+
+.PHONY: changelog
+changelog:
+	@$(RM) $@
+	aereport -p $(project) -c $(change) changelog > $@
+
+include doc/doc.mk
+
+developer-documentation: Doxyfile $(sourcefiles)
+	@$(RM) -r $@
+	doxygen
+	

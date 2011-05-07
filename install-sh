@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# This install-sh script is written from scratch. It does not include
+# any of the BSD install-sh, which was deficient in many ways.
+#
+
+mvprog="${MVPROG-mv}"
+cpprog="${CPPROG-cp}"
+chmodprog="${CHMODPROG-chmod}"
+chownprog="${CHOWNPROG-chown}"
+chgrpprog="${CHGRPPROG-chgrp}"
+stripprog="${STRIPPROG-strip}"
+rmprog="${RMPROG-rm}"
+mkdirprog="${MKDIRPROG-mkdir}"
+
+transformbasename=""
+transform_arg=""
+instcmd="$mvprog"
+chmodcmd="$chmodprog 0755"
+chowncmd=""
+chgrpcmd=""
+stripcmd=""
+rmcmd="$rmprog -f"
+mvcmd="$mvprog"
+cpcmd="$cpprog"
+src=""
+dst=""
+dir_arg=""
+
+if [ $# -lt 2 ] ; then 
+    echo Usage:
+    exit 1
+fi 
+
+for i in  "$@" ; do 
+    dst=$i;
+done
+
+while [ $# -ne 1 ] ; do
+    src=$1
+    shift
+    
+    if [ -d $dst ] ; then 
+      dstfile=$dst/`basename $src`
+    else
+      dstfile=$dst
+    fi
+
+    if [ $src -nt $dstfile -o ! -e $dstfile ] ; then 
+      $rmcmd $dstfile
+      $cpcmd $src $dstfile 
+    fi
+
+done
+
+
+
+exit 0

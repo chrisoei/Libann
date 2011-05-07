@@ -1,0 +1,152 @@
+Linux makes more effective use of PC hardware than MS-DOS, Windows or NT, and is accordingly less tolerant of misconfigured hardware. There are a few things you can do before you start that will lessen your chances of being stopped by this kind of problem.
+
+First, collect any manuals you have on your hardware -- motherboard, video card, monitor, modem, etc. -- and put them within easy reach.
+
+Second, gather detailed information on your hardware configuration. One easy way to do this, if you're running MS-DOS 5.0, or up, is to print a report from the Microsoft diagnostic utility msd.exe (you can leave out the TSR, driver, memory-map, environment-strings and OS-version parts). Among other things, this will guarantee you full and correct information on your video card and mouse type, which will be helpful in configuring X later on.
+
+Third, check your machine for configuration problems with supported hardware that could cause an un-recoverable lockup during Linux installation.
+
+    *
+
+      It is possible for a DOS/Windows system using IDE hard drive(s) and CD ROM to be functional even with the master/slave jumpers on the drives incorrectly set. Linux won't fly this way. If in doubt, check your master-slave jumpers!
+    *
+
+      Is any of your peripheral hardware designed with neither configuration jumpers nor non-volatile configuration memory? If so, it may require boot-time initialization via an MS-DOS utility to start up, and may not be easily accessible from Linux. CD-ROMs, sound cards, Ethernet cards and low-end tape drives can have this problem. If so, you may be able to work around this with an argument to the boot prompt; see theLinux Boot Prompt HOWTO for details).
+    *
+
+Some other operating systems will allow a bus mouse to share an IRQ with other devices. Linux doesn't support this; in fact, trying it may lock up your machine. If you are using a bus mouse, see the Linux Bus Mouse HOWTO, for details.
+
+If possible, get the telephone number of an experienced Linux user you can call in case of emergency. Nine times out of ten you won't need it, but it's comforting to have.
+
+Budget time for installation. That will be about one hour on a bare system or one being converted to all-Linux operation. Or up to three hours for a dual-boot system (they have a much higher incidence of false starts and hangups).
+6.2. Creating the boot and root floppies
+
+(This step is only needed if you can't boot from a CD-ROM.)
+
+Your Linux CD-ROM may come with installation aids that will take you through the process of building boot, root, and rescue disks with interactive prompts. These may be an MS-DOS installation program (such as the Red Hat redhat.exe program) or a Unix script, or both.
+
+If you have such a program and can use it, you should read the rest of this subsection for information only. Run the program to do actual installation -- its authors certainly knew more about the specific distribution than I, and you'll avoid many error-prone hand-entry steps.
+
+More detailed information on making bootdisks, see the Linux Bootdisk HOWTO.
+
+Your first step will be to select a boot-disk image to fit your hardware. If you must do this by hand, you'll generally find that either (a) the bootdisk images on your CD-ROM are named in a way that will help you pick a correct one, or (b) there's an index file nearby describing each image.
+
+Next, you must create floppies from the bootdisk image you selected, and optionally from the rescue disk images. This is where the MS-DOS program RAWRITE.EXE comes into play.
+
+Next, you must have two or three high-density MS-DOS formatted floppies. (They must be of the same type; that is, if your boot floppy drive is a 3.5" drive, both floppies must be high-density 3.5" disks.) You will use RAWRITE.EXE to write the bootdisk images to the floppies.
+
+Invoke it with no arguments, like this:
+
+C:\> RAWRITE
+
+Answer the prompts for the name of the file to write and the floppy to write it to (such as A:). RAWRITE will copy the file, block-by-block, directly to the floppy. Also use RAWRITE for the root disk image (such as COLOR144). When you're done, you'll have two floppies: one containing the boot disk, the other containing the root disk. Note that these two floppies will no longer be readable by MS-DOS (they are ``Linux format'' floppies, in some sense).
+
+You can use the dd(1) commands on a UNIX system to do the same job. (For this, you will need a UNIX workstation with a floppy drive, of course.) For example, on a Sun workstation with the floppy drive on device /dev/rfd0, you can use the command:
+
+$ dd if=bare of=/dev/rfd0 obs=18k
+
+You must provide the appropriate output block size argument (the `obs' argument) on some workstations (e.g., Suns) or this will fail. If you have problems the man page for dd(1) may be be instructive.
+
+Be sure that you're using brand-new, error-free floppies. The floppies must have no bad blocks on them.
+
+Note that you do not need to be running Linux or MS-DOS in order to install Linux. However, running Linux or MS-DOS makes it easier to create the boot and root floppies from your CD-ROM. If you don't have an operating system on your machine, you can use someone else's Linux or MS-DOS just to create the floppies, and install from there.
+6.3. Repartitioning your DOS/Windows drives
+
+On most used systems, the hard drive is already dedicated to partitions for MS-DOS, OS/2, and so on. You'll need to resize these partitions in order to make space for Linux. If you're going to run a dual-boot system, it's strongly recommended that you read one or more of the following mini-HOWTOS, which describe different dual-boot configurations.
+
+    *
+
+      The DOS-Win95-OS2-Linux mini-HOWTO.
+    *
+
+      The Linux+Win95 mini-HOWTO.
+    *
+
+The Linux+NT-Loader mini-HOWTO
+
+Even if they are not directly applicable to your system, they will help you understand the issues involved.
+
+Note
+
+Some Linuxes will install to a directory on your MS-DOS partition. (This is different than installing from an MS-DOS partition.) Instead, you use the ``UMSDOS filesystem'', which allows you to treat a directory of your MS-DOS partition as a Linux filesystem. In this way, you don't have to repartition your drive.
+
+I only suggest using this method if your drive already has four partitions (the maximum supported by DOS) and repartitioning would be more trouble than it's worth (it slows down your Linux due to filename translation overhead). Or, if you want to try out Linux before repartitioning, this is a good way to do so. But in most cases you should re-partition, as described here. If you do plan to use UMSDOS, you are on your own -- it is not documented in detail here. From now on, we assume that you are NOT using UMSDOS, and that you will be repartitioning.
+
+A partition is just a section of the hard drive set aside for a particular operating system to use. If you only have MS-DOS installed, your hard drive probably has just one partition, entirely for MS-DOS. To use Linux, however, you'll need to repartition the drive, so that you have one partition for MS-DOS, and one (or more) for Linux.
+
+Partitions come in three flavors: primary, extended, and logical. Briefly, primary partitions are one of the four main partitions on your drive. However, if you wish to have more than four partitions per drive, you need to replace the last primary partition with an extended partition, which can contain many logical partitions. You don't store data directly on an extended partition---it is used only as a container for logical partitions. Data is stored only on either primary or logical partitions.
+
+To put this another way, most people use only primary partitions. However, if you need more than four partitions on a drive, you create an extended partition. Logical partitions are then created on top of the extended partition, and there you have it---more than four partitions per drive.
+
+Note that you can easily install Linux on the second drive on your system (known as D: to MS-DOS). You simply specify the appropriate device name when creating Linux partitions. This is described in detail below.
+
+Back to repartitioning your drive. It used to be that there was no way to resize partitions without destroying the data on them. Nowadays there are partitioning utilities that can resize non-destructively; they know about the structure of file systems, can find the free space on a file system, and can move file data around on the partition to move free space where it needs to be in order for a resize to work properly. It's still suggested that you make a full backup before using one of these, in case of program or human error.
+
+Under Linux GNU parted allows you to create, destroy, resize and copy partitions. It supports ext2, FAT16, and FAT32 filesystems, Linux swap devices; it also knows about MS-DOS disk labels. Parted is useful for creating space for new operating systems, reorganising disk usage, copying data between hard disks, and disk imaging. It is relatively new code, but is reported to work well and not trash data.
+
+There is a non-destructive disk repartitioner available for MS-DOS, called FIPS. With FIPS, a disk optimizer (such as Norton Speed Disk), and a little bit of luck, you should be able to resize MS-DOS partitions without destroying the data on them.
+
+The older method of resizing a partition, if you don't have one of these resizing partition editors available, is to delete the partition(s), and re-create them with smaller sizes. If you use this method, you absolutely must make a backup in order to save any of your data.
+
+The classic way to modify partitions is with the program FDISK. For example, let's say that you have an 80 meg hard drive, dedicated to MS-DOS. You'd like to split it in half---40 megs for MS-DOS and 40 megs for Linux. In order to do this, you run FDISK under MS-DOS, delete the 80 meg MS-DOS partition, and re-create a 40 meg MS-DOS partition in its place. You can then format the new partition and reinstall your MS-DOS software from backups. 40 megabytes of the drive is left empty. Later, you create Linux partitions on the unused portion of the drive.
+
+In short, you should do the following to resize MS-DOS partitions with FDISK:
+
+   1.
+
+      Make a full backup of your system.
+   2.
+
+      Create an MS-DOS bootable floppy, using a command such as
+
+FORMAT /S A:
+
+      Copy the files FDISK.EXE and FORMAT.COM to this floppy, as well as any other utilities that you need. (For example, utilities to recover your system from backup.)
+   3.
+
+      Boot the MS-DOS system floppy.
+   4.
+
+      Run FDISK, possibly specifying the drive to modify (such as C: or D:).
+   5.
+
+      Use the FDISK menu options to delete the partitions which you wish to resize. This will destroy all data on the affected partitions.
+   6.
+
+      Use the FDISK menu options to re-create those partitions, with smaller sizes.
+   7.
+
+      Exit FDISK and re-format the new partitions with the FORMAT command.
+   8.
+
+      Restore the original files from backup.
+
+Note that MS-DOS FDISK will give you an option to create a ``logical DOS drive''. A logical DOS drive is just a logical partition on your hard drive. You can install Linux on a logical partition, but you don't want to create that logical partition with MS-DOS fdisk. So, if you're currently using a logical DOS drive, and want to install Linux in its place, you should delete the logical drive with MS-DOS FDISK, and (later) create a logical partition for Linux in its place.
+
+The mechanism used to repartition for OS/2 and other operating systems is similar. See the documentation for those operating systems for details.
+6.4. Creating partitions for Linux
+
+After repartitioning your drive, you need to create partitions for Linux. Before describing how to do that, we'll talk about partitions and filesystems under Linux.
+6.4.1. Partition basics
+
+Linux requires at least one partition, for the root filesystem, which will hold the Linux kernel itself.
+
+You can think of a filesystem as a partition formatted for Linux. Filesystems are used to hold files. Every system must have a root filesystem, at least. However, many users prefer to use multiple filesystems---one for each major part of the directory tree. For example, you may wish to create a separate filesystem to hold all files under the /usr directory. (Note that on UNIX systems, forward slashes are used to delimit directories, not backslashes as with MS-DOS.) In this case you have both a root filesystem, and a /usr filesystem.
+
+Each filesystem requires its own partition. Therefore, if you're using both root and /usr filesystems, you'll need to create two Linux partitions.
+
+In addition, most users create a swap partition, which is used for virtual RAM. If you have, say, 4 megabytes of memory on your machine, and a 10-megabyte swap partition, as far as Linux is concerned you have 14 megabytes of virtual memory.
+
+When using swap space, Linux moves unused pages of memory out to disk, allowing you to run more applications at once on your system. However, because swapping is often slow, it's no replacement for real physical RAM. But applications that require a great deal of memory (such as the X window system) often rely on swap space if you don't have enough physical RAM.
+
+Nearly all Linux users employ a swap partition. If you have 4 megabytes of RAM or less, a swap partition is required to install the software. It is strongly recommended that you have a swap partition anyway, unless you have a great amount of physical RAM.
+
+The size of your swap partition depends on how much virtual memory you need. It's often suggested that you have at least 16 megabytes of virtual memory total. Therefore, if you have 8 megs of physical RAM, you might want to create an 8-megabyte swap partition. Note that there are platform-dependent limits on the size of swap partitions; see the Partition-HOWTO if you want to create a swap partition larger than 1GB.
+
+You can find more on the theory of swap space layout and disk partitioning in the Linux Partition mini-HOWTO (http://www.linuxdoc.org/HOWTO/mini/Partition.html).
+
+Note: it is possible, though a bit tricky, to share swap partitions between Linux and Windows 95 in a dual-boot system. For details, see the Linux Swap Space Mini-HOWTO.
+
+Gotcha #1: If you have an EIDE drive with a partition that goes above 504MB, your BIOS may not allow you to boot to a Linux installed there. So keep your root partition below 504MB. This shouldn't be a problem for SCSI drive controllers, which normally have their own drive BIOS firmware. For technical details, see the Large Disk Mini-HOWTO.
+
+Gotcha #2: Are you mixing IDE and SCSI drives? Then watch out. Your BIOS may not allow you to boot directly to a SCSI drive.

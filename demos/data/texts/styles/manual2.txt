@@ -1,0 +1,402 @@
+3. Usage
+3.1. GnuCash Windows
+
+GnuCash windows display the accounts and tools you use to access your financial data. This section gives you an overview of the different windows you will see in GnuCash.
+3.1.1. Account Tree Window
+
+This window provides an overview of all your accounts and a summary of their balances. It groups the accounts into types based on standard accounting practice. Access to commonly used windows and account tools is through this window.
+
+To reopen the Account Tree if you have closed it or to open an additional Account Tree go to File -> New Account Tree. This will open the account tree in the existing window
+
+To open a new window with an Account Tree go to File -> Open in a New Window. Figure ? shows an Account Tree Window.
+
+Table 2 describes the components of the Account Tree Window.
+
+Table 2.
+
+Component
+
+Description
+
+Menubar
+
+Contains the Menus used in the Account Tree Window
+
+Tool Bar
+
+Contains buttons used to access common Account Tree tasks
+
+Summary Bar
+
+Contains Summary of Financial Data
+
+Account Tree
+
+Contains the Chart of Accounts
+
+Status Bar
+
+Contains a short description of Menu items and a progress bar
+
+3.1.1.1. Menus
+
+The following tables describe the menus in the Account Tree Window.
+
+Table 3: File Menu - Access to file and account operations and printing.
+
+Table 3.
+
+Menu Item
+
+Description
+
+New File
+
+Starts the New Account Hierarchy Setup Druid and creates a new file
+
+New Account...
+
+Creates a New Account and opens account properties
+
+New Account Tree
+
+Opens a new instance of the Account Tree view
+
+Open...
+
+Opens a different GnuCash file. Menu shortcut F3
+
+Open Account
+
+When an account is selected in the Account Tree opens the register for that account. Menu Shortcut Ctrl-O
+
+Open Sub-Accounts
+
+When an account is selected in the Account Tree opens a General Ledger register for that account and all subaccounts
+
+Open in a New Window
+
+Opens a new Account Tree Window using the current account tree or report.
+
+Open Recent
+
+Opens one of a list of the four most recently opened account files
+
+Save
+
+Saves the currently open file. Menu shortcut Ctrl-S
+
+Save As...
+
+Saves the currently opened file with a different name
+
+Import -> Import QIF File
+
+Starts the Import QIF Files druid to import files from other financial programs.
+
+Export -> Export Accounts
+
+Exports your account hierarchy to a new file. Does not export data.
+
+Print
+
+Prints reports
+
+Properties
+
+Sets options for this file.
+
+Close
+
+Closes the current open account tree or report. Menu shortcut Ctrl-W
+
+Exit
+
+Exits GnuCash. Menu shortcut Ctrl-Q
+
+Table 4: Edit Menu - Access to file and account editing operations and preferences.
+
+Table 4.
+
+Menu Item
+
+Description
+
+Cut
+
+Copy
+
+Paste
+
+Edit Account
+
+Delete Account
+
+Preferences...
+
+Style Sheets...
+
+Tax Options
+
+Table 5: View Menu - Changes Account Tree Window view.
+
+Table 5.
+
+Menu Item
+
+Description
+
+Refresh
+
+Toolbar
+
+Summary Bar
+
+Status Bar
+
+Table 6: Actions Menu - Setup scheduled transactions, repair accounts, perform stock splits,transfer and reconcile transactions.
+
+Table 6.
+
+Menu Item
+
+Description
+
+Scheduled Transactions -> Scheduled Transaction Editor
+
+Scheduled Transactions ->Since Last Run...
+
+Scheduled Transactions -> Mortgage & Loan Repayment Setup
+
+Transfer...
+
+Reconcile...
+
+Stock Split...
+
+Check & Repair -> Check & Repair Account
+
+Check & Repair -> Check & Repair Subaccounts
+
+Check & Repair -> Check & Repair All
+
+Table 7: Business Menu - Access small business features of GnuCash.
+
+Table 7.
+
+Menu Item
+
+Description
+
+Customers -> New Customer
+
+Customers -> Find Customer
+
+Customers -> New Invoice
+
+Customers -> Find Invoice
+
+Customers -> New Job
+
+Customers -> Find Job
+
+Customers -> Process Payment
+
+Vendors -> New Vendor
+
+Vendors -> Find Vendor
+
+Vendors -> New Bill
+
+Vendors -> Find Bill
+
+Vendors -> New Job
+
+Vendors -> Find Job
+
+Vendors -> Process Payment
+
+Tax Tables
+
+Billing Terms
+
+Table 8: Reports Menu - Access GnuCash Reports and Charts.
+
+Table 8.
+
+Menu Item
+
+Description
+
+Account Summary
+
+Tax Report & TXF Export
+
+Transaction Report
+
+Sample & Custom -> Welcome Sample Report
+
+Sample & Custom -> Custom Multicolumn Report
+
+Sample & Custom -> Custom Web Report
+
+Sample & Custom -> Sample Report With Examples
+
+Assets & Liabilities -> Advanced Portfolio
+
+Assets & Liabilities -> Asset Barchart
+
+Assets & Liabilities -> Asset Piechart
+
+Assets & Liabilities -> Average Balance
+
+Assets & Liabilities -> Balance Sheet
+
+Assets & Liabilities -> Investment Portfolio
+
+Assets & Liabilities -> Liability Barchart
+
+Assets & Liabilities -> Liability Piechart
+
+Assets & Liabilities -> Net Worth Barchart
+
+Assets & Liabilities -> Price Scatterplot
+
+Income & Expense -> Expense Barchart
+
+Income & Expense -> Expense Piechart
+
+Income & Expense -> Income & Expense Chart
+
+Income & Expense -> Income Barchart
+
+Income & Expense -> Income Piechart
+
+Income & Expense -> Profit & Loss
+
+Business Reports -> Customer Report
+
+Business Reports -> Payable Aging
+
+Business Reports -> Printable Invoice
+
+Business Reports -> Receivable Aging
+
+Business Reports -> Vendor Report
+
+Table 9: Tools Menu - Access to miscellaneous tools and editors
+
+Table 9.
+
+Menu Item
+
+Description
+
+General Ledger
+
+Price Editor
+
+Commodity Editor
+
+Financial Calculator
+
+Find Transactions
+
+Table 10: Help Menu - Access to this help and the GnuCash Tutorial and Concepts Guide.
+
+Table 10.
+
+Menu Item
+
+Description
+
+GnuCash Tutorial & Concepts Guide
+
+Tips Of The Day
+
+Help
+
+About...
+
+3.1.1.2. Tool Bar Buttons
+
+The Account Tree Window has a tool bar to access quickly some common functions used with accounts. The Tool Bar can be hidden or shown by selecting the Toolbar item on the View menu.
+
+Table 11: Account Tree Window Tool Bar
+
+Table 11.
+
+Tool Bar Button
+
+Description
+
+Save
+
+Close
+
+Open
+
+Edit
+
+Options
+
+New
+
+Delete
+
+Exit
+
+3.1.1.3. Summary Bar
+
+The Summary Bar displays your Net Assets and Profits at a glance. The Summary Bar can be hidden or shown by selecting the Summary Bar item on the View menu.
+3.1.1.4. Account Tree
+
+The Account Tree displays the list of your accounts in hierarchical format. This enables you to organize your accounts by account type.
+
+The boxed plus shape beside the account name is used to open and close the account tree. When you click on the box the plus sign changes into a minus sign to indicate that the tree is opened. You will then see directly below the account name a line leading to either the sub account or another box. This shows you the linked lower level of the account tree.
+
+The default display for the Account Tree Window is in Notebook mode. This is indicated by the tab on the left side of the Account Tree Window. Other tabs will appear below this one when you open reports and more Account Trees.
+3.1.1.5. Status Bar
+
+The Status Bar displays tooltips for the menus that give more explanation to a menu item. It also shows a progress bar when opening or saving and account. The Status Bar can be hidden or shown by selecting the Status Bar item on the View menu.
+3.1.2. Account Register Window
+
+This window is used to enter and edit your account data. It also provides tools for scheduling future transactions, finding and reporting on transactions and printing checks.
+
+To open the Account Register Window for an account, select the account in the Account Tree then go to File -> Open Account or press Ctrl-O. This will open a new window with the Account Register. Pressing the Open button on the Tool Bar in the Account Tree Window or the Jump button in the Account Register Window are alternate methods.
+
+Figure ? shows an Account Register Window.
+
+Table 12 describes the components of the Account Register Window.
+
+Table 12.
+
+Component
+
+Description
+
+Menubar
+
+Contains the Menus used in the Account Register Window
+
+Tool Bar
+
+Contains buttons used to access common Account Register tasks
+
+Summary Bar
+
+Contains Summary of Financial Data
+
+List of Transactions
+
+Area where transactions are entered and edited.
+
+Status Bar
+
+Contains a short description of the different list of transactions areas.
+
+3.1.2.1. Menus
+
+The following tables describe the menus in the Account Register Window.
+
+Table 13: File Menu - Access to file and account operations and printing.

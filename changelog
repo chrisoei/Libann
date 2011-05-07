@@ -1,0 +1,18 @@
+
+
+
+Project "ann.1", Branch 4												      Page 1
+Change Log												    Thu May 15 08:08:42 2003
+
+ann.1.D005, C4, john, Thu May 15 08:06:34 2003, The libann library, branch 1.4.
+    The libann library, branch 1.4.
+
+    Change Delta  Brief Description
+      10      1	  Re-instated copyright date check
+      11      2	  Added build target for g++-2.x
+
+  ann.1.4.D002, C11, john, Wed May 14 21:50:56 2003, Added build target for g++-2.x
+      Changed the build rules so that everything is compiled on gcc version 2.x as well as 3.x
+
+  ann.1.4.D001, C10, john, Wed May 14 14:02:07 2003, Re-instated copyright date check
+      Re-instated diff_command to check for existence of copyright messages in the code

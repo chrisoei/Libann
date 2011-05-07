@@ -1,0 +1,255 @@
+          In this action, the Court is called upon to determine 
+whether publishers are entitled to place the contents of their 
+periodicals into electronic data bases and onto CD-ROMs without 
+first securing the permission of the freelance writers whose 
+contributions are included in those periodicals.  According to 
+the Complaint, filed by a group of freelance journalists, this 
+practice infringes the copyright that each writer holds in his or 
+her individual articles.  The defendant publishers and electronic 
+service providers respond by invoking the "revision" privilege of 
+the "collective works" provision of the Copyright Act of 1976, 17 
+U.S.C.  201(c).  Defendants maintain that they have not 
+improperly exploited plaintiffs' individual contributions, but 
+that they have permissibly reproduced plaintiffs' articles as 
+part of electronic revisions of the newspapers and magazines in 
+
+which those articles first appeared.  For the reasons to be 
+discussed, the Court agrees with defendants, and grants summary 
+judgment in their favor.
+
+BACKGROUND                         
+
+          Plaintiffs are six freelance writers who have sold 
+articles for publication in a variety of popular newspapers and 
+magazines, including The New York Times, Newsday, and Sports 
+Illustrated.  The first two of these periodicals, published 
+respectively by defendants The New York Times Company and 
+Newsday, Inc., are daily newspapers widely circulated to 
+subscribers and newsstands.  Sports Illustrated, published by the 
+defendant Time, Inc. ("Time"), is a weekly magazine featuring 
+articles and commentary of particular interest to sports 
+enthusiasts.  In addition to circulating hard copy versions of 
+their periodicals, the defendant publishers sell the contents of 
+their publications to the remaining defendants -- University 
+Microfilms Inc. (now called UMI Company ("UMI")) and The MEAD 
+Corporation (now called LEXIS/NEXIS ("MEAD")) -- for inclusion in 
+assorted electronic data bases. 
+
+          MEAD owns and operates NEXIS, an on-line, electronic, 
+computer assisted text retrieval system in which articles from a 
+number of leading newspapers, newsletters, magazines, and wire 
+services -- including The New York Times, Newsday, and Sports 
+Illustrated -- are displayed or printed in response to search 
+requests from subscribers.  (Pl.s' Mot. Summ. J. Ex. 49 at 
+M01464.)  UMI produces and distributes two CD-ROM products 
+identified by plaintiffs in their Amended Complaint.  One of 
+these products, "The New York Times OnDisc," operates in much the 
+same manner as NEXIS, and is made up of the articles appearing in 
+each issue of The New York Times.  The remaining CD-ROM, "General 
+Periodicals OnDisc," provides a full image-based reproduction of 
+The New York Times Book Review and Sunday Magazine.  
+
+          Plaintiffs move for summary judgment on their claims of 
+copyright infringement contending that the electronic 
+reproductions of their articles are improper under the Copyright 
+Act.  Defendants Time and Newsday move for summary judgment on 
+the ground that plaintiffs entered into contracts authorizing 
+these publishers to sell plaintiffs' articles to the electronic 
+defendants.  All of the defendants argue that, even in the 
+absence of such agreements, dismissal of this action is warranted 
+because the publisher defendants properly exercised their right, 
+under the Copyright Act, to produce revised versions of their 
+publications.           
+
+     A. The Parties' Relationship 
+
+          The six plaintiffs claim that defendants infringed 
+their copyrights in a total of 21 articles sold for publication 
+between 1990 and 1993.  Twelve of these articles, written by 
+plaintiffs Tasini, Mifflin, and Blakely, appeared in The New York 
+Times.  Another eight of the articles, by plaintiffs Tasini, 
+Garson, Whitford, and Robbins, were featured in Newsday.  The 
+remaining article, a piece entitled "Glory Amid Grief" by 
+plaintiff Whitford, appeared in an issue of Sports Illustrated.  
+All of the plaintiffs wrote their articles on a freelance basis, 
+and not as employees of the defendant publishers.
+
+          1.   The New York Times
+
+          As of the time this action was commenced, freelance 
+assignments for The New York Times were typically undertaken 
+pursuant to verbal agreements reached between the newspaper and 
+
+the contributing journalists.  A New York Times editor and a 
+selected freelance writer ordinarily agreed upon such matters as 
+the topic and length of a particular piece, the deadline for 
+submission, and the fee to be paid.  (Keller Dec. Ex. B7.)  These 
+discussions seldom extended into negotiations over rights in the 
+commissioned articles.  Indeed, there were no such negotiations 
+between The New York Times and any of the plaintiffs, all of whom 
+submitted their articles for publication by The New York Times 
+without any written agreements.  Id.
+
+          2.   Newsday
+
+          Prior to this action, Newsday solicited its freelance 
+contributions in much the same manner as did The New York Times.  
+Freelance assignments for Newsday were most often undertaken 
+pursuant to discussions between editors and writers and without 
+any written agreements.  (Keller Dec. Ex. B2.)  However, the 
+checks with which Newsday paid freelance writers for their 
+contributions, including those checks sent to plaintiffs 
+following the publication of their articles, included the 
+following endorsement:
+
+     Signature required. Check void if this endorsement 
+     altered. This check accepted as full payment for 
+     first-time publication rights (or all rights, if 
+     agreement is for all rights) to material described 
+     on face of check in all editions published by 
+     Newsday and for the right to include such material 
+     in electronic library archives.
+
+(Pl.s' Mot. Summ. J. Ex. 47.)  Plaintiff Tasini crossed out this 
+notation prior to cashing those checks paying him for his two 
+disputed submissions to Newsday.  Those plaintiffs who wrote the 
+remaining six Newsday articles cashed their checks with the 
+notation intact.
+
+          3.   Sports Illustrated
+
+          Only plaintiff Whitford submitted an article for 
+publication in Sports Illustrated.  The relationship between Time 
+and Whitford was decidedly more formal than the arrangements 
+routinely entered into between freelance writers and Newsday or 
+The New York Times.  Whitford and Sports Illustrated entered into 
+a written contract specifying the content and length of the 
+purchased article, the date due, and the fee to be paid by the 
+magazine.  The contract also provided Sports Illustrated "the 
+following rights":
+
+(a)   the exclusive right first to publish the Story in 
+     the Magazine:
+     (b)  the non-exclusive right to license the 
+     republication of the Story whether in translation, 
+     digest, or abridgement form or otherwise in other 
+     publications, provided that the Magazine shall pay 
+     to you fifty percent (50%) of all net proceeds it           
+     receives for such republication: and
+     (c)  the right to republish the Story or any 
+     portions thereof in or in connection with the 
+     Magazine or in other publications published by The 
+     Time Inc. Magazine Company, its parent, 
+     subsidiaries or affiliates, provided that you 
+     shall be paid the then prevailing rates of the 
+     publication in which the Story is republished. 
+
+(Keller Dec. Ex. C7.)  Plaintiff Whitford claims that he did not 
+intend, by this language, to grant Time electronic rights in his 
+
+article.  (Pl.s' Mot. Summ. J. Ex. 14.) 
+
+     B.   The Technological Reproductions 
+
+          Beginning in the early 1980s, the defendant publishers 
+entered into a series of agreements pursuant to which they sold 
+the contents of their periodicals to the electronic defendants.  
+NEXIS has carried the articles appearing in Sports Illustrated 
+since 1982, The New York Times since 1983, and Newsday since 
+1988.  (Keller Dec. Ex. B5 at PP 3,4,8.)  UMI has distributed 
+"The New York Times OnDisc" since 1992, and The New York Times 
+Magazine and Book Review have been available on the image-based 
+CD-ROM since 1990.  (Keller Dec. Ex. B6 at PP 3, 8.)  
+
+          1.   NEXIS 
+
+          The defendant publishers deliver or electronically 
+transmit to NEXIS the full text of all of the articles appearing 
+in each daily or weekly edition of their periodicals.  The 
+publishers provide NEXIS with a complete copy of computer text 
+files which the publishers use during the process of producing 
+the hard copy versions of their periodicals.  Coded instructions 
+as to page lay out added to these files permit typesetters 
+working for the publishers to produce "mechanicals" -- which 
+resemble full pages as they will appear at publication -- copies 
+of which are transmitted to printing facilities for mass 
+production.  NEXIS does not use the electronic files to create 
+"mechanicals" or to emulate the physical lay out of each 
+periodical issue: such things as photographs, advertisements, and 
+the column format of the newspapers are lost.  NEXIS instead uses 
+the electronic files to input the contents of each article on-
+line along with such information as the author's name, and the 
+publication and page in which each article appeared.  The 
+articles appearing in The New York Times and Newsday are 
+available within twenty-four hours after they first appear in 
+print, and the articles from an issue of Sports Illustrated 
+appear on-line within forty-five days of the initial hard copy 
+publication.  
+
+          Customers enter NEXIS by using a telecommunications 
+package that enables them to access NEXIS' mainframe computers.  
+Once on-line, customers enter "libraries" consisting of the 
+articles from particular publications, or groups of publications.  
+Customers can then conduct a "Boolean search" by inputting 
+desired search terms and connectors from which the system 
+generates a number of "hits."  These "hits," the articles in the 
+library corresponding to the selected search terms, can be 
+reviewed either individually or within a citation list.  A 
+citation list identifies each article by the publication in which 
+it appeared, by number of words, and by author.  When a 
+particular article is selected for full-text review, the entire 
+content of the article appears on screen with a heading providing 
+the same basic information reported within a citation list.  
+Although articles are reviewed individually, it is possible for a 
+user to input a search that will generate all of the articles -- 
+and only those articles -- appearing in a particular periodical 
+on a particular day.   
+
+          2.   The New York Times OnDisc
+
+          "The New York Times OnDisc," the text only CD-ROM 
+product, is created from the same data furnished by The New York 
+Times to NEXIS.  Indeed, at the end of each month, pursuant to a 
+three-way agreement among The New York Times, NEXIS and UMI, 
+NEXIS provides UMI with magnetic tapes containing this 
+information.  UMI then transfers the content of these tapes to 
+
+CD-ROM discs and codes the included articles to facilitate 
+Boolean searching.  
+
+          Not surprisingly, given that the two systems share 
+data, the text-based CD-ROM operates much like NEXIS.  Users 
+enter search terms prompting the system  to access all 
+corresponding articles.  These articles are displayed with 
+headings indicating the author, and the date and page of The New 
+York Times issue in which the articles appeared.  As with NEXIS, 
+an article selected for review appears alone; there are no 
+photographs or captions or columns of text.  Moreover, a search 
+typically retrieves articles which were published on different 
+dates, though it is possible to conduct a search that will 
+retrieve all of the articles making up a single issue of The New 
+York Times. 
+
+          3.   General Periodicals OnDisc
+
+          "General Periodicals OnDisc," an image-based CD-ROM 
+product, does not carry full issues of The New York Times, but 
+only the Sunday Magazine and Book Review.  It includes numerous 
+other periodicals, as well, although none of those involved in 
+this litigation.  The image-based system differs from the other 
+technologies presently at issue in that it is created by digital 
+scanning.  Articles are not inputted into the system 
+individually, but the entire Sunday Magazine and Book Review are 
+photographed producing complete images of these periodicals.  
+Articles appear precisely as they do in print, complete with 
+photographs, captions, and advertisements.  
+
+          "General Periodicals OnDisc" does not employ Boolean 
+searching.  Image based discs are sold alongside text-based 
+discs, which are searchable, and which provide abstracts of 
+articles.  By searching these abstracts, users can identify 
+articles that are of interest to them.  Users can then return to 
+the image-based system in order to retrieve those articles.  
+Drawing upon this interplay between discs, plaintiffs propose 
+that the image-based CD-ROMs are better characterized as part-
+text/part-image based CD-ROMs.

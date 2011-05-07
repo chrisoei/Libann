@@ -1,0 +1,368 @@
+Overview
+Xfig uses depths (a simple form of layers) to determine the drawing order of overlapping objects. The depth is one of the attributes of an object, just as color is. If you have two or more overlapping objects and the order in which they are drawn is important you must give each a different depth value.
+
+Depth 0 is the top of the drawing order, with increasing depths being underneath objects with smaller depth. The maximum depth is 999.
+Depth Panel
+[Depth panel] While the depth feature has been a part of xfig for a long time, there is now a panel to the right of the canvas which allows the user to enable or disable editing and displaying depth levels. This panel may be hidden or shown by selecting Show depth manager from the View menu.
+
+Clicking on the checkbox area of a depth indicator will turn on or off the display and editing of objects at that depth. By clicking on one checkbox and holding down the mouse button while dragging the mouse up or down over other depth checkboxes, multiple depths may be enabled or disabled at one time.
+
+If you click on a checkbox that is ON and drag the mouse over other checkboxes, they will be turned OFF regardless of their initial state. Conversely, if you click on a checkbox that is OFF and drag the mouse over other checkboxes, they will be turned ON.
+Controls
+
+- All On
+Pressing this button will turn on all depths. - All Off
+Pressing this button will turn off all depths. - Toggle
+Pressing this button will toggle all depths, i.e. turn on all depths that are off and turn off all depths that are on. - Gray New
+Turning on this checkbox will make xfig display layers that that are off in gray. - Blank New
+Turning on this checkbox will make xfig not display layers that that are off.
+
+Drawing Objects
+Buttons to create new objects are in the drawing mode panel, and users can create new objects using operations on the canvas after selecting a drawing mode.
+
+[Ellipse by rad] [Ellipse by diam] Circles and Ellipses
+[Closed Approx Spline] [Open Approx Spline] [Closed Interp Spline] [Open Approx Spline] Spline Curves
+[Polyline] Polylines and Dimension lines New
+[Polygon] Polygons
+[Regular Polygon] Regular Polygons
+[Box] Rectangular Boxes
+[Arc Box] Arc Boxes (Rectangular Boxes with rounded corners)
+[Arc] Arcs
+[Picture] Picture Objects (Imported image files)
+[Text] Texts
+[Object Libraries] Object Libraries
+
+The drawing mode is selected by clicking on the corresponding button. The image on the button will turn negative, indicating that it is selected. Settings in the Attribute Panel will be applied to newly created objects, so users should set those attributes before creating new objects.
+
+New Predefined styles may be created by the user by using the style manager.
+
+It is also possible to modify the attributes of an object using EDIT or UPDATE after the object has been created.
+
+The function of each mouse button will change depending on the selected drawing mode or situation. This is displayed in the Mouse Function Indicator. Mouse button 1 is mainly used for creating objects, but mouse button 2 is also used in some cases. In most cases, mouse button 3 (`cancel') is used to cancel an operation.
+
+By default, there is a point positioning grid (snap-to grid) which forces the points of the object you draw to a discrete grid. This grid may be turned off or set to various sizes. See POINT POSITION
+
+(CIRCLE AND ELLIPSE)
+    Create circles and ellipses. To draw a circle, mouse button 1 is used. For an ellipse, mouse button 2 is used.
+    Circles
+    Users can specify the center point and either the radius or diameter of the circle.
+
+    In the former mode, users should click mouse button 1 (`Circle center') at the center point of the circle first, and then click mouse button 1 (`set radius') again at any point on the circle.
+
+    In the diameter mode, users should click mouse button 1 (`Circle diameter') at any point on the circle, and then click mouse button 1 (`set radius') again at the opposite point on the circle.
+
+    [Circle Example]
+
+    If area fill is specified by FILL STYLE, the inside of the circle will be filled according to the setting. If you want to create tiny filled circle, you can also use POLYLINE.
+
+    When creating a circle, the size (radius or diameter) of the circle is displayed on the Message Panel dynamically.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style
+    Ellipses
+    As in CIRCLE, users can specify the center point and radius or diameter of the ellipse. But because it is necessary to specify vertical and horizontal length, the operation is somewhat different from CIRCLE.
+
+    In the former mode, users should click mouse button 2 (`Ellipse center') at the center point of the ellipse first, and then click mouse button 2 (`first corner') again at any corner point of the imaginary rectangle which encloses the ellipse.
+
+    In the diameter mode, users should click mouse button 2 (`Ellipse corner') at any corner point of the imaginary rectangle which encloses the ellipse, and then click mouse button 2 (`final corner') again at the opposite corner point of the rectangle.
+
+    [Ellipse Example]
+
+    If TEXT/ELLIPSE ANGLE is set to non-zero, the ellipse will be rotated by the angle, positive being counter-clockwise.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, text/ellipse angle
+(CLOSED APPROXIMATED SPLINE)
+    Create a closed approximated spline curve (smooth closed curve which approximates the specified points). The operation is similar to POLYGON or CLOSED INTERPORATED SPLINE.
+
+    To make a freehand line for any SPLINE, POLYGON, or POLYLINE, click mouse button 2 (`freehand') at the first point, then drag the mouse to make the line. As you move the mouse points will be added to the line. Click mouse button 2 (`final point') again to finish.
+
+    See also About Spline Curves.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style
+(APPROXIMATED SPLINE)
+    Create an open approximated spline curve (smooth curve which passes through two end-points and approximates the specified points). The operation is similar to POLYLINE or INTERPORATED SPLINE.
+
+    See also About Spline Curves.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, cap style, arrow mode, arrow type
+(CLOSED INTERPOLATED SPLINE)
+    Create a closed interpolated spline curve (smooth closed curve which passes through the specified points). The operation is similar to POLYGON or CLOSED APPROXIMATED SPLINE.
+
+    See also About Spline Curves.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style
+(INTERPOLATED SPLINE)
+    Create an open interpolated spline curve (smooth curve which passes through the specified points). The operation is similar to POLYLINE or APPROXIMATED SPLINE.
+
+    See also About Spline Curves.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, cap style, arrow mode, arrow type
+(POLYLINES and Dimension Lines New )
+    Polylines
+    Create polylines (line segments connecting a sequence of points). A simple line segment or point may also be created with this function.
+
+    To create a polyline or line segment, specify the first point by clicking mouse button 1 (`first point') at the point, and then specify intermediate points by clicking mouse button 1 (`next point') repeatedly. Finally, click mouse button 2 (`final point') at the final point.
+
+    To make a freehand line for any SPLINE, POLYGON, or POLYLINE, click mouse button 2 (`freehand') at the first point, then drag the mouse to make the line. As you move the mouse points will be added to the line. Click mouse button 2 (`final point') again to finish.
+
+    To enter a single point click mouse button 3 (`single point'). The shape of the point will be a filled circle if CAP STYLE is ROUND, or a filled square otherwise. The size of the point will be equal to the line width.
+
+    If area fill is specified by FILL STYLE, the region enclosed by the polyline (first point and last point are considered connected) will be filled according to the setting. When filling a complex region, the `even-odd rule' will be used to decide the area to be filled.
+
+    [Polyline Example]
+
+    For all objects, clicking mouse button 3 (`cancel') will cancel all input. For objects that may have more than two points, clicking mouse button 1 while pressing the SHIFT key (`del point') will cancel entered points one by one.
+
+    When entering lines, splines or polygons, the number of points entered and the distance from last point (length, dx and dy) is displayed on the Message Panel dynamically.
+
+    For open-ended objects, if ARROW MODE is not None, an arrow head will be added to one or both end-points.
+
+    If Show line lengths is set ON (see Global Settings panel and View menu), more information about the lengths of lines being drawn is shown. This is true for most Fig objects being drawn.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, join style, cap style, arrow mode, arrow type
+    Dimension Lines New
+    Dimension lines are lines that show length and have one or more of the following:
+
+        * Text surrounded by a box showing the length of the line
+        * End "ticks" perpendicular to the line
+  * Arrowheads at either or both ends of the line
+
+    To create a dimension line, hold down the Shift key and press mouse button 1 on the first endpoint of the line and again at the other endpoint. xfig will automatically calculate the length of the line and label it in the units currently selected for the rulers.
+
+By default, end "ticks", arrowheads and a box around the text are automatically included in the dimension line, but these are controlled in the attributes listed below. Here are several examples of dimension lines:
+
+Related Attributes:
+dimension line settings
+(POLYGON)
+    Create polygons. This is identical to POLYLINE except that a line is drawn between the first point and the last point.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, join style
+(REGULAR POLYGON)
+    Create regular polygons.
+
+    Click mouse button 1 (`center point') at the center of the polygon, and then click mouse button 1 (`final point') again at the any vertex of the regular polygon. The number of sides is specified by NUM SIDES in advance.
+
+    This will create a simple POLYGON object, and each point of the object may be moved independently after it is created (and result of the edit will no longer be a regular polygon).
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, join style, num sides
+(BOX)
+    Create rectangular boxes.
+
+    Click mouse button 1 (`corner point') at any corner of the rectangular box, and click mouse button 1 (`final point') again at the opposite corner.
+
+    If area fill is specified by FILL STYLE, the box will be filled according to the setting.
+
+    A box created with this function can't be rotated by an arbitrary angle, only by multiples of 90 degrees. To create an arbitrarily rotatable rectangular box, you should use POLYGON (it may be easier to create non-rotated rectangle first and then rotate it by ROTATE). You may also use REGULAR POLYGON to create a rotated square.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, join style
+(ARC-BOX)
+    Create rectangular boxes with rounded corners. This is identical to BOX except that the corners of the box will be arcs with the radius specified by BOX CURVE.
+
+    It is also possible to convert objects between BOX and ARC-BOX with BOX <-> ARC-BOX.
+
+Related Attributes:
+depth, pen color, fill color, fill style, line width, line style, join style, box curve
+(ARC)
+    Create arcs.
+
+    There are two ways to draw arcs in xfig:
+
+-The "Original" Way
+
+       1. Click mouse button 1 (`first point') at the one end-point of the arc
+       2. Click mouse button 1 (`mid point') at any intermediate point on the arc
+       3. Click mouse button 1 (`final point') again at the end-point 
+
+-The "New and Improved" Way
+
+       1. Click mouse button 2 (`center point') at the center of the arc radius
+       2. Click mouse button 1 (`first point') to define one end-point of the arc
+       3. Click mouse button 1 (`mid angle') again to define direction of the arc
+       4. Click mouse button 1 (`final angle') a final time to define the ending angle of the arc 
+
+There are two types of arcs, open-arc and pie-wedge, which may be selected by ARC TYPE.
+
+[Arc Example]
+
+Related Attributes:
+    depth, pen color, fill color, fill style, line width, line style, cap style*, arrow mode*, arrow type*, arc type
+(* These attributes are only effective for OPEN ARC)
+(IMPORTING PICTURE OBJECTS)
+    Import image files and create PICTURE objects.
+
+    Click mouse button 1 (`corner point') at the corner where the upper-left corner of the imported image should be placed, then click mouse button 1 (`final point') again at the opposite corner. The imported image will be rotated automatically according to the order of the corners entered, e.g. if you start with the lower-right and end with the upper-left the image will be rotated 180 degrees. Similarly, starting with the lower-left and ending with the upper-right will rotate the image 90 degrees counter-clockwise, and starting with the upper-right and ending with the lower-left will rotate the image 90 degrees clockwise. It is not necessary to try to set the exact size here because it is possible to modify size or height/width ratio of the image later.
+    After this, the Edit Panel will open, where you enter the file name of the image file. It is also possible to capture an image from the screen using the Screen Capture button.
+
+It is possible to read image files in the following image formats:
+
+    - EPSF (Encapsulated PostScript)
+    - GIF with transparency
+         - See also Important Note about GIF
+    - JPEG (JFIF)
+    - PCX (PC Paintbrush)
+    - PNG (Portable Network Graphics)
+         with alpha transparency blended with xfig's background
+    - PPM (Portable Pixmap)
+    - TIFF (Tagged Image File Format)
+    - XBM (X11 bitmap)
+- XPM (X11 pixmap)
+
+Although it is possible to move, scale and rotate an imported image, it is not possible to edit the image itself using xfig. To edit images, use another application such as xpaint or GIMP. The Edit Image button on the Edit panel will start an external image editor (default is xv and it may be changed to your favorite image editor, e.g. xpaint by changing the Fig.image_editor resource or starting xfig with the -image_editor option followed by the name of your image editor).
+
+If you want edit figures in formats such as PostScript or HP-GL using xfig, try pstoedit or hp2xx to first convert them to Fig files then Load or Merge them into xfig.
+
+To import EPSF files, xfig invokes GhostScript to render the image. GhostScript must be compiled with `pcx256' and `pbmraw' drivers. The `pcx256' driver will used to generate color images, and `pbmraw' driver will used to generate monochrome images (used when xfig is running on a monochrome X server or with the -mono option).
+
+JPEG and XPM support may be included or excluded depending on the configuration when compiling xfig.
+
+xfig can also read files compressed with compress (.Z suffix) or gzip (.z or .gz suffix). To do this, the uncompress and gunzip command must be available for xfig to invoke them.
+
+See also Edit Panel about PICTURE objects.
+
+Related Attributes:
+depth, pen color (only for XBM images)
+(TEXT)
+    Create text strings.
+
+    Click mouse button 1 (`posn cursor') at the desired position on the canvas to specify the position where the text should be placed, then enter text from the keyboard, or to paste text already selected from another application (the PRIMARY cut buffer), press the shift key and mouse button 2 New, or F18 (the `Paste' key on Sun Workstations), or F20. Selecting Paste Text from the Edit menu will also paste text from the PRIMARY cut buffer.
+
+    It is also possible to edit existing text by clicking mouse button 1 (`posn cursor') at any point on the existing text. See Character Editing for editing facilities.
+
+    If TEXT/ELLIPSE ANGLE is set to non-zero, the text will rotated by the angle, positive being counter-clockwise.
+
+    It is possible to enter Latin-1 glyphs such as `a umlaut' or `c cedilla' (Compose characters) using the COMPOSE (META) key. See Latin-1 Characters about this. These tables also show the keyboard mapping for glyphs from the Symbol font.
+
+    [I18N] In international-xfig, it is possible to enter local text such as Japanese with this.
+
+    A simplistic superscript/subscript facility is provided. While entering text, if Ctrl-^ (control caret) is pressed, a new, smaller string is started above the baseline of the current string, which acts as a superscript. Conversely, if Ctrl-_ (control underscore) is typed, a new, smaller string is started below the baseline of the current string. These may be nested to create super-superscripted or sub-subscripted text to four levels.
+    Here are some examples:
+super/subscript example There are several caveats:
+
+- Since separate strings are created each time a super- or sub-script is initiated, if you want to move them together, you must glue all the strings into a compound first. - Editing one of the strings may be problematic because the other strings will not move if characters are added or deleted to/from the string being edited. - This doesn't work for right justified or centered text.
+
+Character Editing
+The following editing facilities are available:
+Control-H [Backspace] Delete a character to the left of the cursor.
+Control-D [Delete] Delete a character to the right of the cursor.
+Control-X Delete all the characters to the left of the cursor.
+Control-K Delete all the characters to the right of the cursor.
+Control-A [Home] Move cursor of the start of the text.
+Control-E [End] Move cursor of the end of the text.
+Control-B [<-] Move cursor left one character.
+Control-F [->] Move cursor right one character.
+Control-M [Return] Finish entering the text and start entering text on the next line.
+See also TEXT STEP.
+F18
+or F20 [Paste] Paste text from the PRIMARY cut buffer (cut/paste buffer of xterm).
+Selecting Paste Text from the Edit menu will also perform this function, as will Shift+Mouse Button 2.
+Alt
+or Meta) [Compose] This key is used to enter Latin-1 character such as `a umlaut' or `c cedilla'.
+See also Latin-1 Characters.
+
+It is also possible to search, replace, and spell-check all the text in the figure.
+
+Related Attributes:
+depth, pen color, text font, text size, text step, text flags, text/ellipse angle, text justification
+(OBJECT LIBRARIES)
+    Pick objects from libraries to place on the canvas.
+
+    Clicking on this button will pop up a panel from which you may choose a library of Fig objects. From there, you may select an object and place copies of it on the canvas by clicking on the canvas where you want it placed.
+    [Library Panel]
+
+    In the panel there is a pull-down menu of the available libraries. Select one and the library will automatically be loaded. The status window will show how many objects it contains after it loads the library, and the icons of the library objects will appear in a view box. Double clicking on an icon or single clicking and pressing the Select Object button will select that object and pop down the panel.
+
+    The size of the icons may be chosen from a pulldown menu. The options are 40, 60, 80, 100 and 120 pixels.
+
+    As you move the mouse around the canvas you will see the object you chose from the library appear under the curser. Simply click mouse button 1 (`place object') to place it anywhere on the canvas. This may be repeated for the same object.
+
+    New If you wish to place the object at the position it was originally created, e.g. for laser printer labels, hold down the Shift key and press mouse button 3 (`place at orign posn') to place it.
+
+    There is an alternate list view of the library objects, which may be selected by choosing List View from the pulldown menu next the View: label.
+    [Library Panel] In this mode, you will see the object names in a list area. Single clicking on an object name will generate a preview in the small canvas on the right. After selecting the desired object, press `Select object' and the panel will pop down, or double-click on the object name to perform the select and popdown in one step.
+
+    If the shift key is pressed when mouse button 1 (`place and edit') is clicked to place the object, the Edit panel is popped up so you may change any comments in the object. This allows customizing of comments in library objects.
+
+    The object may be rotated, flipped or scaled before placing it on the canvas by pressing l to rotate left, r to rotate right, h to flip horizonally, v to flip vertically, s to scale down by 0.9 and S to scale up by 1.1.
+
+    To choose another object from the library either click mouse button 2 (`new object') or press the library button in the drawing mode panel again.
+
+    If you have a slow display or if the library object is complex, you may elect to have xfig show only the outline rectangle as you move the mouse around before placing the object. To switch to this mode, press SHIFT and mouse button 2 (`change draw mode'). You may toggle between drawing modes with this sequence.
+
+To cancel the library placing mode, press mouse button 3 (`cancel library') or any other drawing/editing mode button.
+Available Libraries of Fig Objects
+The xfig distribution comes with several libraries of Fig objects which you may use:
+
+    - Various 3D arrows
+    - Audiovisual components
+    - Some buildings
+    - Some charts (polar, log-log)
+    - Various computers
+    - DSP (Digital Signal Processor) components
+    - Electrical - electrical objects, e.g. connectors
+    - Electronic Physical - symbols for creating electronic wiring diagrams or layouts
+    - Electronic Schematic - symbols for creating electronic schematics
+    - ERD (Chen's model of Entity Relations)
+    - Examples - various examples of xfig drawings contributed by users
+    - Flags of various countries and some U.S. states
+    - Flowchart symbols
+    - GUI widgets (buttons, sliders, etc.)
+    - Hospital equipment
+    - Knitting symbols
+    - Various printer labels (CD, Avery address labels)
+    - Logic symbols
+    - Maps - outline maps of countries, U.S. states and Canadian provinces
+    - DIN Mechanical symbols
+    - Miscellaneous - various fun items here
+    - Music symbols
+    - Networking devices
+    - Office equipment - filing cabinet, telephone, overhead projector
+    - Optics symbols
+    - Process Flowsheet - chemical process flow symbols
+    - Structural Analysis symbols
+    - Unified Modelling Language (UML) symbols
+- Welding - common welding patterns and errors
+It is hoped that users will contribute Fig objects to the libraries to expand and enhance them for all xfig users. If you wish to contribute any Fig objects to existing or new libraries, please send them to me at xfigmail@epb.lbl.gov. You may restrict their usage by users if you wish, but all will benefit if you allow free usage, i.e. copying, using them in published reports, etc.
+Making Your Own Libraries of Fig Objects
+A library is simply a directory containing Fig files. There are two ways to create your own libraries in xfig; simply put all libraries in a directory, or use a text file which contains list of libraries.
+Method 1
+In the first method, you put all libraries (directories containing Fig files) in a directory. If you want use additional libraries in other directories (for example, libraries of somebody else), simply make a symbolic link to those directories in your library directory.
+
+Then you can start xfig specifying your library directory with -library_dir option or Fig.library_dir resource. xfig scans the library directory and all libraries in the directory and any subdirectories will become available.
+
+The default value of library_dir is ``$XFIGLIBDIR/Libraries'', where libraries comes with xfig will be installed automatically when installing xfig. So, you don't have to specify library_dir if you want to use libraries comes with xfig.
+
+This method is more versatile than the second method because you can add more directories in the top-level directory (or sub-directories) and there is no need to edit the file which contains list of libraries.
+
+Using this method, the names of the libraries are simply the names of the directories; e.g. if the resource ``Fig.library_dir: /xfig/Libraries'' is defined, the /xfig/Libraries/Flowchart directory will result in the library name ``Flowchart'', and the /xfig/Libraries/Electrical/Physical directory will result in the library name ``Electrical - Physical''.
+Method 2
+In the second method, you create a text file which contains list of libraries. Each line of the file contains the absolute path of the library (a directory containing Fig files) followed by the name of the library, which may be multiple words with whitespace.
+
+And then you can start xfig specifying the file with -library_dir option or Fig.library_dir resource.
+
+Here is an example of the file:
+
+  /xfig/Libraries/Electrical/Logic    Electrical Parts (Logic)
+  /xfig/Libraries/Electrical/Analog   Electrical Parts (Analog)
+  /home/tim/lib/Flowchart             Tim's Flowchart Elements
+  /home/chim/xfig/Buildings           Computer Clipart
+
+The advantage of this method is flexibility; you can easily put libraries in various directories into your list of libraries, and you can use any name for each library independent of the filenames.
+
+N.B.: In both methods, any sub-directories (and their sub-directories) found with *.fig files in them will be included in the list.
+Limits
+There are some limits with the libraries. These limits are independent of the two methods used.
+
+    - Number of libraries: at most 100
+    - Length of each library name: at most 40 characters
+    - Number of objects in a library: at most 400 (for each library)
+- Length of each object name (filename of Fig files): at most 40 characters
+-

@@ -1,0 +1,276 @@
+#    ann  An artificual neural network library
+#    Copyright (C) 2000,2003  John Darrington
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+ifeq (@LEAK_DETECTOR@,yes)
+EXTRAOBJS=ann/leakDetect.o
+endif
+
+OBJS=ann/vers.o ann/matrix.o ann/layer.o ann/ann.o  ann/kohonen.o ann/persist.o ann/outputMap.o \
+ann/mesh.o \
+ann/hopfield.o \
+ann/boltzmann.o \
+ann/mlp.o \
+ann/log.o \
+ann/fm.o \
+$(EXTRAOBJS)
+
+
+
+
+@AEPATH@
+
+# The following line ensures that top_srcdir is absolute
+# (anything like . or .. would cause problems)
+top_srcdir=$(shell cd @top_srcdir@ ; pwd )
+
+PUBLIC_HEADERS=kohonen.h mlp.h ann.h hopfield.h fm.h boltzmann.h
+HEADER_SOURCES=$(patsubst %, @top_srcdir@/ann/%, $(PUBLIC_HEADERS))
+
+LIBRARY=libann.so
+
+CFLAGS=$(DEFS) -g
+CXXFLAGS=$(CFLAGS)
+CPPFLAGS=-I@top_srcdir@ -I .
+
+INSTALL=sh @top_srcdir@/install-sh
+
+DEMOCPPFLAGS=-I @top_srcdir@/demos/common -I @top_srcdir@/demos -I demos
+
+all:  $(LIBRARY) doc/libann.info
+
+
+-include $(patsubst %.o, %.d, $(OBJS))
+
+
+$(LIBRARY): $(OBJS) 
+	$(RM) $@
+	$(CXX)  -shared -o $@ $^
+
+
+ann/vers.o: ann/vers.cc
+	@$(RM) $@
+	$(CXX) -c  $(CPPFLAGS) -I @top_srcdir@/ann $(CXXFLAGS) $< -o $@
+
+ann/%.o: @top_srcdir@/ann/%.cc
+	@$(RM) $@
+	$(CXX) -c  $(CPPFLAGS) $(CXXFLAGS) $< -o $@
+
+demos/%.o: @top_srcdir@/demos/%.cc
+	@$(RM) $@
+	mkdir -p `dirname $@`
+	$(CXX) -c  $(CPPFLAGS) $(DEMOCPPFLAGS) $(CXXFLAGS) $< -o $@
+
+demos/%.o: demos/%.cc
+	@$(RM) $@
+	mkdir -p `dirname $@`
+	$(CXX) -c  $(CPPFLAGS) $(DEMOCPPFLAGS) $(CXXFLAGS) $< -o $@
+
+
+demos/%.o: @top_srcdir@/demos/%.c
+	@$(RM) $@
+	mkdir -p `dirname $@`
+	$(CC) -c  $(CPPFLAGS) $(DEMOCPPFLAGS) $(CFLAGS) $< -o $@
+
+
+
+.PHONY: test-install
+test-install: $(LIBRARY)
+	mkdir -p inst/lib
+	mkdir -p inst/include/ann
+	$(INSTALL) $(LIBRARY) inst/lib/$(LIBRARY)
+	$(INSTALL)  $(HEADER_SOURCES) inst/include/ann
+
+.PHONY: uninstall
+.PHONY: install
+install: $(LIBRARY)
+	mkdir -p @prefix@/@libdir@
+	mkdir -p @prefix@/include/ann
+	$(INSTALL)  $(LIBRARY) @prefix@/@libdir@/$(LIBRARY)
+	$(INSTALL)  $(HEADER_SOURCES) @prefix@/include/ann
+
+.PHONY: uninstall
+uninstall:
+	$(RM) @prefix@/@libdir@/$(LIBRARY)
+	$(RM) -r @prefix@/include/ann
+
+.PHONY: clean
+clean::
+	$(RM) *.o	
+	$(RM) $(BINARY)
+	$(RM) core
+
+.PHONY: distclean
+distclean:: clean
+	$(RM) config.*
+	$(RM) Makefile
+
+
+include/ann/%.h: ann/%.h
+	@$(RM) $@
+	cp $< $@
+
+
+
+
+LDFLAGS=-L@prefix@/@libdir@
+DEMOLDFLAGS=-L . 
+CFLAGS=-g
+CPPFLAGS=-I @prefix@/include -I @top_srcdir@ -I .
+MLPOBJS=demos/main.o demos/parse.o demos/tokenise.o demos/syms.o demos/cmdline.o
+
+
+ann/vers.d: ann/vers.cc
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS) -I @top_srcdir@/ann" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@
+
+ann/%.d: ann/%.cc
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS)" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@
+
+ann/%.d: ann/%.c
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS)" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@
+
+
+demos/%.c: @top_srcdir@/demos/%.l
+	@$(RM) $@
+	$(LEX) -t $< > $@
+
+DEMOBINARIES=mlp \
+	demos/wordFreq/freq \
+	demos/mlp-char/mlp-char \
+	demos/hopfield-char/hopfield-char \
+	demos/hspell/hspell \
+	demos/boltzmann/boltzmann-char \
+	demos/dict-style/dict-style
+
+demo: $(DEMOBINARIES)
+
+mlp: $(MLPOBJS)
+	@$(RM) $@
+	$(CXX) -o $@ $^ $(LDFLAGS) $(DEMOLDFLAGS) -lann
+
+demos/parse.cc: @top_srcdir@/demos/parse.y
+
+demos/%.cc: @top_srcdir@/demos/%.y
+	@$(RM) $@
+	@mkdir -p `dirname $@`
+	$(YACC) -d $< -o $@
+
+demos/tokenise.o: demos/tokenise.c
+	@$(RM) $@
+	@mkdir -p `dirname $@`
+	$(CC) -c  $(CPPFLAGS) -I demos $(CFLAGS) $< -o $@
+
+
+test-demo-install: $(DEMOBINARIES)
+	mkdir -p inst/bin
+	$(INSTALL) $(DEMOBINARIES) inst/bin
+
+demo-install: $(DEMOBINARIES)
+	mkdir -p @prefix@/@bindir@
+	$(INSTALL) $(DEMOBINARIES) @prefix@/@bindir@
+
+
+include/ann/%.h: ann/%.h
+	@$(RM) $@
+	cp $< $@
+
+-include $(patsubst %.o, %.d, $(MLPOBJS))
+
+
+# This rule caters for the case of generated *.cc files
+demos/%.d: demos/%.cc
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS) $(DEMOCPPFLAGS)" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@
+
+demos/%.d: @top_srcdir@/demos/%.cc
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS) $(DEMOCPPFLAGS)" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@ 
+
+# This one is a generated file, so don't try to create deps for it.
+demos/tokenise.d: 
+	@$(RM) $@
+	mkdir -p `dirname $@`
+	cat /dev/null > $@
+
+demos/%.d: @top_srcdir@/demos/%.c
+	@$(RM) $@
+	CPPFLAGS="$(CPPFLAGS) $(DEMOCPPFLAGS)" @top_srcdir@/generate-depends.sh $< $@ @top_srcdir@ 
+
+.PHONY: test
+test:
+	@export builddir=`pwd` ;\
+	export search_path=`pwd` ;\
+        for i in @top_srcdir@/test/*/*.sh ; do  \
+                cd @top_srcdir@ && sh $$i ;\
+                if test $$? -eq 0 ; then \
+                        echo PASSED test $$i ; \
+                else \
+                        echo FAILED test $$i ; \
+                fi \
+        done
+
+
+COMMONDEMOOBJS=demos/common/direntry.o demos/common/regexpr.o demos/common/glyph.o
+-include $(patsubst %.o, %.d, $(COMMONDEMOOBJS))
+
+
+WFOBJS=demos/wordFreq/wordVec.o  \
+	demos/wordFreq/freqCount.o  \
+	demos/wordFreq/freq.o 
+
+-include $(patsubst %.o, %.d, $(WFOBJS))
+
+WFCPPFLAGS=-I ../.. -g
+
+
+
+demos/wordFreq/freq: $(WFOBJS) $(COMMONDEMOOBJS)
+	$(CXX) -o $@ $(WFOBJS) $(COMMONDEMOOBJS) $(DEMOLDFLAGS) -lann
+
+
+MLPCHAROBJS=demos/mlp-char/mlp-char.o
+
+-include $(patsubst %.o, %.d, $(MLPCHAROBJS))
+
+demos/mlp-char/mlp-char:  $(MLPCHAROBJS) $(COMMONDEMOOBJS)
+	$(CXX) -o $@  $(MLPCHAROBJS) $(COMMONDEMOOBJS) $(DEMOLDFLAGS) -lann
+
+HOPFIELDCHAROBJS=demos/hopfield-char/hopfield-char.o
+
+demos/hopfield-char/hopfield-char:  $(HOPFIELDCHAROBJS) $(COMMONDEMOOBJS)
+	mkdir -p `dirname $@`
+	$(CXX) -o $@  $(HOPFIELDCHAROBJS) $(COMMONDEMOOBJS) $(DEMOLDFLAGS) -lann
+
+BOLTZMANNCHAROBJS=demos/boltzmann/boltzmann-char.o
+
+demos/boltzmann/boltzmann-char:  $(BOLTZMANNCHAROBJS) $(COMMONDEMOOBJS)
+	mkdir -p `dirname $@`
+	$(CXX) -o $@  $(DEMOCPPFLAGS) $(BOLTZMANNCHAROBJS) $(COMMONDEMOOBJS) $(DEMOLDFLAGS) -lann
+
+AUTHOROBJS=demos/dict-style/dict-style.o
+
+demos/dict-style/dict-style: $(AUTHOROBJS) 
+	mkdir -p `dirname $@`
+	$(CXX) -o $@  $(AUTHOROBJS) $(COMMONDEMOOBJS) $(DEMOLDFLAGS) -lann
+
+include @top_srcdir@/doc/doc.mk
+
+include @top_srcdir@/demos/hspell/make.mk
+

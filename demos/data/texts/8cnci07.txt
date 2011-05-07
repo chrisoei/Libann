@@ -1,0 +1,644 @@
+The Project Gutenberg Etext of Stendhal's Les Cenci, [In French]
+by Stendhal   [1 of 170 pseudnyms used by Marie-Henri Beyle]
+
+
+#4 in our series by Stendhal [These are our first French Etexts
+please tell us how we can improve our French Etext. . .gently--
+I know we have a ways to go.]
+
+This is file 8cnci07.txt
+
+The 8 means this version is in 8 bit ASCII and includes accents.
+The 7 bit version without accents will be called 7cnci07.txt
+
+The 07's mean this is the 7th edition. . .we usually do not post
+any editions until the 10th, but we need more help this time, so
+we are starting earlier.
+
+We are still working on new filenameing techniques--
+suggestions are encouraged.
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+Les Cenci
+
+by Stendhal   [1 of 170 pseudnyms used by Marie-Henri Beyle]
+
+February, 1997  [Etext #801]
+
+
+Project Gutenberg's Etext of Stendhal's Les Cenci, [En Fraicais]
+*****This file should be named 8cnci07.txt or 8cnci07.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 8cnci11.txt.
+VERSIONS based on separate sources get new LETTER, 8cnci07a.txt.
+
+
+This Etext was created by Tokuya Matsumoto<toqyam@os.rim.or.jp>
+[My apology if I have not presented it properly.  Michael Hart]
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, for time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+fifty hours is one conservative estimate for how long it we take
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-two text
+files per month:  or 400 more Etexts in 1996 for a total of 800.
+If these reach just 10% of the computerized population, then the
+total should reach 80 billion Etexts.  We will try add 800 more,
+during 1997, but it will take all the effort we can manage to do
+the doubling of our library again this year, what with the other
+massive requirements it is going to take to get incorporated and
+establish something that will have some permanence.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by the December 31, 2001.  [10,000 x 100,000,000=Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only 10% of the present number of computer users.  2001
+should have at least twice as many computer users as that, so it
+will require us reaching less than 5% of the users in 2001.
+
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg"
+
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+
+We would prefer to send you this information by email
+(Internet, Bitnet, Compuserve, ATTMAIL or MCImail).
+
+******
+If you have an FTP program (or emulator), please
+FTP directly to the Project Gutenberg archives:
+[Mac users, do NOT point and click. . .type]
+
+ftp uiarchive.cso.uiuc.edu
+login:  anonymous
+password:  your@login
+cd etext/etext90 through /etext97
+or cd etext/articles [get suggest gut for more information]
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET INDEX?00.GUT
+for a list of books
+and
+GET NEW GUT for general information
+and
+MGET GUT* for newsletters.
+
+**Information prepared by the Project Gutenberg legal advisor**
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg (the "Project").
+Among other things, this means that no one owns a United States
+copyright on or for this work, so the Project (and you!) can copy
+and distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association within the 60
+     days following each date you prepare (or were legally
+     required to prepare) your annual (or equivalent periodic)
+     tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+LES CENCI
+
+
+Stendhal
+
+
+
+Le don Juan de MoliŠre est galant sans doute, mais avant tout il est homme de bonne compagnie; avant de se livrer au penchant irr‚sistible qui l'entraŒne vers les jolies femmes, il tient … se conformer … un certain modŠle id‚al, il veut ˆtre l'homme qui serait souverainement admir‚ … la cour d'un jeune roi galant et spirituel.
+
+Le don Juan de Mozart est d‚j… plus prŠs de la nature, et moins fran‡ais, il pense moins … l'opinion des autres; il ne songe pas, avant tout, … parestre, comme dit le baron de Foeneste, de d'Aubign‚. Nous n'avons que deux portraits du don Juan d'Italie, tel qu'il dut se montrer, en ce beau pays, au seiziŠme siŠcle, au d‚but de la civilisation renaissante.
+
+De ces deux portraits, il en est un que je ne puis absolument faire connaŒtre, le siŠcle est trop collet mont‚; il faut se rappeler ce grand mot que j'ai ou' r‚p‚ter bien des fois … lord Byron: This age of cant. Cette hypocrisie si ennuyeuse et qui ne trompe personne a l'immense avantage de donner quelque chose … dire aux sots: ils se scandalisent de ce qu'on a os‚ dire telle chose; de ce qu'on a os‚ rire de telle autre, etc. Son d‚savantage est de raccourcir infiniment le domaine de l'histoire.
+
+Si le lecteur a le bon go–t de me le permettre, je vais lui pr‚senter, en toute humilit‚, une notice historique sur le second des don Juan, dont il est possible de parler en 1837; il se nommait Fran‡ois Cenci.
+
+Pour que le don Juan soit possible, il faut qu'il y ait de l'hypocrisie dans le monde. Le don Juan e–t ‚t‚ un effet sans cause dans l'antiquit‚; la religion ‚tait une fˆte, elle exhortait les hommes au plaisir, comment aurait-elle fl‚tri des ˆtres qui faisaient d'un certain plaisir leur unique affaire? Le gouvernement seul parlait de s'abstenir; il d‚fendait les choses qui pouvaient nuire … la patrie, c'est-…-dire … l'int‚rˆt bien entendu de tous, et non ce qui peut nuire … l'individu qui agit.
+
+Tout homme qui avait du go–t pour les femmes et beaucoup d'argent pouvait donc ˆtre un don Juan dans AthŠnes, personne n'y trouvait … redire; personne ne professait que cette vie est une vall‚e de larmes et qu'il y a du m‚rite … se faire souffrir.
+
+Je ne pense pas que le don Juan ath‚nien p–t arriver jusqu'au crime aussi rapidement que le don Juan des monarchies modernes, une grande partie du plaisir de celui-ci consiste … braver l'opinion, et il a d‚but‚, dans sa jeunesse, par s'imaginer qu'il bravait seulement l'hypocrisie.
+
+Violer les lois dans la monarchie … la Louis XV tirer un coup de fusil … un couvreur, et le faire d‚gringoler du haut de son toit, n'est-ce pas une preuve que l'on vit dans la soci‚t‚ du prince, que l'on est du meilleur ton, et que l'on se moque fort du juge? Se moquer du juge, n'est-ce pas le premier pas, le premier essai de tout petit don Juan qui d‚bute?
+
+Parmi nous, les femmes ne sont plus … la mode, c'est pourquoi les don Juan sont rares; mais quand il y en avait, ils commen‡aient toujours par chercher des plaisirs fort naturels, tout en se faisant gloire de braver ce qui leur semblait des id‚es non fond‚es en raison dans la religion de leurs contemporains. Ce n'est que plus tard, et lorsqu'il commence … se pervertir, que le don Juan trouve une volupt‚ exquise … braver les opinions qui lui semblent … lui-mˆme justes et raisonnables.
+
+Ce passage devait ˆtre fort difficile chez les anciens, et ce n'est guŠre que sous les empereurs romains, et aprŠs TibŠre et Capr‚e, que l'on trouve des libertins qui aiment la corruption pour elle-mˆme, c'est-…-dire pour le plaisir de braver les opinions raisonnables de leurs contemporains.
+
+Ainsi, c'est … la religion chr‚tienne que j'attribue la possibilit‚ du r“le satanique de don Juan. C'est sans doute cette religion qui enseigna au monde qu'un pauvre esclave, qu'un gladiateur avait une ƒme absolument ‚gale en facult‚ … celle de C‚sar lui-mˆme; ainsi, il faut la remercier de l'apparition des sentiments d‚licats; je ne doute pas, au reste, que t“t ou tard ces sentiments ne se fussent fait jour dans le sein des peuples. L'En‚ide est d‚j… bien plus tendre que l'Iliade.
+
+La th‚orie de J‚sus ‚tait celle des philosophes arabes ses contemporains; la seule chose nouvelle qui se soit introduite dans le monde … la suite des principes prˆch‚s par saint Paul, c'est un corps de prˆtres absolument s‚par‚ du reste des citoyens et mˆme ayant des int‚rˆts oppos‚s*.
+* Voir Montesquieu: Politique des Romains dans la religion.
+
+Ce corps fit son unique affaire de cultiver et de fortifier le sentiment religieux; il inventa des prestiges et des habitudes pour ‚mouvoir les esprits de toutes les classes, depuis le pƒtre inculte jusqu'au vieux courtisan blas‚; il sut lier son souvenir aux impressions charmantes de la premiŠre enfance, il ne laissa point passer la moindre peste ou le moindre grand malheur sans en profiter pour redoubler la peur et le sentiment religieux, ou tout au moins pour bƒtir une belle ‚glise, comme la Salute … Venise.
+
+L'existence de ce corps produisit cette chose admirable: le pape saint L‚on, r‚sistant sans force physique au f‚roce Attila et … ses nu‚es de barbares qui venaient d'effrayer la Chine, la Perse et les Gaules.
+
+Ainsi, la religion, comme le pouvoir absolu temp‚r‚ par des chansons, qu'on appelle la monarchie fran‡aise, a produit des choses singuliŠres que le monde n'e–t jamais vues, peut-ˆtre, s'il e–t ‚t‚ priv‚ de ces deux institutions.
+
+Parmi ces choses bonnes ou mauvaises, mais toujours singuliŠres et curieuses, et qui eussent bien ‚tonn‚ Aristote, Polybe, Auguste, et les autres bonnes tˆtes de l'antiquit‚, je place sans h‚siter le caractŠre tout moderne de don Juan. C'est, … mon avis, un produit des institutions asc‚tiques des papes venus aprŠs Luther; car L‚on X et sa cour (1506) suivaient … peu prŠs les principes de la religion d'AthŠnes.
+
+Le Don Juan de MoliŠre fut repr‚sent‚ au commencement du rŠgne de Louis XIV, le 15 f‚vrier 1665; ce prince n'‚tait point encore d‚vot, et cependant la censure eccl‚siastique fit supprimer la scŠne du pauvre dans la forˆt. Cette censure, pour se donner des forces, voulait persuader … ce jeune roi, si prodigieusement ignorant, que le mot judiciaire ‚tait synonyme de r‚publicain*.
+* Saint-Simon: M‚moires de l'abb‚ Blache.
+
+L'original est d'un Espagnol, Tirso de Molina*; une troupe italienne en jouait une imitation … Paris vers 1664, et faisait fureur. C'est probablement la com‚die du monde qui a ‚t‚ repr‚sent‚e le plus souvent. C'est qu'il y a le diable et l'amour, la peur de l'enfer et une passion exalt‚e pour une femme, c'est-…-dire, ce qu'il y a de plus terrible et de plus doux aux yeux de tous les hommes pour peu qu'ils soient au-dessus de l'‚tat sauvage.
+* Ce nom fut adopt‚ par un moine, homme d'esprit, fray Gabriel Tellez. Il appartenait … l'ordre de la Merci, et l'on a de lui plusieurs piŠces o— se trouvent des scŠnes de g‚nie, entre autres, le Timide … la Cour. Tellez fit trois cents com‚dies, dont soixante ou quatre-vingts existent encore. Il mourut' vers 1610.
+
+Il n'est pas ‚tonnant que la peinture du don Juan ait ‚t‚ introduite dans la litt‚rature par un poŠte espagnol. L'amour tient une grande place dans la vie de ce peuple; c'est, l…-bas, une passion s‚rieuse et qui se fait sacrifier, haut la main, toutes les autres, et mˆme, qui le croirait? la vanit‚! Il en est de mˆme en Allemagne et en Italie. A le bien prendre, la France seule est complŠtement d‚livr‚e de cette passion, qui fait faire tant de folies … ces ‚trangers: par exemple, ‚pouser une fille pauvre, sous le pr‚texte qu'elle est jolie et qu'on en est amoureux. Les filles qui manquent de beaut‚ ne manquent pas d'admirateurs en France; nous sommes gens avis‚s. Ailleurs, elles sont r‚duites … se faire religieuses, et c'est pourquoi les couvents sont indispensables en Espagne. Les filles n'ont pas de dot en ce pays, et cette loi a maintenu le triomphe de l'amour. En France, l'amour ne s'est-il pas r‚fugi‚ au cinquiŠme ‚tage, c'est-…-dire parmi les filles qui ne se marient pas avec l'entremise du notaire de la famille?
+
+Il ne faut point parler du don Juan de lord Byron, ce n'est qu'un Faublas, un beau jeune homme insignifiant, et sur lequel se pr‚cipitent toutes sortes de bonheurs invraisemblables.
+
+C'est donc en Italie et au seiziŠme siŠcle seulement qu'a d– paraŒtre, pour la premiŠre fois, ce caractŠre singulier. C'est en Italie et au dix-septiŠme siŠcle qu'une princesse disait, en prenant une glace avec d‚lices le soir d'une journ‚e fort chaude: Quel dommage que ce ne soit pas un p‚ch‚!
+
+Ce sentiment forme, suivant moi, la base du caractŠre du don Juan, et comme on voit, la religion chr‚tienne lui est n‚cessaire.
+
+Sur quoi un auteur napolitain s'‚crie: "N'est-ce rien que de braver le ciel, et de croire qu'au moment mˆme le ciel peut vous r‚duire en cendre? De l… l'extrˆme volupt‚, dit-on, d'avoir une maŒtresse religieuse, et religieuse remplie de piti‚, sachant fort bien qu'elle fait mal, et demandant pardon … Dieu avec passion, comme elle pŠche avec passion*."
+* D. Dominico Paglietta.
+
+Supposons un chr‚tien extrˆmement pervers, n‚ … Rome, au moment o— le s‚vŠre Pie V venait de remettre en honneur ou d'inventer une foule de pratiques minutieuses absolument ‚trangŠres … cette morale simple qui n'appelle vertu que ce qui est utile aux hommes. Une inquisition inexorable, et tellement inexorable qu'elle dura peu en Italie, et dut se r‚fugier en Espagne, venait d'ˆtre renforc‚e* et faisait peur … tous. Pendant quelques ann‚es, on attacha de trŠs grandes peines … la non-ex‚cution ou au m‚pris public de ces petites pratiques minutieuses ‚lev‚es au rang des devoirs les plus sacr‚s de la religion; il aura hauss‚ les ‚paules en voyant l'universalit‚ des citoyens trembler devant les lois terribles de l'inquisition.
+* Saint Pie V Ghislieri, Pi‚montais, dont on voit la figure maigre et s‚vŠre au tombeau de Sixte-Quint, … Sainte-Marie-Majeure, ‚tait grand inquisiteur quand il fut appel‚ au tr“ne de saint Pierre en 1566. Il gouverna l'‚glise six ans et vingt-quatre jours. Voir ses lettres, publi‚es par M. de Potter, le seul homme parmi nous qui ait connu ce point d'histoire. L'ouvrage de M. de Potter, vaste mine de faits, est le fruit de quatorze ans d'‚tudes consciencieuses dans les bibliothŠques de Florence, de Venise et de Rome.
+
+"Eh bien! se sera-t-il dit, je suis l'homme le plus riche de Rome, cette capitale du monde; je vais en ˆtre aussi le plus brave; je vais me moquer publiquement de tout ce que ces gens-l… respectent, et qui ressemble si peu … ce qu'on doit respecter."
+
+Car un don Juan, pour ˆtre tel, doit ˆtre homme de coeur et poss‚der cet esprit vif et net qui fait voir clair dans les motifs des actions des hommes.
+
+Fran‡ois Cenci se sera dit: "Par quelles actions parlantes, moi Romain, n‚ … Rome en 1527, pr‚cis‚ment pendant les six mois durant lesquels les soldats luth‚riens du conn‚table de Bourbon' y commirent, sur les choses saintes, les plus affreuses profanations; par quelles actions pourrais-je faire remarquer mon courage et me donner, le plus profond‚ment possible, le plaisir de braver l'opinion? Comment ‚tonnerai je mes sots contemporains? Comment pourrai-je me donner le plaisir si vif de me sentir diff‚rent de tout ce vulgaire?"
+
+Il ne pouvait entrer dans la tˆte d'un Romain, et d'un Romain du Moyen Age, de se borner … des paroles. Il n'est pas de pays o— les paroles hardies soient plus m‚pris‚es qu'en Italie.
+
+L'homme qui a pu se dire … lui-mˆme ces choses se nommait Fran‡ois Cenci: il a ‚t‚ tu‚ sous les yeux de sa fille et de sa femme, le 15 septembre 1598. Rien d'aimable ne nous reste de ce don Juan, son caractŠre ne fut point adouci et amoindri par l'id‚e d'ˆtre, avant tout, homme de bonne compagnie, comme le don Juan de MoliŠre. Il ne songeait aux autres hommes que pour marquer sa sup‚riorit‚ sur eux, s'en servir dans ses desseins ou les ha‹r. Le don Juan n'a jamais de plaisir par les sympathies, par les douces rˆveries ou les illusions d'un coeur tendre. Il lui faut, avant tout, des plaisirs qui soient des triomphes, qui puissent ˆtre vus par les autres, qui ne puissent ˆtre ni‚s; il lui faut la liste d‚ploy‚e par l'insolent Leporello aux yeux de la triste Elvire.
+
+Le don Juan romain s'est bien gard‚ de la maladresse insigne de donner la clef de son caractŠre, et de faire des confidences … un laquais, comme le don Juan de MoliŠre; il a v‚cu sans confident, et n'a prononc‚ de paroles que celles qui ‚taient utiles pour l'avancement de ses desseins. Nul ne vit en lui de ces moments de tendresse v‚ritable et de gaiet‚ charmante qui nous font pardonner au don Juan de Mozart; en un mot, le portrait que je vais traduire est affreux.
+
+Par choix, je n'aurais pas racont‚ ce caractŠre, je me serais content‚ de l'‚tudier, car il est plus voisin de l'horrible que du curieux; mais j'avouerai qu'il m'a ‚t‚ demand‚ par des compagnons de voyage auxquels je ne pouvais rien refuser. En 1823, j'eus le bonheur de voir l'Italie avec des ˆtres aimables et que je n'oublierai jamais, je fus s‚duit comme eux par l'admirable portrait de B‚atrix Cenci, que l'on voit … Rome, au palais Barberini.
+
+La galerie de ce palais est maintenant r‚duite … sept ou huit tableaux; mais quatre sont des chefs-d'oeuvre: c'est d'abord le portrait de la c‚lŠbre Fornarina, la maŒtresse de Rapha‰l, par Rapha‰l lui-mˆme. Ce portrait, sur l'authenticit‚ duquel il ne peut s'‚lever aucun doute, car on trouve des copies contemporaines, est tout diff‚rent de la figure qui, … la galerie de Florence, est donn‚e comme le portrait de la maŒtresse de Rapha‰l, et a ‚t‚ grav‚, sous ce nom, par Morghen. Le portrait de Florence n'est pas mˆme de Rapha‰l. En faveur de ce grand nom, le lecteur voudra-t-il pardonner … cette petite digression?
+
+Le second portrait pr‚cieux de la galerie Barberini est du Guide; c'est le portrait de B‚atrix Cenci, dont on voit tant de mauvaises gravures. Ce grand peintre a plac‚ sur le cou de B‚atrix un bout de draperie insignifiant, il l'a coiff‚e d'un turban; il e–t craint de pousser la v‚rit‚ jusqu'… l'horrible, s'il e–t reproduit exactement l'habit qu'elle s'‚tait fait faire pour paraŒtre … l'ex‚cution, et les cheveux en d‚sordre d'une pauvre fille de seize ans qui vient de s'abandonner au d‚sespoir. La tˆte est douce et belle, le regard trŠs doux et les yeux fort grands: ils ont l'air ‚tonn‚ d'une personne qui vient d'ˆtre surprise au moment o— elle pleurait … chaudes larmes. Les cheveux sont blonds et trŠs beaux. Cette tˆte n'a rien de la fiert‚ romaine et de cette conscience de ses propres forces que l'on surprend souvent dans le regard assur‚ d'une file du Tibre, di una figlia del Tevere, disent-elles d'elles-mˆmes avec fiert‚. Malheureusement les demi-teintes ont pouss‚ au rouge de brique pendant ce long intervalle de deux cent trente-huit ans qui nous s‚pare de la catastrophe dont on va lire le r‚cit.
+
+Le troisiŠme portrait de la galerie Barberini est celui de LucrŠce Petroni, belle-mŠre de B‚atrix, qui fut ex‚cut‚e avec elle. C'est le type de la matrone romaine dans sa beaut‚ et sa fiert‚* naturelles. Les traits sont grands et la carnation d'une ‚clatante blancheur, les sourcils noirs et fort marqu‚s, le regard est imp‚rieux et en mˆme temps charg‚ de volupt‚. C'est un beau contraste avec la figure si douce, si simple, presque allemande de sa belle-fille.
+* Cette fiert‚ ne provient point du rang dans le monde, comme dans les portraits de Van Dyck.
+
+Le quatriŠme portrait, brillant par la v‚rit‚ et l'‚clat des couleurs, est l'un des chefs-d'oeuvre de Titien; c'est une esclave grecque qui fut la maŒtresse du fameux doge Barbarigo.
+
+Presque tous les ‚trangers qui arrivent … Rome se font conduire, dŠs le commencement de leur tourn‚e, … la galerie Barberini; ils sont appel‚s, les femmes surtout, par les portraits de B‚atrix Cenci et de sa belle-mŠre. J'ai partag‚ la curiosit‚ commune; ensuite, comme tout le monde, j'ai cherch‚ … obtenir communication des piŠces de ce procŠs c‚lŠbre. Si on a ce cr‚dit, on sera tout ‚tonn‚, je pense, en lisant ces piŠces, o— tout est latin, except‚ les r‚ponses des accus‚s, de ne trouver presque pas l'explication des faits. C'est qu'… Rome, en 1599, personne n'ignorait les faits. J'ai achet‚ la permission de copier un r‚cit contemporain; j'ai cru pouvoir en donner la traduction sans blesser aucune convenance; du moins cette traduction put-elle ˆtre lue tout haut devant des dames en 1823. Il est bien entendu que le traducteur cesse d'ˆtre fidŠle lorsqu'il ne peut plus l'ˆtre: l'horreur l'emporterait facilement sur l'int‚rˆt de curiosit‚.
+
+Le triste r“le du don Juan pur (celui qui ne cherche … se conformer … aucun modŠle id‚al, et qui ne songe … l'opinion du monde que pour l'outrager) est expos‚ ici dans toute son horreur. Les excŠs de ses crimes forcent deux femmes malheureuses … le faire tuer sous leurs yeux; ces deux femmes ‚taient l'une son ‚pouse, et l'autre sa fille, et le lecteur n'osera d‚cider si elles furent coupables. Leurs contemporains trouvŠrent qu'elles ne devaient pas p‚rir.
+
+Je suis convaincu que la trag‚die de Galeotto Manfredi (qui fut tu‚ par sa femme, sujet trait‚ par le grand poŠte Monti) et tant d'autres trag‚dies domestiques du quinziŠme siŠcle, qui sont moins connues et … peine indiqu‚es dans les histoires particuliŠres des villes d'Italie, finirent par une scŠne semblable … celle du chƒteau de Petrella. Voici la traduction du r‚cit contemporain; il est en italien de Rome. et fut ‚crit le 14 septembre 1599.
+
+
+HISTOIRE VRITABLE
+
+de la mort de Jacques et B‚atrix Cenci, et de LucrŠce Petroni Cenci, leur belle-mŠre, ex‚cut‚s pour crime de parricide, samedi dernier 11 septembre 1599, sous le rŠgne de notre saint pŠre le pape, Cl‚ment VIII, Aldobrandini.
+
+
+La vie ex‚crable qu'a toujours men‚e Fran‡ois Cenci, n‚ … Rome et l'un de nos concitoyens les plus opulents, a fini par le conduire … sa perte. Il a entraŒn‚ … une mort pr‚matur‚e ses fils, jeunes gens forts et courageux, et sa fille B‚atrix qui, quoiqu'elle ait ‚t‚ conduite au supplice … peine ƒg‚e de seize ans (il y a aujourd'hui quatre jours), n'en passait pas moins pour une des plus belles personnes des Etats du pape et de l'Italie tout entiŠre. La nouvelle se r‚pand que le signor Guido Reni, un des ‚lŠves de cette admirable ‚cole de Bologne, a voulu faire le portrait de la pauvre B‚atrix, vendredi dernier, c'est-…-dire le jour mˆme qui a pr‚c‚d‚ son ex‚cution. Si ce grand peintre s'est acquitt‚ de cette tƒche comme il a fait pour les autres peintures qu'il a ex‚cut‚es dans cette capitale, la post‚rit‚ pourra se faire quelque id‚e de ce que fut la beaut‚ de cette fille admirable. Afin qu'elle puisse aussi conserver quelque souvenir de ses malheurs sans pareils, et de la force ‚tonnante avec laquelle cette ƒme vraiment romaine sut les combattre, j'ai r‚solu d'‚crire ce que j'ai appris sur l'action qui l'a conduite … la mort, et ce que j'ai vu le jour de sa glorieuse trag‚die.
+
+ Les personnes qui m'ont donn‚ mes informations ‚taient plac‚es de fa‡on … savoir les circonstances les plus secrŠtes, lesquelles sont ignor‚es dans Rome mˆme aujourd'hui, quoique depuis six semaines on ne parle d'autre chose que du procŠs des Cenci. J'‚crirai avec une certaine libert‚, assur‚ que je suis de pouvoir d‚poser mon commentaire dans des archives respectables, et d'o— certainement il ne sera tir‚ qu'aprŠs moi. Mon unique chagrin est de devoir parler, mais ainsi le veut la v‚rit‚, contre l'innocence de cette pauvre B‚atrix Cenci, ador‚e et respect‚e de tous ceux qui l'ont connue, autant que son horrible pŠre ‚tait ha' et ex‚cr‚.
+
+Cet homme qui, l'on ne peut le nier, avait re‡u du ciel une sagacit‚ et une bizarrerie ‚tonnantes, fut fils de monseigneur Cenci, lequel, sous Pie V (Ghislieri), s'‚tait ‚lev‚ au poste de tr‚sorier (ministre des finances). Ce saint pape, tout occup‚, comme on sait, de sa juste haine contre l'h‚r‚sie et du r‚tablissement de son admirable inquisition, n'eut que du m‚pris pour l'administration temporelle de son Etat, de fa‡on que ce monsignor Cenci, qui fut tr‚sorier pendant quelques ann‚es avant 1572, trouva moyen de laisser … cet homme affreux qui fut son fils et pŠre de B‚atrix un revenu net de cent soixante mille piastres (environ deux millions cinq cent mille francs de 1837).
+
+Fran‡ois Cenci, outre cette grande fortune, avait une r‚putation de courage et de prudence … laquelle, dans son jeune temps, aucun autre Romain ne put atteindre; et cette r‚putation le mettait d'autant plus en cr‚dit … la cour du pape et parmi tout le peuple, que les actions criminelles que l'on commen‡ait … lui imputer n'‚taient que du genre de celles que le monde pardonne facilement. Beaucoup de Romains se rappelaient encore, avec un amer regret, la libert‚ de penser et d'agir dont on avait joui du temps de L‚on X, qui nous fut enlev‚ en 1513, et sous Paul III, mort en 1549. On commen‡a … parler, sous ce dernier pape, du jeune Fran‡ois Cenci … cause de certains amours singuliers, amen‚s … bonne r‚ussite par des moyens plus singuliers encore.
+
+Sous Paul III, temps o— l'on pouvait encore parler avec une certaine confiance, beaucoup disaient que Fran‡ois Cenci ‚tait avide surtout d'‚v‚nements bizarres qui pussent lui donner des peripezie di nuova idea, sensations nouvelles et inqui‚tantes; ceux-ci s'appuient sur ce qu'on a trouv‚ dans ses livres de comptes des articles tels que celui-ci:
+
+"Pour les aventures et peripezie de Toscanella, trois mille cinq cents piastres (environ soixante mille francs de 1837) e non fu caro (et ce ne fut pas trop cher)."
+
+On ne sait peut-ˆtre pas, dans les autres ville d'Italie, que notre sort et notre fa‡on d'ˆtre … Rome changent selon le caractŠre du pape r‚gnant. Ainsi. pendant treize ann‚es sous le bon pape Gr‚goire XIII (Buoncompagni), tout ‚tait permis … Rome; qui voulait faisait poignarder son ennemi, et n'‚tait point poursuivi, pour peu qu'il se conduisŒt d'une fa‡on modeste. A cet excŠs d'indulgence succ‚da l'excŠs de la s‚v‚rit‚ pendant les cinq ann‚es que r‚gna le grand Sixte Quint, duquel il a ‚t‚ dit, comme de l'empereur Auguste, qu'il fallait qu'il ne vŒnt jamais ou qu'il restƒt toujours. Alors on vit ex‚cuter des malheureux pour des assassinats ou empoisonnements oubli‚s depuis dix ans, mais dont ils avaient eu le malheur de se confesser au cardinal Montalto, depuis Sixte Quint.
+
+Ce fut principalement sous Gr‚goire XIII que l'on commen‡a … beaucoup parler de Fran‡ois Cenci; il avait ‚pous‚ une femme fort riche et telle qu'il convenait … un seigneur si accr‚dit‚, elle mourut aprŠs lui avoir donn‚ sept enfants. ` Peu aprŠs sa mort, il prit en secondes noces LucrŠce Petroni, d'une rare beaut‚ et c‚lŠbre surtout par l'‚clatante blancheur de son teint, mais un peu trop replŠte comme c'est le d‚faut commun de nos Romaines De LucrŠce, il n'eut point d'enfants.
+
+Le moindre vice qui f–t … reprendre en Fran‡ois Cenci, ce fut la propension … un amour infƒme, le plus grand fut celui de ne pas croire en Dieu. De sa vie on ne le vit entrer dans une ‚glise.
+
+Mis trois fois en prison pour ses amours infƒmes, il s'en tira en donnant deux cent mille piastres aux personnes en faveur auprŠs des douze papes sous lesquels il a successivement v‚cu. (Deux cent mille piastres font … peu prŠs cinq millions de 1837.)
+
+Je n'ai vu Fran‡ois Cenci que lorsqu'il avait d‚j… les cheveux grisonnants, sous le rŠgne du pape Buoncompagni, quand tout ‚tait permis … qui osait. C'‚tait un homme d'… peu prŠs cinq pieds quatre pouces, fort bien fait, quoique trop maigre; il passait pour ˆtre extrˆmement fort, peut-ˆtre faisait-il courir ce bruit lui-mˆme; il avait les yeux grands et expressifs, mais la paupiŠre sup‚rieure retombait un peu trop; il avait le nez trop avanc‚ et trop grand, les lŠvres minces et un sourire plein de grƒce. Ce sourire devenait terrible lorsqu'il fixait le regard sur ses ennemis; pour peu qu'il f–t ‚mu ou irrit‚, il tremblait excessivement et de fa‡on … l'incommoder. Je l'ai vu dans ma jeunesse, sous le pape Buoncompagni, aller … cheval de Rome … Naples, sans doute pour quelqu'une de ses amourettes, il passait par les bois de San Germano et de la Faggola, sans avoir nul souci des brigands, et faisait, dit-on, la route en moins de vingt heures. Il voyageait toujours seul, et sans pr‚venir personne; quand son premier cheval ‚tait fatigu‚, il en achetait ou en volait un autre. Pour peu qu'on fŒt des difficult‚s, il ne faisait pas difficult‚, lui, de donner un coup de poignard. Mais il est vrai de dire que du temps de ma jeunesse c'est-…-dire quand il avait quarante-huit ou cinquante ans, personne n'‚tait assez hardi pour lui r‚sister. Son grand plaisir ‚tait surtout de braver ses ennemis.
+
+Il ‚tait fort connu sur toutes les routes des Etats de Sa Saintet‚, il payait g‚n‚reusement, mais aussi il ‚tait capable, deux ou trois mois aprŠs une offense … lui faite, d'exp‚dier un de ses sicaires pour tuer la personne qui l'avait offens‚.
+
+La seule action vertueuse qu'il ait faite pendant toute sa longue vie, a ‚t‚ de bƒtir, dans la cour de son vaste palais prŠs du Tibre, une ‚glise d‚di‚e … saint Thomas, et encore il fut pouss‚ … cette belle action par le d‚sir singulier d'avoir sous ses yeux les tombeaux de tous ses enfants*, pour lesquels il eut une haine excessive et contre nature, mˆme dŠs leur plus tendre jeunesse, quand ils ne pouvaient encore l'avoir offens‚ en rien.
+* A Rome on enterre sous les ‚glises.
+
+C'est l… que je veux les mettre tous, disait-il souvent avec un rire amer aux ouvriers qu'il employait … construire son ‚glise. Il envoya les trois aŒn‚s, Jacques, Christophe et Roch, ‚tudier … l'universit‚ de Salamanque en Espagne. Une fois qu'ils furent dans ce pays lointain, il prit un malin plaisir … ne leur faire passer aucune remise d'argent, de fa‡on que ces malheureux jeunes gens, aprŠs avoir adress‚ … leur pŠre nombre de lettres, qui toutes restŠrent sans r‚ponse, furent r‚duits … la mis‚rable n‚cessit‚ de revenir dans leur patrie en empruntant de petites sommes d'argent ou en mendiant tout le long de la route.
+
+A Rome, ils trouvŠrent un pŠre plus s‚vŠre et plus rigide, plus ƒpre que jamais, lequel, malgr‚ ses immenses richesses, ne voulut ni les vˆtir ni leur donner l'argent n‚cessaire pour acheter les aliments les plus grossiers. Ces malheureux furent forc‚s d'avoir recours au pape, qui for‡a Fran‡ois Cenci … leur faire une petite pension. Avec ce secours fort m‚diocre ils se s‚parŠrent de lui.
+
+Bient“t aprŠs, … l'occasion de ses amours infƒmes, Fran‡ois fut mis en prison pour la troisiŠme et derniŠre fois, sur quoi les trois frŠres sollicitŠrent une audience de notre saint pŠre le pape actuellement r‚gnant, et le priŠrent en commun de faire mourir Fran‡ois Cenci leur pŠre, qui, dirent-ils, d‚shonorerait leur maison. Cl‚ment VIII en avait grande envie, mais il ne voulut pas suivre sa premiŠre pens‚e, pour ne pas donner contentement … ces enfants d‚natur‚s, et il les chassa honteusement de sa pr‚sence.
+
+Le pŠre, comme nous l'avons dit plus haut, sortit de prison en donnant une grosse somme d'argent … qui le pouvait prot‚ger. On con‡oit que l'‚trange d‚marche de ses trois fils aŒn‚s dut augmenter encore la haine qu'il portait … ses enfants. Il les maudissait … chaque instant, grands et petits, et tous les jours il accablait de coups de bƒton ses deux pauvres filles qui habitaient avec lui dans son palais.
+
+La plus ƒg‚e, quoique surveill‚e de prŠs, se donna tant de soins, qu'elle parvint … faire pr‚senter une supplique au pape; elle conjura Sa Saintet‚ de la marier ou de la placer dans un monastŠre. Cl‚ment VIII eut piti‚ de ses malheurs, et la maria … Charles Gabrielli, de la famille la plus noble de Gubbio; Sa Saintet‚ obligea le pŠre … donner une forte dot.
+
+A ce coup impr‚vu, Fran‡ois Cenci montra une extrˆme colŠre, et pour empˆcher que B‚atrix, en devenant plus grande, n'eut l'id‚e de suivre l'exemple de sa soeur, il la s‚questra dans un des appartements de son immense palais. L…, personne n'eut la permission de voir B‚atrix, alors … peine ƒg‚e de quatorze ans, et d‚j… dans tout l'‚clat d'une ravissante beaut‚. Elle avait surtout une gaiet‚, une candeur et un esprit comique que je n'ai jamais vus qu'… elle. Fran‡ois Cenci lui portait lui-mˆme … manger. Il est … croire que c'est alors que le monstre en devint amoureux, ou feignit d'en devenir amoureux, afin de mettre au supplice sa malheureuse fille. Il lui parlait souvent du tour perfide que lui avait jou‚ sa soeur aŒn‚e, et, se mettant en colŠre au son de ses propres paroles, finissait pas accabler de coups B‚atrix.
+
+Sur ces entrefaites, Roch Cenci, son fils, fut tu‚ par un charcutier, et l'ann‚e suivante, Christophe Cenci fut tu‚ par Paul Corso de Massa. A cette occasion, il montra sa noire impi‚t‚, car aux fun‚railles de ses deux fils il ne voulut pas d‚penser mˆme un ba‹oque pour des cierges. En apprenant le sort de son fils Christophe, il s'‚cria qu'il ne pourrait go–ter quelque joie que lorsque tous ses enfants seraient enterr‚s, et que, lorsque le dernier viendrait … mourir, il voulait, en signe de bonheur, mettre le feu … son palais. Rome fut ‚tonn‚e de ce propos, mais elle croyait tout possible d'un pareil homme, qui mettait sa gloire … braver tout le monde et le pape lui-mˆme.
+
+(Ici il devient absolument impossible de suivre le narrateur romain dans le r‚cit fort obscur des choses ‚tranges par lesquelles Fran‡ois Cenci chercha … ‚tonner ses contemporains. Sa femme et sa malheureuse fille furent, suivant toute apparence, victimes de ses id‚es abominables.)
+
+Toutes ces choses ne lui suffirent point; il tenta avec des menaces, et en employant la force, de violer sa propre fille B‚atrix, laquelle ‚tait d‚j… grande et belle; il n'eut pas honte d'aller se placer dans son lit, lui se trouvant dans un ‚tat complet de nudit‚. Il se promenait avec elle dans les salles de son palais, lui ‚tant parfaitement nu; puis il la conduisait dans le lit de sa femme, afin qu'… la lueur des lampes la pauvre LucrŠce p–t voir ce qu'il faisait avec B‚atrix.
+
+Il donnait … entendre … cette pauvre fille une h‚r‚sie effroyable, que j'ose … peine rapporter, … savoir que, lorsqu'un pŠre connaŒt sa propre fille, les enfants qui naissent sont n‚cessairement des saints et que tous les plus grands saints v‚n‚r‚s par l'Eglise sont n‚s de cette fa‡on, c'est-…-dire que leur grand-pŠre maternel a ‚t‚ leur pŠre.
+
+Lorsque B‚atrix r‚sistait … ses ex‚crables volont‚s il l'accablait des coups les plus cruels, de sorte que cette pauvre fille, ne pouvant tenir … une vie si malheureuse, eut l'id‚e de suivre l'exemple que sa soeur lui avait donn‚. Elle adressa … notre saint pŠre le pape une supplique fort d‚taill‚e; mais il est … croire que Fran‡ois Cenci avait pris ses pr‚cautions, car il ne paraŒt pas que cette supplique soit jamais parvenue aux mains de Sa Saintet‚; du moins fut-il impossible de la retrouver … la secr‚tairerie des Memoriali, lorsque, B‚atrix ‚tant en prison, son d‚fenseur eut le plus grand besoin de cette piŠce; elle aurait pu prouver en quelque sorte les excŠs inou‹s qui furent commis dans le chƒteau de Petrella. N'e–t-il pas ‚t‚ ‚vident pour tous que B‚atrix Cenci s'‚tait trouv‚e dans le cas d'une l‚gitime d‚fense? Ce m‚morial parlait aussi au nom de LucrŠce belle-mŠre de B‚atrix.
+
+Fran‡ois Cenci eut connaissance de cette tentative, et l'on peut juger avec quelle colŠre il redoubla de mauvais traitements envers ces deux malheureuses femmes.
+
+Leur vie leur devint absolument insupportable, et ce fut alors que, voyant bien qu'elles n'avaient rien … esp‚rer de la justice du souverain, dont les courtisans ‚taient gagn‚s par les riches cadeaux de Fran‡ois, elles eurent l'id‚e d'en venir au parti extrˆme qui les a perdues, mais qui pourtant a eu cet avantage de terminer leurs souffrances en ce monde.
+
+Il faut savoir que le c‚lŠbre monsignor Guerra allait souvent au palais Cenci; il ‚tait d'une taille ‚lev‚e et d'ailleurs fort bel homme, il avait re‡u ce don sp‚cial de la destin‚e, qu'… quelque chose qu'il voul–t s'appliquer il s'en tirait avec une grƒce toute particuliŠre. On a suppos‚ qu'il aimait B‚atrix et avait le projet de quitter la mantelletta et de l'‚pouser*; mais, quoiqu'il prŒt soin de cacher ses sentiments avec une attention extrˆme, il ‚tait ex‚cr‚ de Fran‡ois Cenci, qui lui reprochait d'avoir ‚t‚ fort li‚ avec tous ses enfants. Quand monsignor Guerra apprenait que le signor Cenci ‚tait hors de son palais, il montait … l'appartement des dames et passait plusieurs heures … discourir avec elles et … ‚couter leurs plaintes des traitements incroyables auxquels toutes les deux ‚taient en butte. Il paraŒt que B‚atrix la premiŠre osa parler de vive voix … monsignor Guerra du projet auquel elles s'‚taient arrˆt‚es. Avec le temps il y donna les mains; et vivement press‚ … diverses reprises par B‚atrix, il consentit enfin … communiquer cet ‚trange dessein … Giacomo Cenci, sans le consentement duquel on ne pouvait rien faire, puisqu'il ‚tait le frŠre aŒn‚ et chef de la maison aprŠs Fran‡ois.
+* La plupart des monsignori ne sont point engag‚s dans les ordres sacr‚s et peuvent se marier.
+
+On trouva de grandes facilit‚s … l'attirer dans la conspiration; il ‚tait extrˆmement maltrait‚ par son pŠre, qui ne lui donnait aucun secours, chose d'autant plus sensible … Giacomo qu'il ‚tait mari‚ et avait six enfants. On choisit pour s'assembler et traiter des moyens de donner la mort … Fran‡ois Cenci l'appartement de monsignor Guerra. L'affaire se traita avec toutes les formes convenables, et l'on prit sur toutes choses le vote de la belle-mŠre et de la jeune fille. Quand enfin le parti fut arrˆt‚, on fit choix de deux vassaux de Fran‡ois Cenci, lesquels avaient con‡u contre lui une haine mortelle. L'un d'eux s'appelait Marzio; c'‚tait un homme de coeur, fort attach‚ aux malheureux enfants de Fran‡ois, et, pour faire quelque chose qui leur f–t agr‚able, il consentit … prendre part au parricide. Olimpio, le second, avait ‚t‚ choisi pour chƒtelain de la forteresse de la Petrella, au royaume de Naples, par le prince Colonna; mais, par son cr‚dit tout-puissant auprŠs du prince, Fran‡ois Cenci l'avait fait chasser.
+
+On convint de toute chose avec ces deux hommes Fran‡ois Cenci ayant annonc‚ que, pour ‚viter l‚ mauvais air de Rome, il irait passer l'‚t‚ suivant dans cette forteresse de la Petrella, on eut l'id‚e de r‚unir une douzaine de bandits napolitains. Olimpio se chargea de les fournir. On d‚cida qu'on les ferait cacher dans les forˆts voisines de la Petrella, qu'on les avertirait du moment o— Fran‡ois Cenci se mettrait en chemin, qu'ils l'enlŠveraient sur la route, et feraient annoncer … sa famille qu'ils le d‚livreraient moyennant une forte ran‡on. Alors les enfants seraient oblig‚s de retourner … Rome pour amasser la somme demand‚e par les brigands; ils devaient feindre de ne pas pouvoir trouver cette somme avec rapidit‚, et les brigands, suivant leur menace, ne voyant point arriver l'argent, auraient mis … mort Fran‡ois Cenci. De cette fa‡on, personne ne devait ˆtre amen‚ … soup‡onner les v‚ritables auteurs de cette mort.
+
+Mais, l'‚t‚ venu, lorsque Fran‡ois Cenci partit de Rome pour la Petrella, l'espion qui devait donner avis du d‚part, avertit trop tard les bandits plac‚s dans les bois, et ils n'eurent pas le temps de descendre sur la grande route. Cenci arriva sans encombre … la Petrella; les brigands, las d'attendre une proie douteuse, allŠrent voler ailleurs pour leur propre compte.
+
+De son c“t‚, Cenci, vieillard sage et soup‡onneux, ne se hasardait jamais … sortir de la forteresse. Et, sa mauvaise humeur augmentant avec les infirmit‚s de l'ƒge, qui lui ‚taient insupportables, il redoublait les traitements atroces qu'il faisait subir aux deux pauvres femmes. Il pr‚tendait qu'elles se r‚jouissaient de sa faiblesse.
+
+B‚atrix, pouss‚e … bout par les choses horribles qu'elle avait … supporter, fit appeler sous les murs de la forteresse Marzio et Olimpio. Pendant la nuit, tandis que son pŠre dormait, elle leur parla d'une fenˆtre basse et leur jeta des lettres qui ‚taient destin‚es … monsignor Guerra.
+
+Au moyen de ces lettres, il fut convenu que monsignor Guerra promettrait … Marzio et … Olimpio mille piastres s'ils voulaient se charger eux-mˆmes de mettre … mort Fran‡ois Cenci. Un tiers de la somme devait ˆtre pay‚ … Rome, avant l'action, par monsignor Guerra, et les deux autres tiers par LucrŠce et B‚atrix, lorsque, la chose faite, elles seraient maŒtresses du coffre-fort de Cenci.
+
+Il fut convenu de plus que la chose aurait lieu le jour de la Nativit‚ de la Vierge, et … cet effet ces deux hommes furent introduits avec adresse dans la forteresse. Mais LucrŠce fut arrˆt‚e par le respect d– … une fˆte de la Madone, et elle engagea B‚atrix … diff‚rer d'un jour, afin de ne pas commettre un double p‚ch‚.
+
+Ce fut donc le 9 septembre 1598, dans la soir‚e, que, la mŠre et la fille ayant donn‚ de l'opium avec beaucoup de dext‚rit‚ … Fran‡ois Cenci, cet homme si difficile … tromper, il tomba dans un profond sommeil.
+
+Vers minuit, B‚atrix introduisit elle-mˆme dans la forteresse Marzio et Olimpio; ensuite LucrŠce et B‚atrix les conduisirent dans la chambre du vieillard, qui dormait profond‚ment. L… on les laissa afin qu'ils effectuassent ce qui avait ‚t‚ convenu, et les deux femmes allŠrent attendre dans une chambre voisine. Tout … coup elles virent revenir ces deux hommes avec des figures pƒles, et comme hors d'eux-mˆmes.
+
+- Qu'y a-t-il de nouveau? s'‚criŠrent les femmes.
+
+- Que c'est une bassesse et une honte, r‚pondirent-ils, de tuer un pauvre vieillard endormi! la piti‚ nous a empˆch‚s d'agir.
+
+En entendant cette excuse, B‚atrix fut saisie d'indignation et commen‡a … les injurier, disant:
+
+- Donc, vous autres hommes, bien pr‚par‚s … une telle action, vous n'avez pas le courage de tuer un homme qui dort*! bien moins encore oseriez-vous le regarder en face s'il ‚tait ‚veill‚! Et c'est pour en finir ainsi que vous osez prendre de l'argent! Eh bien! puisque votre lƒchet‚ le veut, moi-mˆme je tuerai mon pŠre; et, quant … vous autres, vous ne vivrez pas longtemps!
+* Tous ces d‚tails sont prouv‚s au procŠs.
+
+Anim‚s par ce peu de paroles fulminantes, et craignant quelque diminution dans le prix convenu, les assassins rentrŠrent r‚solument dans la chambre, et furent suivis par les femmes. L'un d'eux avait un grand clou qu'il posa verticalement sur l'oeil du vieillard endormi; l'autre, qui avait un marteau, lui fit entrer ce clou dans la tˆte. On fit entrer de mˆme un autre grand clou dans la gorge, de fa‡on que cette pauvre ƒme, charg‚e de tant de p‚ch‚s r‚cents, f–t enlev‚e par les diables; le corps se d‚battit, mais en vain.
+
+La chose faite, la jeune fille donna … Olimpio une grosse bourse remplie d'argent; elle donna … Marzio un manteau de drap garni d'un galon d'or, qui avait appartenu … son pŠre, et elle les renvoya.
+
+Les femmes, rest‚es seules, commencŠrent par retirer ce grand clou enfonc‚ dans la tˆte du cadavre et celui qui ‚tait dans le cou; ensuite, ayant envelopp‚ le corps dans un drap de lit, elles le traŒnŠrent … travers une longue suite de chambres jusqu'… une galerie qui donnait sur un petit jardin abandonn‚. De l…, elles jetŠrent le corps sur un grand sureau qui croissait en ce lieu solitaire. Comme il y avait des lieux … l'extr‚mit‚ de cette petite galerie, elles esp‚rŠrent que, lorsque le lendemain on trouverait le corps du vieillard tomb‚ dans les branches du sureau, on supposerait que le pied lui avait gliss‚, et qu'il ‚tait tomb‚ en allant aux lieux.
+
+La chose arriva pr‚cis‚ment comme elles l'avaient pr‚vu. Le matin, lorsqu'on trouva le cadavre, il s'‚leva une grande rumeur dans la forteresse, elles ne manquŠrent pas de jeter de grands cris, et de pleurer la mort si malheureuse d'un pŠre et d'un ‚poux. Mais la jeune B‚atrix avait le courage de la pudeur offens‚e, et non la prudence n‚cessaire dans la vie; dŠs le grand matin, elle avait donn‚ … une femme qui blanchissait le linge dans la forteresse un drap tach‚ de sang, lui disant de ne pas s'‚tonner d'une telle quantit‚ de sang, parce que, toute la nuit, elle avait souffert d'une grande perte, de fa‡on que, pour le moment, tout se passa bien.
+
+On donna une s‚pulture honorable … Fran‡ois Cenci, et les femmes revinrent … Rome jouir de cette tranquillit‚ qu'elles avaient d‚sir‚e en vain depuis si longtemps.
+
+Elles se croyaient heureuses … jamais, parce qu'elles ne savaient pas ce qui se passait … Naples.
+
+La justice de Dieu, qui ne voulait pas qu'un parricide si atroce restƒt sans punition, fit qu'aussit“t qu'on apprit en cette capitale ce qui s'‚tait pass‚ dans la forteresse de la Petrella, le principal juge eut des doutes, et envoya un commissaire royal pour visiter le corps et faire arrˆter les gens soup‡onn‚s.
+
+Le commissaire royal fit arrˆter tout ce qui habitait dans la forteresse. Tout ce monde fut conduit … Naples enchaŒn‚; et rien ne parut suspect dans les d‚positions, si ce n'est que la blanchisseuse dit avoir re‡u de B‚atrix un drap ou des draps ensanglant‚s. On lui demanda si B‚atrix avait cherch‚ … expliquer ces grandes taches de sang; elle r‚pondit que B‚atrix avait parl‚ d'une indisposition naturelle. On lui demanda si des taches d'une telle grandeur pouvaient provenir d'une telle indisposition; elle r‚pondit que non, que les taches sur le drap ‚tait d'un rouge trop vif.
+
+On envoya sur-le-champ ce renseignement … la justice de Rome, et cependant il se passa plusieurs mois avant que l'on songeƒt, parmi nous, … faire arrˆter les enfants de Fran‡ois Cenci. LucrŠce, B‚atrix et Giacomo eussent pu mille fois se sauver, soit en allant … Florence sous le pr‚texte de quelque pŠlerinage, soit en s'embarquant … Civita-Vecchia; mais Dieu leur refusa cette inspiration salutaire.
+
+Monsignor Guerra, ayant eu avis de ce qui se passait … Naples , mit sur-le-champ en campagne des hommes qu'il chargea de tuer Marzio et Olimpio; mais le seul Olimpio put ˆtre tu‚ … Terni. La justice napolitaine avait fait arrˆter Marzio, qui fut conduit … Naples, o— sur-le-champ il avoua toutes choses.
+
+Cette d‚position terrible fut aussit“t envoy‚e … la justice de Rome, laquelle se d‚termina enfin … faire arrˆter et conduire … la prison de Corte Savella Jacques et Bernard Cenci, les seuls fils survivants de Fran‡ois, ainsi que LucrŠce, sa veuve. B‚atrix fut gard‚e dans le palais de son pŠre par une grosse troupe de sbires. Marzio fut amen‚ de Naples, et plac‚, lui aussi, dans la prison Savella; l…, on le confronta aux deux femmes, qui niŠrent tout avec constance, et B‚atrix en particulier ne voulut jamais reconnaŒtre le manteau galonn‚ qu'elle avait donn‚ … Marzio. Celui-ci p‚n‚tr‚ d'enthousiasme pour l'admirable beaut‚ et l'‚loquence ‚tonnante de la jeune fille r‚pondant au juge, nia tout ce qu'il avait avou‚ … Naples. On le mit … la question, il n'avoua rien, et pr‚f‚ra mourir dans les tourments; juste hommage … la beaut‚ de B‚atrix.
+
+AprŠs la mort de cet homme, le corps du d‚lit n'‚tant point prouv‚, les juges ne trouvŠrent pas qu'il y e–t raison suffisante pour mettre … la torture soit les deux fils de Cenci, soit les deux femmes. On les conduisit tous quatre au chƒteau Saint-Ange, o— ils passŠrent plusieurs mois fort tranquillement.
+
+Tout semblait termin‚, et personne ne doutait plus dans Rome que cette jeune fille si belle, si courageuse, et qui avait inspir‚ un si vif int‚rˆt, ne f–t bient“t mise en libert‚, lorsque, par malheur, la justice vint … arrˆter le brigand qui, … Terni, avait tu‚ Olimpio; conduit … Rome, cet homme avoua tout.
+
+Monsignor Guerra, si ‚trangement compromis par l'aveu du brigand, fut cit‚ … comparaŒtre sous le moindre d‚lai; la prison ‚tait certaine et probablement la mort. Mais cet homme admirable, … qui la destin‚e avait donn‚ de savoir bien faire toutes choses, parvint … se sauver d'une fa‡on qui tient du miracle. Il passait pour le plus bel homme de la cour du pape, et il ‚tait trop connu dans Rome pour pouvoir esp‚rer de se sauver; d'ailleurs, on faisait bon ne garde au x portes , et probablement, dŠs le moment de la citation, sa maison avait ‚t‚ surveill‚e. Il faut savoir qu'il ‚tait fort grand, il avait le visage d'une blancheur parfaite, une belle barbe blonde et des cheveux admirables de la mˆme couleur.
+
+Avec une rapidit‚ inconcevable, il gagna un marchand de charbon, prit ses habits, se fit raser la tˆte et la barbe, se teignit le visage, acheta deux ƒnes, et se mit … courir les rues de Rome, et … vendre du charbon en boitant. Il prit admirablement un certain air grossier et h‚b‚t‚, et allait criant partout son charbon avec la bouche pleine de pain et d'oignons, tandis que des centaines de sbires le cherchaient non seulement dans Rome, mais encore sur toutes les routes. Enfin, quand sa figure fut bien connue de la plupart des sbires, il osa sortir de Rome, chassant toujours devant lui ses deux ƒnes charg‚s de charbon. Il rencontra plusieurs troupes de sbires qui n'eurent garde de l'arrˆter. Depuis, on n'a jamais re‡u de lui qu'une seule lettre; sa mŠre lui a envoy‚ de l'argent … Marseille, et on suppose qu'il fait la guerre en France, comme soldat.
+
+La confession de l'assassin de Terni et cette fuite de monsignor Guerra, qui produisit une sensation ‚tonnante dans Rome, ranimŠrent tellement les soup‡ons et mˆme les indices contre les Cenci, qu'ils furent extraits du chƒteau Saint-Ange et ramen‚s … la prison Savella.
+
+Les deux frŠres, mis … la torture, furent bien loin d'imiter la grandeur d'ƒme du brigand Marzio; ils eurent la pusillanimit‚ de tout avouer. La signora LucrŠce Petroni ‚tait tellement accoutum‚e … la mollesse et aux aisances du grand luxe, et d'ailleurs elle ‚tait d'une taille tellement forte, qu'elle ne put supporter la question de la corde: elle dit tout ce qu'elle savait.
+
+Mais il n'en fut pas de mˆme pour B‚atrix Cenci, jeune fille pleine de vivacit‚ et de courage. Les bonnes paroles ni les menaces du juge Moscati n'y firent rien. Elle supportait les tourments de` la corde sans un moment d'alt‚ration et avec un courage parfait. Jamais le juge ne put l'induire … une r‚ponse qui la compromŒt le moins du monde; et, bien plus, par sa vivacit‚ pleine d'esprit, elle confondit complŠtement ce c‚lŠbre Ulysse Moscati, juge charg‚ de l'interroger. Il fut tellement ‚tonn‚ des fa‡ons d'agir de cette jeune fille, qu'il crut devoir faire rapport du tout … Sa Saintet‚ le pape Cl‚ment VIII, heureusement r‚gnant.
+
+Sa Saintet‚ voulut voir les piŠces du procŠs et l'‚tudier. Elle craignit que le juge Ulysse Moscati, si c‚lŠbre pour sa profonde science et la sagacit‚ si sup‚rieure de son esprit, n'e–t ‚t‚ vaincu par la beaut‚ de B‚atrix et ne la m‚nageƒt dans les interrogatoires. Il suivit de l… que Sa Saintet‚ lui “ta la direction de ce procŠs et la donna … un autre juge plus s‚vŠre. En effet, ce barbare eut le courage de tourmenter sans piti‚ un si beau corps ad torturam capillorum (c'est-…-dire qu'on donna la question … B‚atrix Cenci en la suspendant par les cheveux*).
+* Voir le trait‚ de Suppliclis du c‚lŠbre Farinacci, jurisconsulte contemporain. Il y a des d‚tails horribles dont notre sensibilit‚ du XlXe siŠcle ne supporterait pas la lecture et que supporta fort bien une jeune Romaine ƒg‚e de seize ans et abandonn‚e par son amant.
+
+Pendant qu'elle ‚tait attach‚e … la corde, ce nouveau juge fit paraŒtre devant B‚atrix sa belle-mŠre et ses frŠres. Aussit“t que Giacomo et la signora LucrŠce la virent:
+
+- Le p‚ch‚ est commis, lui criŠrent-ils; il faut faire aussi la p‚nitence, et ne pas se laisser d‚chirer le corps par une vaine obstination.
+
+- Donc vous voulez couvrir de honte notre maison, r‚pondit la jeune fille, et mourir avec ignominie? Vous ˆtes dans une grande erreur; mais, puisque vous le voulez, qu'il en soit ainsi.
+
+Et, s'‚tant tourn‚e vers les sbires:
+
+- D‚tachez-moi, leur dit-elle, et qu'on me lise l'interrogatoire de ma mŠre, j'approuverai ce qui doit ˆtre approuv‚, et je nierai ce qui doit ˆtre ni‚.
+
+Ainsi fut fait; elle avoua tout ce qui ‚tait vrai*. Aussit“t on “ta les chaŒnes … tous, et parce qu'il y avait cinq mois qu'elle n'avait vu ses frŠres, elle voulut dŒner avec eux, et ils passŠrent tous quatre une journ‚e fort gaie.
+* On trouve dans Farinacci plusieurs passages des aveux de B‚atrix, ils me semblent d'une simplicit‚ touchante.
+
+Mais le jour suivant ils furent s‚par‚s de nouveau; les deux frŠres furent conduits … la prison de Tordinona, et les femmes restŠrent … la prison Savella. Notre saint pŠre le pape, ayant vu l'acte authentique contenant les aveux de tous, ordonna que sans d‚lai ils fussent attach‚s … la queue de chevaux indompt‚s et ainsi mis … mort.
+
+Rome entiŠre fr‚mit en apprenant cette d‚cision rigoureuse. Un grand nombre de cardinaux et de princes allŠrent se mettre … genoux devant le pape, le suppliant de permettre … ces malheureux de pr‚senter leur d‚fense.
+
+- Et eux, ont-ils donn‚ … leur vieux pŠre le temps de pr‚senter la sienne? r‚pondit le pape indign‚.
+
+Enfin, par grƒce sp‚ciale, il voulut bien accorder un sursis de vingt-cinq jours. Aussit“t les premiers avocats de Rome se mirent … ‚crire dans cette cause qui avait rempli la ville de trouble et de piti‚. Le vingt-cinquiŠme jour, ils parurent tous ensemble devant Sa Saintet‚. Nicolo De' Angalis parla le premier, mais il avait … peine lu deux lignes de sa d‚fense, que Cl‚ment VIII l'interrompit:
+
+- Donc, dans Rome, s'‚cria-t-il, on trouve des hommes qui tuent leur pŠre, et ensuite des avocats pour d‚fendre ces hommes!
+
+Tous restaient muets, lorsque Farinacci osa ‚lever la voix.
+
+- TrŠs-saint-pŠre, dit-il, nous ne sommes pas ici pour d‚fendre le crime, mais pour prouver, si nous le pouvons, qu'un ou plusieurs de ces malheureux sont innocents du crime.
+
+Le pape lui fit signe de parler, et il parla trois grandes heures, aprŠs quoi le pape prit leurs ‚critures … tous et les renvoya. Comme ils s'en allaient, l'Altieri marchait le dernier, il eut peur de s'ˆtre compromis, et alla se mettre … genoux devant le pape, disant:
+
+- Je ne pouvais pas faire moins que de paraŒtre dans cette cause, ‚tant avocat des pauvres.
+
+A quoi le pape r‚pondit:
+
+- Nous ne nous ‚tonnons pas de vous, mais des autres.
+
+Le pape ne voulut point se mettre au lit, mais passa toute la nuit … lire les plaidoyers des avocats, se faisant aider en ce travail par le cardinal de Saint-Marcel; Sa Saintet‚ parut tellement touch‚e, que plusieurs con‡urent quelque espoir pour la vie de ces malheureux. Afin de sauver les fils, les avocats rejetaient tout le crime sur B‚atrix. Comme il ‚tait prouv‚ dans le procŠs que plusieurs fois son pŠre avait employ‚ la force dans un dessein criminel, les avocats esp‚raient que le meurtre lui serait pardonn‚, … elle, comme se trouvant dans le cas de l‚gitime d‚fense; s'il en ‚tait ainsi, l'auteur principal du crime obtenant la vie, comment ses frŠres, qui avaient ‚t‚ s‚duits par elle, pouvaient-ils ˆtre punis de mort?
+
+AprŠs cette nuit donn‚e … ses devoirs de juge, Cl‚ment VIII ordonna que les accus‚s fussent reconduits en prison, et mis au secret. Cette circonstance donna de grandes esp‚rances … Rome, qui dans toute cette cause ne voyait que B‚atrix. Il ‚tait av‚r‚ qu'elle avait aim‚ monsignor Guerra, mais n'avait jamais transgress‚ les rŠgles de la vertu la plus s‚vŠre: on ne pouvait donc, en v‚ritable justice, lui imputer les crimes d'un monstre, et on la punirait parce qu'elle avait us‚ du droit de se d‚fendre! qu'e–t-on fait si elle e–t consenti? Fallait-il que la justice hum aine vŒnt augmenter l'infortune d'une cr‚ature si aimable, si digne de piti‚ et d‚j… si malheureuse? AprŠs une vie si triste qui avait accumul‚ sur elle tous les genres de malheurs avant qu'elle e–t seize ans, n'avait-elle pas droit enfin … quelques jours moins affreux? Chacun dans Rome semblait charg‚ de sa d‚fense. N'e–t-elle pas ‚t‚ pardonn‚e si, la premiŠre fois que Fran‡ois Cenci tenta le crime, elle l'e–t poignard‚?
+
+Le pape Cl‚ment VIII ‚tait doux et mis‚ricordieux. Nous commencions … esp‚rer qu'un peu honteux de la boutade qui lui avait fait interrompre le plaidoyer des avocats, il pardonnerait … qui avait repouss‚ la force par la force, non pas, … la v‚rit‚, au moment du premier crime, mais lorsque l'on tentait de le commettre de nouveau. Rome tout entiŠre ‚tait dans l'anxi‚t‚, lorsque le pape re‡ut la nouvelle de la mort violente de la marquise Constance Santa Croce. Son fils Paul Santa Croce venait de tuer … coups de poignard cette dame, ƒg‚e de soixante ans, parce qu'elle ne voulait pas s'engager … le laisser h‚ritier de tous ses biens. Le rapport ajoutait que Santa Croce avait pris la fuite, et que l'on ne pouvait conserver l'espoir de l'arrˆter. Le pape se rappela le fratricide des Massini, commis peu de temps auparavant. D‚sol‚e de la fr‚quence de ces assassinats commis sur de proches parents, Sa Saintet‚ ne crut pas qu'il lui f–t permis de pardonner. En recevant ce fatal rapport sur Santa Croce, le pape se trouvait au palais de Monte Cavallo, o— il ‚tait le 6 septembre, pour ˆtre plus voisin, la matin‚e suivante, de l'‚glise de Sainte-Marie-des-Anges, o— il devait consacrer comme ‚vˆque un cardinal allemand.
+
+Le vendredi … 22 heures (4 heures du soir), il fit appeler Ferrante Taverna*, gouverneur de Rome, et lui dit ces propres paroles:
+* Depuis cardinal pour une si singuliŠre cause. (Note du manuscrit.)
+
+- Nous vous remettons l'affaire des Cenci, afin que justice soit faite par vos soins et sans nul d‚lai.
+
+Le gouverneur revint … son palais fort touch‚ de l'ordre qu'il venait de recevoir; il exp‚dia aussit“t la sentence de mort, et rassembla une congr‚gation pour d‚lib‚rer sur le mode d'ex‚cution.
+
+Samedi matin, 11 septembre 1599, les premiers seigneurs de Rome, membres de la confr‚rie des confortatori, se rendirent aux deux prisons, … Corte Savella, o— ‚taient B‚atrix et sa belle-mŠre, et … Tordinona, o— se trouvaient Jacques et Bernard Cenci. Pendant toute la nuit du vendredi au samedi, les seigneurs romains qui avaient su ce qui se passait ne firent autre chose que courir du palais de Monte Cavallo … ceux des principaux cardinaux, afin d'obtenir au moins que les femmes fussent mises … mort dans l'int‚rieur de la prison, et non sur un infƒme ‚chafaud; et que l'on fit grƒce au jeune Bernard Cenci, qui, … peine ƒg‚ de quinze ans, n'avait pu ˆtre admis … aucune confidence. Le noble cardinal Sforza s'est surtout distingu‚ par son zŠle dans le cours de cette nuit fatale, mais quoique prince si puissant, il n'a pu rien obtenir. Le crime de Santa Croce ‚tait un crime vil, commis pour avoir de l'argent, et le crime de B‚atrix fut commis pour sauver l'honneur.
+
+Pendant que les cardinaux les plus puissants faisaient tant de pas inutiles, Farinacci, notre grand jurisconsulte, a bien eu l'audace de p‚n‚trer jusqu'au pape; arriv‚ devant Sa Saintet‚, cet homme ‚tonnant a eu l'adresse d'int‚resser sa conscience, et enfin il a arrach‚ … force d'importunit‚s la vie de Bernard Cenci.
+
+Lorsque le pape pronon‡a ce grand mot, il pouvait ˆtre quatre heures du matin (du samedi 11 septembre). Toute la nuit on avait travaill‚ sur la place du pont Saint-Ange aux pr‚paratifs de cette cruelle trag‚die. Cependant toutes les copies n‚cessaires de la sentence de mort ne purent ˆtre termin‚es qu'… cinq heures du matin, de fa‡on que ce ne fut qu'… six heures que l'on put aller annoncer la fatale nouvelle … ces pauvres malheureux, qui dormaient tranquillement.
+
+La jeune fille, dans les premiers moments, ne pouvait mˆme trouver des forces pour s'habiller. Elle jetait des cris per‡ants et continuels, et se livrait sans retenue au plus affreux d‚sespoir.
+
+- Comment est-il possible, ah! Dieu! s'‚criait-elle, qu'ainsi … l'improviste je doive mourir?
+
+LucrŠce Petroni, au contraire, ne dit rien que de fort convenable; d'abord elle pria … genoux, puis exhorta tranquillement sa fille … venir avec elle … la chapelle, o— elles devaient toutes deux se pr‚parer … ce grand passage de la vie … la mort.
+
+Ce mot rendit toute sa tranquillit‚ … B‚atrix; autant elle avait montr‚ d'extravagance et d'emportement d'abord, autant elle fut sage et raisonnable dŠs que sa belle-mŠre eut rappel‚ cette grande ƒme … elle-mˆme. DŠs ce moment elle a ‚t‚ un miroir de constance que Rome entiŠre a admir‚.
+
+Elle a demand‚ un notaire pour faire son testament, ce qui lui a ‚t‚ accord‚. Elle a prescrit que son corps f–t … Saint-Pierre in Montorio; elle a laiss‚ trois cent mille francs aux Stimƒte (religieuses des Stigmates de saint Fran‡ois); cette somme doit servir … doter cinquante pauvres filles. Cet exemple a ‚mu la signora LucrŠce, qui, elle aussi, a fait son testament et ordonn‚ que son corps f–t port‚ … Saint-Georges; elle a laiss‚ cinq cent mille francs d'aum“nes … cette ‚glise et fait d'autres legs pieux.
+
+A huit heures elles se confessŠrent, entendirent la messe, et re‡urent la sainte communion. Mais, avant d'aller … la messe, la signora B‚atrix consid‚ra qu'il n'‚tait pas convenable de paraŒtre sur l'‚chafaud, aux yeux de tout le peuple avec les riches habillements qu'elles portaient. Elle ordonna deux robes, l'une pour elle, l'autre pour sa mŠre. Ces robes furent faites comme celles des religieuses, sans ornements … la poitrine et aux ‚paules, et seulement pliss‚es avec des manches larges. La robe de la belle-mŠre fut de toile de coton noir; celle de la jeune fille de taffetas bleu avec une grosse corde qui ceignait la ceinture.
+
+Lorsqu'on apporta les robes, la signora B‚atrix, qui ‚tait … genoux, se leva et dit … la signora LucrŠce:
+
+- Madame ma mŠre, l'heure de notre passion approche; il sera bien que nous nous pr‚parions, que nous prenions ces autres habits, et que nous nous rendions pour la derniŠre fois le service r‚ciproque de nous habiller.
+
+On avait dress‚ sur la place du pont Saint-Ange un grand ‚chafaud avec un cep et une mannaja (sorte de guillotine). Sur les treize heures (… huit heures du matin), la compagnie de la Mis‚ricorde apporta son grand crucifix … la porte de la prison. Giacomo Cenci sortit le premier de la prison; il se mit … genoux d‚votement sur le seuil de la porte, fit sa priŠre et baisa les saintes plaies du crucifix. Il ‚tait suivi de Bernard Cenci, son jeune frŠre, qui, lui aussi, avait les mains li‚es et une petite planche devant les yeux. La foule ‚tait ‚norme, et il y eut du tumulte … cause d'un vase qui tomba d'une fenˆtre presque sur la tˆte d'un des p‚nitents qui tenait une torche allum‚e … c“t‚ de la banniŠre.
+
+Tous regardaient les deux frŠres, lorsqu'… l'improviste s'avan‡a le fiscal de Rome, qui dit:
+
+- Signor Bernardo, Notre-Seigneur vous fait grƒce de la vie; soumettez-vous … accompagner vos parents et priez Dieu pour eux.
+
+A l'instant ses deux confortatori lui “tŠrent la petite planche qui ‚tait devant ses yeux. Le bourreau arrangeait sur la charrette Giacomo Cenci et lui avait “t‚ son habit afin de pouvoir le tenailler. Quand le bourreau vint … Bernard, il v‚rifia la signature de la grƒce, le d‚lia, lui “ta ses menottes, et, comme il ‚tait sans habit, devant ˆtre tenaill‚, le bourreau le mit sur la charrette et l'enveloppa du riche manteau de drap galonn‚ d'or. (On a dit que c'‚tait le mˆme qui fut donn‚ par B‚atrix … Marzio aprŠs l'action dans la forteresse de Petrella.) La foule immense qui ‚tait dans la rue, aux fenˆtres et sur les toits, s'‚mut tout … coup; on entendait un bruit sourd et profond, on commen‡ait … dire que cet enfant avait sa grƒce.
+
+Les chants des psaumes commencŠrent et la procession s'achemina lentement par la place Navonne vers la prison Savella. Arriv‚e … la porte de la prison, la banniŠre s'arrˆta, les deux femmes sortirent firent leur adoration au pied du saint crucifix et ensuite s'acheminŠrent … pied l'une … la suite de l'autre. Elles ‚taient vˆtues ainsi qu'il a ‚t‚ dit, la tˆte couverte d'un grand voile de taffetas qui arrivait presque jusqu'… la ceinture.
+
+La signora LucrŠce, en sa qualit‚ de veuve, portait un voile noir et des mules de velours noir sans talons selon l'usage.
+
+Le voile de la jeune fille ‚tait de` taffetas bleu, comme sa robe; elle avait de plus un grand voile de drap d'argent sur les ‚paules, une jupe de drap violet, et des mules de velours blanc, lac‚es avec ‚l‚gance et retenues par des cordons cramoisis. Elle avait une grƒce singuliŠre en marchant dans ce costume, et les larmes venaient dans tous les yeux … mesure qu'on l'apercevait s'avan‡ant lentement dans les derniers rangs de la procession.
+
+Les femmes avaient toutes les deux les mains libres, mais les bras li‚s au corps, de fa‡on que chacune d'elles pouvait porter un crucifix, elles le tenaient fort prŠs des yeux. Les manches de leurs robes ‚taient fort larges, de fa‡on qu'on voyait leurs bras, qui ‚taient couverts d'une chemise serr‚e aux poignets, comme c'est l'usage en ce pays.
+
+La signora LucrŠce, qui avait le coeur moins ferme, pleurait presque continuellement; la jeune B‚atrix, au contraire, montrait un grand courage; et tournant les yeux vers chacune des ‚glises devant lesquelles la procession passait, se mettait … genoux pour un instant et disait d'une voix ferme: Adoramus te, Christe!
+
+Pendant ce temps, le pauvre Giacomo Cenci ‚tait tenaill‚ sur sa charrette, et montrait beaucoup de constance.
+
+La procession put … peine traverser le bas de la place du pont Saint-Ange, tant ‚tait grand le nombre des carrosses et la foule du peuple. On conduisit sur-le-champ les femmes dans la chapelle qui avait ‚t‚ pr‚par‚e, on y amena ensuite Giacomo Cenci.
+
+Le jeune Bernard, recouvert de son manteau galonn‚, fut conduit directement sur l'‚chafaud; alors tous crurent qu'on allait le faire mourir et qu'il n'avait pas sa grƒce. Ce pauvre enfant eut une telle peur, qu'il tomba ‚vanoui au second pas qu'il fit sur l'‚chafaud. On le fit revenir avec de l'eau fraŒche et on le pla‡a assis vis-…-vis la mannaja.
+
+Le bourreau alla chercher la signora LucrŠce Petroni; ses mains ‚taient li‚es derriŠre le dos, elle n'avait plus de voile sur les ‚paules. Elle parut sur la place accompagn‚e par la banniŠre, la tˆte envelopp‚e dans le voile de taffetas noir; l… elle fit sa r‚conciliation avec Dieu et elle baisa les saintes plaies. On lui dit de laisser ses mules sur le pav‚; comme elle ‚tait fort grosse, elle eut quelque peine … monter. Quand elle fut sur l'‚chafaud et qu'on lui “ta le voile de taffetas noir, elle souffrit beaucoup d'ˆtre vue avec les ‚paules et la poitrine d‚couvertes; elle se regarda, puis regarda la mannaja, et, en signe de r‚signation, leva lentement les ‚paules; les larmes lui vinrent aux yeux, elle dit: O mon Dieu!... Et vous, mes frŠres, priez pour mon ƒme.
+
+Ne sachant ce qu'elle avait … faire, elle demanda … Alexandre, premier bourreau, comment elle devrait se comporter. Il lui dit de se placer … cheval sur la planche du cep. Mais ce mouvement lui parut offensant pour la pudeur, et elle mit beaucoup de temps … le faire. (Les d‚tails qui suivent sont tol‚rables pour le public italien, qui tient … savoir toutes choses avec la derniŠre exactitude; qu'il suffise au lecteur fran‡ais de savoir que la pudeur de cette pauvre femme fit qu'elle se blessa … la poitrine; le bourreau montra la tˆte au peuple et ensuite l'enveloppa dans le voile de taffetas noir.)
+
+Pendant qu'on mettait en ordre la mannaja pour la jeune fille, un ‚chafaud charg‚ de curieux tomba, et beaucoup de gens furent tu‚s. Ils parurent ainsi devant Dieu avant B‚atrix.
+
+Quand B‚atrix vit la banniŠre revenir vers la chapelle pour la prendre, elle dit avec vivacit‚:
+
+- Madame ma mŠre est-elle bien morte?
+
+On lui r‚pondit que oui; elle se jeta … genoux devant le crucifix et pria avec ferveur pour son ƒme. Ensuite elle parla haut et pendant longtemps au crucifix.
+
+- Seigneur, tu es retourn‚ pour moi, et moi je te suivrai de bonne volont‚, ne d‚sesp‚rant pas de ta mis‚ricorde pour mon ‚norme p‚ch‚, etc.
+
+Elle r‚cita ensuite plusieurs psaumes et oraisons toujours … la louange de Dieu. Quand enfin le bourreau parut devant elle avec une corde, elle dit:
+
+- Lie ce corps qui doit ˆtre chƒti‚, et d‚lie cette ƒme qui doit arriver … l'immortalit‚ et … une gloire ‚ternelle.
+
+Alors elle se leva, fit la priŠre, laissa ses mules au bas de l'escalier, et, mont‚e sur l'‚chafaud, elle passa lestement la jambe sur la planche, posa le cou sous la mannaja, et s'arrangea parfaitement bien elle-mˆme pour ‚viter d'ˆtre touch‚e par le bourreau. Par la rapidit‚ de ses mouvements, elle ‚vita qu'au moment o— son voile de taffetas lui fut “t‚ le public aper‡–t ses ‚paules et sa poitrine. Le coup fut longtemps … ˆtre donn‚, parce qu'il survint un embarras. Pendant ce temps, elle invoquait … haute voix le nom de J‚sus-Christ et de la trŠs-sainte Vierge*. Le corps fit un grand mouvement au moment fatal. Le pauvre Bernard Cenci, qui ‚tait toujours rest‚ assis sur l'‚chafaud, tomba de nouveau ‚vanoui, et il fallut plus d'une grosse demi-heure … ses confortatori pour le ranimer. Alors parut sur l'‚chafaud Jacques Cenci; mais il faut encore ici passer sur des d‚tails trop atroces. Jacques Cenci fut assomm‚ (mazzolato).
+* Un auteur contemporain raconte que Cl‚ment VIII ‚tait fort inquiet pour le salut de l'ƒme de B‚atrix comme il savait qu'elle se trouvait injustement condamn‚e, il craignait un mouvement d'impatience. Au moment o— elle eut plac‚ la tˆte sur la mannaja, le fort Saint-Ange, d'o— la mannaja se voyait fort bien, tira un coup de canon. Le pape, qui ‚tait en priŠre … Monte Cavallo, attendant ce signal, donna aussit“t a la jeune fille l'absolution papale majeure, in articulo mortis. De l… le retard dans ce cruel moment dont parle le chroniqueur.
+
+Sur-le-champ, on reconduisit Bernard en prison, il avait une forte fiŠvre, on le saigna.
+
+Quant aux pauvres femmes, chacune fut accommod‚e dans sa biŠre, et d‚pos‚e … quelques pas de l'‚chafaud, auprŠs de la statue de saint Paul, qui est la premiŠre … droite sur le pont Saint-Ange. Elles restŠrent l… jusqu'… quatre heures et un quart aprŠs midi. Autour de chaque biŠre br–laient quatre cierges de cire blanche.
+
+Ensuite, avec ce qui restait de Jacques Cenci, elles furent port‚es au palais du consul de Florence. A neuf heures et un quart du soir*, le corps de la jeune fille, recouvert de ses habits et couronn‚ de fleurs avec profusion, fut port‚ … Saint-Pierre in Montorio. Elle ‚tait d'une ravissante beaut‚; on e–t dit qu'elle dormait. Elle fut enterr‚e devant le grand autel et la Transfiguration de Rapha‰l d'Urbin. Elle ‚tait accompagn‚e de cinquante gros cierges allum‚s et de tous les religieux franciscains de Rome.
+* C'est l'heure r‚serv‚e … Rome aux obsŠques des princes. Le convoi du bourgeois a lieu au coucher du soleil, la petite noblesse est port‚e … l'‚glise … une heure de nuit, les cardinaux et les princes ƒ deux heures et demie de nuit, qui, le 11 septembre. correspondaient … neuf heures et trois quarts.
+
+LucrŠce Petroni fut port‚e, … dix heures du soir, … l'‚glise de Saint-Georges. Pendant cette trag‚die, la foule fut innombrable; aussi loin que le regard pouvait s'‚tendre, on voyait les rues remplies de carrosses et de peuple, les ‚chafaudages, les fenˆtres et les toits couverts de curieux. Le soleil ‚tait d'une telle ardeur ce jour-l… que beaucoup de gens perdirent connaissance. Un nombre infini prit la fiŠvre; et lorsque tout fut termin‚, … dix-neuf heures (deux heures moins un quart), et que la foule se dispersa, beaucoup de personnes furent ‚touff‚es, d'autres ‚cras‚es par les chevaux. Le nombre des morts fut consid‚rable.
+
+La signora LucrŠce Petroni ‚tait plut“t petite que grande, et, quoique ƒg‚e de cinquante ans, elle ‚tait encore fort bien. Elle avait de fort beaux traits, le nez petit, les yeux noirs, le visage trŠs blanc avec de belles couleurs, elle avait peu de cheveux et ils ‚taient chƒtains.
+
+B‚atrix Cenci, qui inspirera des regrets ‚ternels, avait justement seize ans; elle ‚tait petite; elle avait un joli embonpoint et des fossettes au milieu des joues, de fa‡on que, morte et couronn‚e de fleurs on e–t dit qu'elle dormait et mˆme qu'elle riait, comme il lui arrivait fort souvent quand elle ‚tait en vie. Elle avait la bouche petite, les cheveux blonds et naturellement boucl‚s. En allant … la mort ces cheveux blonds et boucl‚s lui retombaient sur les yeux ce qui donnait une certaine grƒce et portait … l… compassion.
+
+Giacomo Cenci ‚tait de petite taille, gros, le visage blanc et la barbe noire; il avait vingt-six ans … peu prŠs quand il mourut.
+
+Bernard Cenci ressemblait tout … fait … sa soeur, et comme il portait les cheveux longs comme elle, beaucoup de gens, lorsqu'il parut sur l'‚chafaud, le prirent pour elle.
+
+Le soleil avait ‚t‚ si ardent, que plusieurs des spectateurs de cette trag‚die moururent dans la nuit, et parmi eux Ubaldino Ubaldini, jeune homme d'une rare beaut‚ et qui jouissait auparavant d'une parfaite sant‚. Il ‚tait frŠre du signor Renzi, si connu dans Rome. Ainsi les ombres des Cenci s'en allŠrent bien accompagn‚es.
+
+Hier, qui fut mardi 14 septembre 1599, les p‚nitents de San Marcello, … l'occasion de la fˆte de Sainte-Croix, usŠrent de leur privilŠge pour d‚livrer de la prison le signor Bernard Cenci, qui s'est oblig‚ de payer dans un an quatre cent mille francs … la trŠs sainte trinit‚ du pont Sixte.
+
+
+(Ajout‚ d'une autre main)
+
+C'est de lui que descendent Fran‡ois et Bernard Cenci qui vivent aujourd'hui.
+
+Le c‚lŠbre Farinacci, qui, par son obstination, sauva la vie du jeune Cenci, a publi‚ ses plaidoyers. Il donne seulement un extrait du plaidoyer num‚ro 66, qu'il pronon‡a devant Cl‚ment VIII en faveur des Cenci. Ce plaidoyer, en langue latine, formerait six grandes pages, et je ne puis le placer ici, ce dont j'ai du regret; il peint les fa‡ons de penser de 1599; il me semble fort raisonnable. Bien des ann‚es aprŠs l'an 1599, Farinacci, en envoyant ses plaidoyers … l'impression, ajouta une note … celui qu'il avait prononc‚ en faveur des Cenci: Omnes fuerant ultimo supplicio effecti, excepto Bernardo qui ad triremes cum bonorum confiscatione condemnatus fuit, ac etiam ad interessendum aliorum morti prout interfuit. La fin de cette note latine est touchante, mais je suppose que le lecteur est las d'une si longue histoire.
+
+
+
+
+
+Project Gutenberg's Etext of Stendhal's Les Cenci, [En Fraicais]
+
+

@@ -1,0 +1,55 @@
+#!/bin/sh
+$# Copyright 2003 John Darrington
+# Copyright ${Date %Y} ${User name}
+# A script to test the . . . 
+
+cleanup ()
+{
+    rm -rf $$TEMPDIR
+    rm -f a.out
+    true
+}
+
+fail ()
+{
+    cleanup
+    exit 1
+}
+
+no_result ()
+{
+    cleanup
+    exit 2
+}
+
+
+pass ()
+{
+    cleanup
+    exit 0
+}
+
+include_path='-I '`echo $$search_path | sed -e 's/:/ -I /g'`
+if [ $$? -ne 0 ] ; then no_result ; fi
+
+
+here=`pwd`
+if [ $$? -ne 0 ] ; then no_result ; fi
+
+TEMPDIR=/tmp/$$$$
+mkdir -p $$TEMPDIR
+if [ $$? -ne 0 ] ; then no_result ; fi
+
+cd $$TEMPDIR
+if [ $$? -ne 0 ] ; then no_result ; fi
+
+
+ put tests here
+
+if [ $$? -ne 0 ] ; then no_result ; fi
+
+
+if [ $$? -ne 0 ] ; then fail ; fi
+
+
+pass

@@ -1,0 +1,18 @@
+* Add the following types of Neural Network:
+	
+  - Boltzmann machine
+  - ART
+
+* Add the ability to perform Principal Component Analysis.   Although
+  this is not neural nets per se,  one would normally do it as a
+  preprocessing stage.   Since it involves the calculation of
+  eigenvectors, it would make sense to use the Octave C++ library (but
+  do people want this extra dependency?).
+
+* Extend the multi-layer perceptron to use different training rules
+  other than the standard back propogation.
+
+* Support for Radial Basis Functions.
+
+
+

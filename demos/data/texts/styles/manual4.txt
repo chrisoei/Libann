@@ -1,0 +1,85 @@
+ If you've installed Ant as described in the  Installing Ant section, running Ant from the command-line is simple: just type ant.
+
+When no arguments are specified, Ant looks for a build.xml file in the current directory and, if found, uses that file as the build file and runs the target specified in the default attribute of the <project> tag. To make Ant use a build file other than build.xml, use the command-line option -buildfile file, where file is the name of the build file you want to use.
+If you use the -find [file] option, Ant will search for a build file first in the current directory, then in the parent directory, and so on, until either a build file is found or the root of the filesystem has been reached. By default, it will look for a build file called build.xml. To have it search for a build file other than build.xml, specify a file argument. Note: If you include any other flags or arguments on the command line after the -find flag, you must include the file argument for the -find flag, even if the name of the build file you want to find is build.xml.
+
+You can also set properties on the command line. This can be done with the -Dproperty=value option, where property is the name of the property, and value is the value for that property. If you specify a property that is also set in the build file (see the property task), the value specified on the command line will override the value specified in the build file. Defining properties on the command line can also be used to pass in the value of environment variables - just pass -DMYVAR=%MYVAR% (Windows) or -DMYVAR=$MYVAR (Unix) to Ant. You can then access these variables inside your build file as ${MYVAR}. You can also access environment variables using the property task's environment attribute.
+
+Options that affect the amount of logging output by Ant are: -quiet, which instructs Ant to print less information to the console; -verbose, which causes Ant to print additional information to the console; and -debug, which causes Ant to print considerably more additional information.
+
+It is also possible to specify one or more targets that should be executed. When omitted, the target that is specified in the default attribute of the project tag is used.
+
+The -projecthelp option prints out a list of the build file's targets. Targets that include a description attribute are listed as "Main targets", those without a description are listed as "Subtargets", then the "Default" target is listed.
+Command-line Options Summary
+
+ant [options] [target [target2 [target3] ...]]
+Options:
+  -help                  print this message
+  -projecthelp           print project help information
+  -version               print the version information and exit
+  -diagnostics           print information that might be helpful to
+                         diagnose or report problems.
+  -quiet, -q             be extra quiet
+  -verbose, -v           be extra verbose
+  -debug                 print debugging information
+  -emacs                 produce logging information without adornments
+  -logfile <file>        use given file for log
+    -l     <file>                ''
+  -logger <classname>    the class which is to perform logging
+  -listener <classname>  add an instance of class as a project listener
+  -buildfile <file>      use given buildfile
+    -file    <file>              ''
+    -f       <file>              ''
+  -D<property>=<value>   use value for given property
+  -propertyfile <name>   load all properties from file with -D
+                         properties taking precedence
+  -inputhandler <class>  the class which will handle input requests
+  -find <file>           search for buildfile towards the root of the
+                         filesystem and use it
+
+For more information about -logger and -listener see Loggers & Listeners.
+
+For more information about -inputhandler see InputHandler.
+Examples
+
+ant
+
+runs Ant using the build.xml file in the current directory, on the default target.
+
+ant -buildfile test.xml
+
+runs Ant using the test.xml file in the current directory, on the default target.
+
+ant -buildfile test.xml dist
+
+runs Ant using the test.xml file in the current directory, on the target called dist.
+
+ant -buildfile test.xml -Dbuild=build/classes dist
+
+runs Ant using the test.xml file in the current directory, on the target called dist, setting the build property to the value build/classes.
+Files
+
+The Ant wrapper script for Unix will source (read and evaluate) the file ~/.antrc before it does anything. On Windows, the Ant wrapper batch-file invokes %HOME%\antrc_pre.bat at the start and %HOME%\antrc_post.bat at the end. You can use these files, for example, to set/unset environment variables that should only be visible during the execution of Ant. See the next section for examples.
+Environment Variables
+
+The wrapper scripts use the following environment variables (if set):
+
+    * JAVACMD - full path of the Java executable. Use this to invoke a different JVM than JAVA_HOME/bin/java(.exe).
+    * ANT_OPTS - command-line arguments that should be passed to the JVM. For example, you can define system properties or set the maximum Java heap size here.
+    * ANT_ARGS - Ant command-line arguments. For example, set ANT_ARGS to point to a different logger, include a listener, and to include the -find flag.
+Note: If you include -find in ANT_ARGS, you should include the name of the build file to find, even if the file is called build.xml.
+
+Cygwin Users
+
+The Unix launch script that come with Ant works correctly with Cygwin. You should not have any problems launching Ant form the Cygwin shell. It is important to note however, that once Ant is runing it is part of the JDK which operates as a native Windows application. The JDK is not a Cygwin executable, and it therefore has no knowledge of the Cygwin paths, etc. In particular when using the <exec> task, executable names such as "/bin/sh" will not work, even though these work from the Cygwin shell from which Ant was launched. You can use an executable name such as "sh" and rely on that command being available in the Windows path.
+Running Ant via Java
+
+If you have installed Ant in the do-it-yourself way, Ant can be started with:
+
+java -Dant.home=c:\ant org.apache.tools.ant.Main [options] [target]
+
+These instructions actually do exactly the same as the ant command. The options and target are the same as when running Ant with the ant command. This example assumes you have set your classpath to include:
+
+    * ant.jar
+    * jars/classes for your XML parser
+    * the JDK's required jar/zip files

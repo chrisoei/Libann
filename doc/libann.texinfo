@@ -1,0 +1,1363 @@
+\input texinfo   @c -*-texinfo-*-
+@c %**start of header
+@setfilename libann.info
+@settitle Libann
+@setchapternewpage odd
+@c %**end of header
+
+@ifinfo
+Copyright 2002,2003 John Darrington
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, with no Front-Cover Texts and no
+Back-Cover Texts.
+A copy of the license is included in the section entitled "GNU
+Free Documentation License
+@end ifinfo
+
+
+@titlepage
+@title Libann
+@subtitle A C++ Artificial Neural Network library.
+@author John Darrington
+
+@c  The following two commands
+@c  start the copyright page.
+@page
+@vskip 0pt plus 1filll
+Copyright @copyright{} 2002,2003 John Darrington
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, with no Front-Cover Texts and no
+Back-Cover Texts.
+A copy of the license is included in the section entitled ``GNU
+Free Documentation License''
+@end titlepage
+
+@contents
+
+@node Top, Pattern Classification and Neural Networks, , (dir)
+
+@include vers.texinfo
+@ifinfo
+This document describes the programmers' interface of the @command{Libann} 
+artificial neural network library. 
+
+This document applies to version @version{}
+of the library named @command{Libann}.
+@end ifinfo
+
+
+@menu
+* Pattern Classification and Neural Networks:: Brief introduction to the theory
+* Using Libann in your Programs:: Some things you need to know before
+you start
+* Creating a Feature Vector::  How to create inputs to your networks.
+* The Networks::               Descriptions of all the network classes.
+* Miscellaneous Features::     Things with don't fit elsewhere.
+* Example Programs::           Demonstrations of Libann.
+* Copying::                    Your rights and freedoms.
+@end menu
+
+@node Pattern Classification and Neural Networks, Using Libann in your Programs, Top, Top
+@comment  node-name,  next,  previous,  up
+@chapter  Pattern Classification and Neural Networks
+
+
+Pattern classification problems have three distinct stage:
+
+@enumerate
+@item Preprocessing;
+@item Feature Extraction;
+and
+@item Classification.
+@end enumerate
+
+@noindent
+The pre-processing stage typically involves filtering, normalisation
+and conversion of your data into a form acceptable to the computer.
+Feature extraction takes each sample and creates a @dfn{feature
+vector} from it.
+The elements of a feature vector can be any quantities which you think
+will be useful to classify the datum.
+However, you must choose the same feature vector definition for all
+your samples.
+
+@section The Feature Vector
+For example, given a bunch of physical data about set of persons, you
+might be asked classify them into male and female.
+You believe that, in general, men are taller than women, and so you
+would use the height as one of the elements of your feature vector.
+Height alone, cannot give very satisfactory results, and so you would
+probably want to have the individuals' weight as another element.
+The combination of height and weight is better, but still not perfect
+for the problem.  You need to choose as an optimum number of features
+for your vector.  In this case you would probably want to include the
+size of the individuals' hips, chest and other important measurements,
+assuming that this data is available.
+
+You must choose the optimum set of features  and your program must
+arrange extract these into a vector.  The order of elements in the
+vector is not important, except that it must be the same for all
+samples. @ref{Creating a Feature Vector} shows you how to set
+about creating your feature vectors.
+
+
+
+@section Classifiers
+A classifier takes a feature vector and attempts to decide to which
+class it belongs.
+Neural Networks are just one type of classifier.
+Other classifiers work on statistical principles.  
+
+In the male/female
+example, a statistical classifier with a feature vector which comprised
+only the individual's height would, based upon the statistical
+evidence, decide upon a critical height value.  
+All samples above this
+height would be classified as `male' and all below as `female'.
+Clearly, there would be a number of samples which would be
+misclassified, but this number has been minimised according to
+statistical principles.
+If a  larger the feature vector is used, then a more complex decision
+rule (and hopefully a more accurate one) can be formed.
+
+A Neural Network is a classifier which has the advantage that it
+doesn't need to know any explicit rules.
+This makes it useful in situations where no mathematical model exists
+for the problem, or where the model is so complex as to be intractable.
+
+@section Training a Neural Network
+In general Neural Networks have two modes.   There is a @dfn{training}
+mode, and there is a @dfn{recall} mode.
+In the training mode, the network is presented with the feature
+vectors of a large number of samples.
+During this mode it `learns' the pattern of the data.
+In the recall mode, the network is presented with the feature vector
+of a single sample. 
+The output of the network determines the class to which the sample
+belongs.
+
+@subsection Supervised and Unsupervised Learning
+Depending upon the type of network, the training mode may be a
+@dfn{supervised learning} mode or an @dfn{unsupervised learning} mode.
+Supervised learning means that the network is told the classes to
+which each sample belongs at training time.
+Unsupervised learning means that the network is not told the class of
+any of its training samples.  It has the sole responsibility of
+determining the most appropriate way to classify the samples.
+
+@section Performance of Neural Networks
+
+Although the training mode can take a long time,
+a neural network has the advantage that the recall mode is very fast.
+In certain applications, a long training time is not of penalty (for
+example the network can be pre-trained in an environment with a lot of
+computing power) and
+this makes them an ideal candidate for the neural net approach.
+
+
+@node Using Libann in your Programs, Creating a Feature Vector, Pattern Classification and Neural Networks, Top
+@comment  node-name,  next,  previous,  up
+
+@chapter Using Libann in your Programs
+
+
+
+There are no special features that you need to know about when using
+Libann, that don't also apply to other C++ libraries.
+However, the effects of ignoring them might be more severe than with
+simpler programs.
+This chapter is largely a memorandum for persons not thoroughly
+familiar with C++ programming.
+If you're an expert with C++, then you can skip this chapter, or just
+give it a cursory glance.
+
+
+@menu
+* Namespaces::                         Avoiding identifier clashes.
+* Public Header Files::                Declarations you need to know about.
+* Exceptions::                         Exceptional situations.
+* Randomness::                         Randomness
+* Compiling and Linking with Libann::  How to produce an executable.
+@end menu
+
+
+
+@node Namespaces, Public Header Files, Using Libann in your Programs, Using Libann in your Programs
+@comment  node-name,  next,  previous,  up
+
+@section Namespaces
+@emph{Everything} provided by Libann is in the @code{ann} namespace.
+Therefore, your code should:
+@itemize @bullet
+@item Prepend @emph{every} typename and classname with @code{ann::}; or
+@item Put the statement @code{using namespace ann;} at the start of
+every file.
+@end itemize
+@noindent
+The latter is not recommended in header files.
+
+If you don't do one of these, then your compiler won't recognise any
+identifiers from the library.
+This is a  feature designed to prevent clashes with symbols from other
+libraries or from other parts of your own program.
+
+@node Public Header Files, Exceptions,Namespaces, Using Libann in your Programs
+@comment  node-name,  next,  previous,  up
+
+@section Public Header Files
+There is a  public header file for each type of Neural Network
+provided by the library.
+For example if you want to use a Multi-Layer Perceptron network, then
+you must include the @file{ann/mlp.h} file.
+All @code{#include} statements must have the @code{ann/} prefix, and
+on most compilers should be enclosed by angle brackets.
+For example:
+@example
+#include <ann/mlp.h>
+@end example
+
+As well as a header file for each network type, there is a common
+file, @file{ann/ann.h} which contains declarations for classes which
+you'll almost definitely need if you're going to do anything useful
+with Libann.  More about this header file later.
+
+
+@node Exceptions, Randomness, Public Header Files, Using Libann in your Programs
+@comment  node-name,  next,  previous,  up
+
+@section Exceptions
+The library throws exceptions!
+Most often, an exception means that you have provided invalid data to
+a Neural Network.  For example, if you pass a vector to a network
+which has the wrong input size, then you'll definitely get an
+exception.
+
+This is not to say that all exceptions are errors.
+Exceptions should be thought of as exactly what their name suggests,
+@i{viz:} things which happen only in exceptional circumstances.
+For example you might know that @emph{most} of your vectors are the
+appropriate size for a network, but that there are the occasional few
+which are not.  In that case, you could catch the exception and deal
+with the few cases as they arise.
+
+The potential to throw exceptions however, means that you @emph{must}
+protect your @code{main} function with a @code{try-catch} block:
+
+@example
+#include <stdexcept> 
+#include <iostream>
+
+int
+main(int argc, char **argv)
+@{
+ try @{
+
+  // Program will go here
+
+  return 0;
+ @}
+ catch (const std::exception &e) @{ 
+  std::cerr << "Unexpected exception " << e.what() <<
+  std::endl;
+ @}
+ catch (...) @{
+  std::cerr << "Unhandled exception\n";
+ @}
+ return 1;
+@}
+@end example
+
+@noindent
+There is nothing new here. 
+@emph{Any} C++ program should have this (or something similar) in its
+@code{main}. 
+You might not think you need to be worried about exceptions, but you
+do (use of the @code{new} operator has the potential to throw an
+exception). 
+If you don't catch exceptions like this, then your program may
+unexpectedly terminate and you'll have no idea why.
+
+@node Randomness, Compiling and Linking with Libann, Exceptions, Using Libann in your Programs
+@comment  node-name,  next,  previous,  up
+
+@section Randomness
+Many types of neural network depend upon random initialisation.  This is 
+important to ensure that solutions do not fall into local minima or
+become biased towards a particular solution.  The library uses the
+standard @file{libc} call @code{rand()} to generate its random numbers.
+
+Therefore, before using Libann, your program should make a call to
+@code{srand()} to initialise the random generator seed.
+Whilst developing and debugging, it's useful to use the same seed each
+time. Simply calling @code{srand(0)} is the easiest way to do this.
+When your program is complete however, you should ensure that the
+generator is truly random.  One way to do this, is to initialise the
+seed from the real time clock:
+@example
+
+#include <stdlib.h>
+#include <time.h>
+
+int
+main()
+@{
+  srand(time(0));
+
+  .
+  .
+  .
+
+  return 0;
+@}
+
+@end example
+
+
+@node Compiling and Linking with Libann, , Randomness, Using Libann in your Programs
+@comment  node-name,  next,  previous,  up
+
+@section Compiling and Linking with Libann
+There's nothing special about compiling and linking a program with
+Libann.
+Assuming that you have installed Libann in a directory called @file{/usr/local/libann},
+on most systems, you would use a command line similar to
+@example
+g++ -I /usr/local/libann/include -lann -L /usr/local/libann @var{prog.cc}
+@end example
+@noindent
+where @var{prog.cc} is the name of the source file for your program.
+For all but the most trivial programs of course, you will probably
+want to split your source files and to use @command{make} or some
+other build tool to assist you. 
+
+@node Creating a Feature Vector, The Networks,Using Libann in your Programs, Top
+@comment  node-name,  next,  previous,  up
+
+@chapter Creating a Feature Vector
+
+Before you can do anything useful with a neural network, you need to
+have some feature vectors defined.
+Feature vectors must be of the class @code{ExtInput} or (more
+usually) a class
+which is derived from it.
+The @code{ExtInput} class is defined in @file{ann/ann.h} and if
+you have a look through that file you will see that it is (eventually)
+derived from the Standard Template Library class
+@code{std::vector<float>}.
+The following code fragment shows a  na@"{@dotless{i}}ve way to create a
+feature vector. 
+@example
+#include <ann/ann.h>
+
+// Create a feature vector of length 4
+ann::ExtInput featureVector(4);
+
+featureVector[0]=0.907;
+featureVector[1]=1.092;
+featureVector[2]=54.0;
+featureVector[3]=-3.409;
+@end example
+
+In real life examples however, your feature vector comprises
+elements of some physical quantity, such as pixel values of an image,
+a word frequency table from a passage of text, or some physical quantities. 
+So you will probably
+want to define your own class to be used in place of
+@code{ann::ExtInput}.  The beauty of the C++ inheritance
+mechanism is that this can be done very easily:
+@example
+#include <ann/ann.h>
+
+// A class to represent physical properties of human individuals
+
+class VitalStatistics : public ann::ExtInput @{
+public:
+  // Construct a VitalStatistics object
+  VitalStatistics(float height, float weight) : ann::ExtInput(2) @{
+    (*this)[0] = height;
+    (*this)[1] = weight;
+  @}
+@}
+@end example
+
+Now you can instantiate a @code{VitalStatistics} object and use it
+anywhere you could have used a @code{ann::ExtInput}:
+
+@example
+int
+main(int argc, char **argv)
+@{
+
+  try @{
+
+    // Make a VitalStatistics 
+    VitalStatistics vs1(1.59,67,45);
+
+    // and another
+    VitalStatistics vs2(1.82,95,03);
+
+    // rest of the program goes here
+
+    @} catch ( @dots{}
+	       
+    .
+    .
+    .
+
+@}
+@end example
+
+
+These examples show the principle of how it works.
+In practice, you would be creating hundreds of instances, and would
+therefore probably read the data from a file or other external source.
+
+
+@node The Networks,Miscellaneous Features, Creating a Feature Vector, Top
+@comment  node-name,  next,  previous,  up
+
+@chapter The Networks
+
+This chapter describes the different types of Neural Network supported
+by Libann.
+Each network type has its own C++ class, and it declared in its own
+header file.
+In general, the processes you will follow are:
+@enumerate
+@item Instantiate the network.  
+@item Train the network.
+@item Present a feature vector to the network for recall.
+@end enumerate
+
+@menu
+* Persisting the Network::           Saving to a file
+* Kohonen Networks::                 Unsupervised Learning
+* Multi-Layer Perceptron Networks::  Supervised Learning
+* Hopfield Networks::                Content Addressable Memory
+* Boltzmann Machines::               Generalised Hopfield Networks
+@end menu
+
+
+@node Persisting the Network, Kohonen Networks , The Networks, The Networks
+@comment  node-name,  next,  previous,  up
+
+@section Persisting the Network
+
+The power of neural networks lies in their fast recall times.
+Once a network has been trained, it can be used for recall many times.
+You will probably want to save a network to non-volatile storage to be
+read back at a later date.
+To do this, all the network classes have a @code{save} method to store
+the network to a @code{std::ostream}, and a constructor which reads
+from a @code{std::istream} to re-create that network. 
+
+For example,
+assume that you have instantiated a Multi-Layer Perceptron Network
+called @code{network}, and you have already trained it.  The following
+code fragment will save it to a file called @file{myNetwork}:
+
+@example 
+std::ofstream ofs("myNetwork");
+
+network.save(ofs);
+
+ofs.close();
+@end example
+
+@noindent
+Another program can then create an identical network with the
+following code:
+
+@example 
+std::ifstream ifs("myNetwork");
+
+ann::Mlp network(ifs);
+
+ifs.close();
+@end example
+@noindent
+Currently, the file formats produced are not portable between
+architectures with different endianess.
+
+
+@node Kohonen Networks, Multi-Layer Perceptron Networks, Persisting the Network, The Networks
+@comment  node-name,  next,  previous,  up
+
+@section Kohonen Networks
+
+A Kohonen network is useful when you want to classify samples into
+groups, but you don't know how many groups there are, or exactly what
+the variation is.   The Kohonen network is an example of
+@dfn{unsupervised learning}.
+
+First, you need the following preprocessor directives in your
+code:
+
+@example
+#include <ann/ann.h>
+#include <ann/kohonen.h>
+@end example
+
+@noindent
+You will also need to include a Standard Template Library
+header:
+
+@example 
+#include <set>
+@end example
+
+Now you're ready to actually create the network.    The constructor
+for the Kohonen class takes two integer parameters.  The first is the
+number of input units, the second is the square root of the number of
+output units.
+
+@example 
+// Create a Kohonen Network with 100 inputs and 25 outputs
+ann::Kohonen net(100,5);
+@end example
+
+@noindent
+This implies that the number of output nodes in a Kohonen network
+is always square.  Non square configurations are not (yet) supported
+by @command{Libann}.
+
+After the network has been created, it needs to be trained.  First,
+however you need to gather all the training samples into a
+@code{std::set}, and then pass it to the @code{train} method.
+The following code fragment assumes that you have already defined a
+class called @code{FeatureVec} which is derived from
+@code{ann::ExtInput}, and that you have instantiated @var{N} samples of
+this this class, @code{ft1, ft2, @dots{} ft@var{N}}.
+
+@example 
+std::set<FeatureVec> trainingData;
+
+trainingData.insert(ft1);
+trainingData.insert(ft2);
+.
+.
+.
+trainingData.insert(ft@var{N});
+
+net.train(trainingData);
+@end example
+
+
+There are other optional parameters to the @code{train}
+method, by which you can control the training process.  Please see the
+header file  @file{ann/kohonen.h} for details.
+
+Having trained your network, you'll probably want to recall data
+from it.  You do this with the recall method:
+
+@example
+net.recall(ft1);
+@end example
+
+Here, we used a sample which was one of the training data, but it
+need not have been.  
+The return value from the @code{recall} method is
+of the type @code{ann::vector} which is derived from
+@code{std::vector<float>}. It has an
+@code{operator<<} defined which you can use to stream it
+to @code{cout}.
+
+@node Multi-Layer Perceptron Networks, Hopfield Networks, Kohonen Networks, The Networks
+@comment  node-name,  next,  previous,  up
+
+@section Multi-Layer Perceptron Networks
+
+@menu
+* Creating the Network::  Instantiating the network
+* The FeatureMap::        How to arrange your training data.
+@end menu
+
+The Multi-Layer Perceptron is an example of a Neural Network which
+uses @dfn{supervised learning}.   That means it is useful when
+you have a reasonable number of samples whose class is already known,
+and you wish to classify some  unknown samples to match the known
+samples.
+
+@node Creating the Network, The FeatureMap, , Multi-Layer Perceptron Networks, 
+@comment  node-name,  next,  previous,  up
+@subsection Creating the Network
+
+You will need to include the following headers:
+
+@example
+#include <ann/ann.h>
+#include <ann/fm.h>
+#include <ann/mlp.h>
+#include <map>
+@end example
+
+@noindent
+The first line is what you need for any program using Libann.   The
+third line gives you the declarations for the Multi-Layer Perceptron
+(@code{Mlp}).   The forth line is a
+header from the C++ Standard Template Library.   It contains a
+declaration for an associative array which we need later.  
+Also, you should not forget to catch @emph{all} exceptions as
+described in @ref{Exceptions}.
+
+Before you create your network, it's best to have the training
+samples already prepared.  As the network uses supervised learning,
+you must know the class of each sample.  Class names have the type
+@code{std::string}.  You can use any name for your classes, so
+long as they are unique.   A quick look through the header file
+@file{ann/fm.h} shows that it contains a declaration for a class
+@code{ann::FeatureMap} which is  inherited from
+@code{std::map<std::string,std::set<ann::ExtInput> >}.  In
+fact it is nothing more than one of those, plus a couple of
+convenience methods.   An object of this class will hold your samples.
+There's more about the @code{FeatureMap} below.
+
+@node The FeatureMap,,Creating the  Network,Multi-Layer Perceptron Networks
+@comment  node-name,  next,  previous,  up
+@subsection FeatureMap
+
+Let us assume that you are writing an optical character recognition
+program and have already defined your  input class 
+(@xref{Creating a Feature Vector}.)
+and it is called
+@code{Glyph}.  Each @code{Glyph}  represents some feature
+vector from a printed character on a page.  So now you should copy
+each @code{Glyph} into a @code{ann::FeatureMap}:
+
+@example 
+ann::FeatureMap fm;
+
+while(/* there are more glyphs */) @{
+ Glyph glyph(/* arguments to the Glyph constructor*/);
+ std::string className=/* the name of the class to which this Glyph
+                          belongs */; 
+ fm.addFeature(className,glyph);
+@}
+@end example
+@noindent
+Every feature that you add must have the same size. If you try to
+add one with a different size, then you'll get an exception thrown at
+you.
+
+Now you're in a position to create the network.  The
+@code{ann::Mlp} constructor takes two mandatory arguments; the
+size of the input layer and the size of the output layer.   An
+optional third argument allows you to specify the size of the hidden
+layer.
+
+@example
+ann::Mlp network(fm.featureSize(),4);
+@end example
+
+@noindent
+Notice two things about the above code fragment:
+@enumerate
+@item
+We have used the method
+    @code{ann::FeatureMap::featureSize()} to find out the size
+    of the features in the feature map.  We should know that anyway
+    since we put them there in the first place, but this method makes
+    it easy for us.
+
+@item
+We've asked for an output size of 4.  This implies that there
+    are no more than @math{2^4 = 16} classes in the feature map.  If
+    there are any more then you'll get problems later.  We could have
+    calculated this size instead of asking for a literal `4', but this
+    would involve the use of logarithms, so you might want to think
+    twice before doing that.
+@end enumerate
+
+The network it now ready for training.  To do this, use the
+@code{ann::Mlp::train} method and pass the feature map:
+
+@example
+network.train(fm);
+@end example
+
+There are a multitude of optional arguments to this method.  Refer
+to the @file{ann/mlp.h} header file to find out what they are.  If
+training 
+takes an unreasonably long time, then you may have to tweak some of
+them.  Alternatively, you might need to rethink the training data
+you're passing trying to train with.  Increasing the size of the
+network's hidden layer could also help.
+
+Once trained, you'll probably want to use your network to recall
+samples of unknown class.  To do this, simply use the
+@code{ann::Mlp::recall} method, passing in the unknown sample as
+its argument:
+
+
+@example 
+Glyph unknown(/* some new glyph */);
+network.recall(unknown);
+@end example
+@noindent
+The return value from the recall method is the class-name of the
+sample passed in.   That is to say, it'll be one of those that you
+entered into the feature map.
+
+@node Hopfield Networks, Boltzmann Machines, Multi-Layer Perceptron Networks,  The Networks
+@comment  node-name,  next,  previous,  up
+@section Hopfield Networks
+
+The Hopfield network can be used as a @dfn{content addressable memory}.  That
+is, it can learn a set of patterns, and recall any one of these patterns
+given an incomplete or approximate copy of that pattern.
+
+
+First, you need the following preprocessor directives in your
+code:
+
+@example
+#include <ann/ann.h>
+#include <ann/hopfield.h>
+@end example
+
+@noindent
+As mentioned, the Hopfield network learns a set of patterns.
+Therefore you will also need to include a Standard Template Library
+header for sets:
+
+@example 
+#include <set>
+@end example
+
+This allows you to create a set of @code{ann::ExtInputs} (or objects of
+a derived class) and to put them into a @code{std::set}, thus:
+
+@example
+  std::set<MyPattern> patternSet;
+  for (int i = 0 ; i < 10 ; ++i) @{
+     // Create a  pattern using some pre-defined constructor
+     MyPattern p(i);
+
+     // and insert it into the set
+     patternSet.insert(p);
+  @}
+@end example
+
+@noindent
+Once you have your set of patterns, you can create the 
+Hopfield network using its contructor, and passing in the set.  
+Then you can use the @code{recall} method, passing in a pattern which 
+@emph{approximates} one of the patterns passed to the constructor; the
+Hopfield network should identify the closest pattern and return that
+value.
+
+
+@example
+
+   // Instantiate a Hopfield network
+   ann::Hopfield h(patternSet);
+
+   // recall a (hitherto unknown) pattern
+   MyPattern approximation;
+
+   std::cout << approximation << "is an approximation to " ; 
+   std::cout << h.recall(approximation) << std::endl;
+  
+@end example
+
+@node Boltzmann Machines, ,  Hopfield Networks, The Networks
+@comment  node-name,  next,  previous,  up
+@section The Boltzmann Machine
+
+The Boltzmann machine class can be used to classify binary data.
+It is a fully meshed network, like the Hopfield network. However
+it has a concept of @dfn{temperature}, which overcomes local minima.
+
+@example
+#include <ann/fm.h>
+#include <ann/boltzmann.h>
+@end example
+
+You must prepare your data to be classified, and add it to a
+@code{ann::FeatureMap} @xref{The FeatureMap}.  
+Having done this, you create the Boltzmann machine by invoking the
+constructor. 
+
+@example
+  ann::FeatureMap fm;
+
+  // Insert features into feature map
+  .
+  .
+  // End of feature map creation
+
+  ann::Boltzmann b(fm,hiddenUnits, temperature , coolingRate);
+
+@end example
+
+As you can see, the constructor needs some additional parameters:
+@itemize
+@item @code{hiddenUnits} is the number of `hidden' units in the network.
+As a rule, the greater the number of hidden units, the more powerful
+the network, but the longer it will take to work.
+@item @code{temperature} is a floating point value, which is the initial
+temperature of the network.
+A large value might give better results, but will give slower
+performance.
+@item @code{coolingRate} is the amount by which the temperature is
+reduced in each iteration of the network.  It must be a floating point
+value between 0 and 1.  Values closer to 1.0 will be better at
+overcoming local minima but will be slower.
+@end itemize
+
+Once you have created the network, use the @code{recall} method to look
+up values.
+
+@example
+  ann::ExtInput feature = getFeature();
+
+  std::cout << "Feature is of class " << b.recall(feature) << std::endl;
+@end example
+
+@noindent
+The value returned by the @code{recall} method is the class name which
+was given in the @code{FeatureMap}.  If the network cannot determine the
+class, then it will return an empty string.
+
+@node Miscellaneous Features, Example Programs, The Networks, Top
+@comment  node-name,  next,  previous,  up
+@chapter Miscellaneous Features
+
+@section Version Number
+
+A string containing the version of the library can be obtained by
+calling the global function @code{ann::version()}.  This is declared in
+@file{ann/ann.h}.
+
+@section Logging
+There is a simple logging facility.  Primarily it's there to assist
+debugging of Libann itself, but you may use it for other purposes.
+Logging features are declared in @file{ann/log.h}.
+
+To log a string, call the global function @code{ann::log()} which
+returns an @code{std::ostream}, and stream the string to 
+it@footnote{If you want to log the entry and exit of functions, it's safer
+to use the constructor and destructor of a local object, since exceptions
+can occur at any time.}.
+
+@example
+using namespace ann;
+
+int
+main()
+@{
+  log() << "Start of program" << std::endl;
+
+  log() << "End of program" << std::endl;
+
+  return 0;
+@}
+@end example
+
+@noindent
+By default, anything streamed to the object returned by @code{log()}
+will go to @file{/dev/null}.  This behaviour can be changed however by
+calling @code{ann::setLogStream} or @code{ann::setLogFile}.  
+These functions take a @code{std::ostream} and a @code{std::string}
+respectively, which refer to the stream or file to which all future
+logging should be done.
+
+Currently there is no facility for different levels (priorities) of logging.
+
+@page
+
+@node Example Programs, Copying, Miscellaneous Features, Top
+@comment  node-name,  next,  previous,  up
+
+@appendix Example Programs
+
+This section describes some of the demonstration programs which are
+distributed with Libann.  They do not form part of the library, but are
+a useful source of reference to anyone wanting to implement similar
+functions. 
+
+The examples are distributed in the @file{demos} directory of the
+distribution.  These examples are deliberately over simplified.  In real
+life examples, a better choice of feature vector and more elaborate
+selection of training parameters would be required.
+
+
+@menu
+* Kohonen Network::                   Natural Language Selection
+* Character Recognition (MLP)::       Optical Character Recognition
+* Style Classification (MLP)::        Deciding the Literacy Style of Texts
+* Hopfield Network::                  Recalling Noisy Images
+* Boltzmann Machine as a Classifier:: Another Character Recognition Program
+@end menu
+
+@node Kohonen Network, Character Recognition (MLP), Example Programs, Example Programs 
+@comment  node-name,  next,  previous,  up
+
+@appendixsec Natural Language Selection Using a Kohonen Network
+
+The Kohonen network is useful when classifying data for which you do not
+have prior knowledge of the classes or the distribution of features.
+The @command{wordFreq} example program shows how a Kohonen network can
+classify written texts according to language, based upon their word
+frequencies. 
+
+In the directory @file{demos/data/texts} there several files downloaded from
+@url{http://promo.net/pg}.  These are text files written in 
+@itemize @bullet
+@item English
+@item French
+@item German
+@item Spanish
+@item Latin
+@end itemize
+
+One obvoius way a  Kohonen network might  classify these, is 
+according to their language.
+The output from the @command{wordFreq} program confirms this
+expectation.
+Note that all of the texts, regardless of their primary language
+contain approximately 1800 words of copyright information written in
+English.  One of the advantages of neural network classifiers is their
+tolerance to this sort of `noisy' data.
+
+The first step in classifying the texts is to define some sort of
+feature vector.  In this case, the vector is the relative frequency of
+words in the texts.  
+The program first examines all the texts and identifies the most common
+words among them.
+We have @i{a priori} knowledge of the languages used, and so for best
+results, the feature vector would have at least as many elements as
+there are classes (languages).  However, the Kohonen network is used
+most commonly where this information is not known.  The program uses the
+less than optimal vector size of 3.
+Running the program displays the following output:
+
+@example
+@cartouche
+Creating word vector
+Using file /tmp/libann1.2.D007/demos/data/texts//1drll10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//81agt10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8bern11.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8cinq10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8cnci07.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8fau110.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8hrmr10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//8trdi10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//alad10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//auglg10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//civil10.txt
+Using file /tmp/libann1.2.D007/demos/data/texts//lazae11.txt
+
+The most common words are: the, de, und
+
+ . 
+ .
+ .
+
+@end cartouche
+@end example
+
+The next thing the program does, is to take each file individually and
+to calculate the occurance of each of the words `the', `de' and
+`und'.  The frequencies are normalised relative to the total number of
+words in the text, otherwise the network would be variant to the length
+of the text.
+The program uses  a C++ class called @code{WordFreq} which is inherited
+from @code{ann::ExtInput}.  
+This makes it easy to create the feature vectors and to train the network.
+
+@example
+// Create frequency counts and put them into a set
+typedef set<string>::const_iterator CI;
+for (CI ci = files.begin(); ci != files.end() ; ci++) @{
+
+  FreqCount fc(*ci,wv);
+
+  trainingData.insert(fc);
+
+@}
+
+// Create the network
+ann::Kohonen net(vectorSize,7);
+
+// Train the network
+net.train(trainingData,0.3,0.8,0.1,0.40);
+@end example
+
+
+After training, each feature vector is presented to the network.  The
+program creates a directory for each class it detects, and copies the
+text into it.
+@example
+@cartouche
+bash-2.05a$ ls 1*
+1111111111111100111001111110111111111111011111010:
+1drll10.txt  alad10.txt  civil10.txt
+
+1111111111111101111011111111111110011111011111001:
+auglg10.txt
+
+1111111111111101111011111111111110011111011111011:
+81agt10.txt  8bern11.txt  8fau110.txt  8hrmr10.txt
+
+1111111111111111111010111100111110111111011111100:
+8cinq10.txt
+
+1111111111111111111010111100111111111111011111100:
+8cnci07.txt  8trdi10.txt  lazae11.txt
+@end cartouche
+@end example
+
+There are several interesting points about this result:
+@itemize @bullet
+@item The first directory contains only English texts.
+@item The second directory, contains a single file  which has  both Latin
+      and German text (and the English copyright information).
+@item The third directory contains only German texts.
+@item The network has been unable to clearly discriminate between French
+and Spanish text.  This
+is a result of too few dimensions in the feature vector. The word `de'
+is common in both languages, whereas `the' and `und' are not common in
+either of them.  The best it could do was to create two classes, one
+containing both French and Spanish texts, the other containing only 
+French.
+@end itemize
+
+@node Character Recognition (MLP), Style Classification (MLP), Kohonen Network, Example Programs
+@comment  node-name,  next,  previous,  up
+@appendixsec Character Recognition using a Multi-Layer Perceptron 
+
+Optical character recognition is a common application for neural
+networks.  This example program demonstrates how a multi-layer
+perceptron can be used to recognise and classify printed characters.
+In a character recognition application, we know what classes to expect
+[a--z] and we can manually classify some of the samples.   This
+situation makes the problem suitable for supervised leaning using
+multi-layer perceptron network.
+
+The @command{mlp-char} program uses a multi-layer perceptron network to
+classify bitmap glyphs.  The glyphs concerned are in the directory
+@file{demos/data/glyphs}. There are 6 instances of glyphs representing
+the characters [a--e].  The @command{mlp-char} program uses a C++ class
+called @code{Glyph} inherited from @code{ann::ExtInput}.  A
+@code{Glyph} is a feature vector of the same length as the number of
+pixels in the bitmap.  A black pixel is represented by 1 and a white
+pixel by 0. 
+The first thing the program does therefore is to create a feature map
+from the glyphs and their respective classes.
+
+@example 
+// Populate the feature map from the files
+ann::FeatureMap fm;
+
+for (CI ci = de.begin() ; ci != de.end() ; ++ci ) @{
+  const string filename(*ci);
+
+  // Reserve files with a 6 in them for recall
+  // Don't train with them
+  if ( "6.char" == filename.substr(len -6, len) ) 
+    continue;
+
+  // The classname is the first letter of the filename
+  const string className(filename.substr(0,1));
+
+
+  // Create the glyph and add it to the map
+  const Glyph g(filename);
+  fm.addFeature(className,g);
+
+@}
+@end example
+
+@noindent
+Note that one sample from each class is not put into the feature map and
+will therefore not be used for training.
+
+The glyphs happen to be of resolution 8x8 and therefore the feature
+vector (and hence the input layer of the network) are of size 64.
+There are 5 classes, which can be represented by a network output layer
+of size 3.  The next task therefore is to train the network.
+
+@example
+// Set up the network and train it.
+
+const int outputSize=3;
+const int inputSize=fm.featureSize();
+
+ann::Mlp net(inputSize,outputSize,1,0);
+
+net.train(fm);
+@end example
+
+@noindent
+Finally, we want to use the @code{recall} method to classify glyphs.
+The program does this with a loop, recalling all glyphs (including those
+used for training).
+@example
+// Recall  all the glyphs
+for (CI ci = de.begin() ; ci != de.end() ; ++ci ) @{
+  const string pathname(*ci);
+
+  const Glyph g(pathname);
+
+  cout << pathname << " has class " << net.recall(g) << endl;
+
+@}
+@end example
+
+The following shows the results of running the program, filtering the
+samples ending in `6.char' (the ones not used for training).
+@example
+@cartouche
+bash-2.05a$ ./mlp-char ../data/glyphs/ | grep 6.char
+../data/glyphs//a6.char has class a
+../data/glyphs//b6.char has class b
+../data/glyphs//c6.char has class c
+../data/glyphs//d6.char has class d
+../data/glyphs//e6.char has class e
+bash-2.05a$ 
+@end cartouche
+@end example
+@noindent
+
+These happen to be all correctly classified.
+Running the program again, this time without the filter, showed 2 samples
+(out of a total of 30) incorrectly classified. The ratio of correctly
+classified samples to the total number of samples (in our case 28/30 =
+0.94) is called the @dfn{precision} of the classifier.
+A precision of 95% is a reasonable figure for most applications.
+Adjustment of the training parameters, and increasing the size of the
+hidden layer can improve the precision.
+
+
+@node Style Classification (MLP), Hopfield Network, Character Recognition (MLP), Example Programs
+@comment  node-name,  next,  previous,  up
+@appendixsec Style Classification using a Multi-Layer Perceptron 
+
+This program is a slightly more ambitious application of a multi-layer
+perceptron.   It attempts to classify different types of document
+according to their grammatical style.  To do this, it uses the
+@command{style} program published by the Free Software Foundation (@url{http://www.gnu.org/software/diction/diction.html}).  This program takes
+a English text file and produces 9 different metrics about the author's
+grammatical style.
+
+
+
+Our program takes a set of files, runs the @command{style} program over
+each of them, postprocesses the output and then reads that output to
+create objects of class @code{DictStyle} which is inhereted from
+@code{ann::ExtInput}. 
+Each @code{DictStyle} is then entered into a @code{FeatureMap} as
+before.
+In this program, the first part of the filename is assumed to be the
+name of the class for training purposes.
+
+@example
+
+ // Create a feature map from the files given on the command line
+ for ( int i = 3; i < argc ; ++i ) @{ 
+
+     const string pathname(argv[i]);
+
+
+     // extract the filename from the full pathname
+     const string filename(pathname.substr(pathname.rfind("/")+1,
+					   string::npos));
+
+     // The classname is filename upto the first number
+     const string className(filename.substr(0,filename.find_first_of("0123456789")));
+
+     // Create a DictStyle object from the text file
+     DictStyle ds(pathname);
+
+     fm.addFeature(className,ds);
+
+   @}
+@end example
+
+
+The @command{Libann} source comes with some examples of text files which
+can be used to test this classifier.  These are located in
+@file{demo/data/text/style} and comprise extracts from 5 each
+@itemize
+@item  Novels.
+@item  User Manuals.
+@item  Legal Documents.
+@end itemize
+
+@noindent
+We would expect these types of document to have  a quite different style
+of language, and therefore to be able to classify them accordingly.
+
+Training the classifier and recalling from it is simple:
+@example
+
+   ann::Mlp classifier(9,2,0.4,6,0.45,1,3);
+
+
+   cout << "Training the  classifier\n";
+
+   classifier.train(fm);
+
+   cout  << "Writing to " << netfile << endl;
+
+
+   .
+   .
+   .
+
+   // Recall files
+  for ( int i = 3; i < argc ; ++i ) @{ 
+
+   const string pathname(argv[i]);
+
+   DictStyle ds(pathname);
+
+   cout << classifier.recall(ds) << endl;
+  @}
+
+@end example
+
+Investigating the precision of this classifier is left as an exercise
+for the reader.
+
+@node Hopfield Network, Boltzmann Machine as a Classifier, Style Classification (MLP), Example Programs
+@comment  node-name,  next,  previous,  up
+
+@appendixsec Hopfield Network
+
+In the directory @file{demos/data/glyphs/numerals} there are 5 files
+each containing  a bit map pattern of the numerals from 1 to 5.
+This program demonstrates how a Hopfield network can learn these
+patterns, and then how a noisy pattern can be presented to the network
+and be identified as the original.
+
+
+The network is created from a set of all the patterns it is to hold, as
+described in @xref{Hopfield Networks}.
+
+@example
+    // Create a training set
+    set<ExtInput> inset;
+    
+    for ( CI ci = filenames.begin() ; ci != filenames.end() ; ++ci ) @{ 
+      Glyph g(*ci, true);
+      inset.insert(g);
+    @}
+
+   // Instantiate a hopfield net trained with our patterns
+   Hopfield h(inset);
+@end example
+
+@noindent
+Having done this, the program mutates a few of the bits.  The program
+uses a  special function called @code{mutate} for this purpose.
+
+@example
+   for ( CI ci = recallNames.begin() ; ci != recallNames.end() ; ++ci ) @{ 
+     Glyph g(*ci);
+    
+     mutate(g);
+
+     ann::vector result = h.recall(g);
+   @}
+@end example
+
+Results of the running the program show correct recall for the numerals
+1--4.
+However the network has problems identifying a noisy number 5.  This is
+because of the similarity between a @samp{3} and a @samp{5}, and because
+of the overlap in patterns when too many are given to the network to
+learn.  The Boltzmann machine can overcome these limitations.
+
+
+@node Boltzmann Machine as a Classifier, , Hopfield Network , Example Programs
+@comment  node-name,  next,  previous,  up
+
+@appendixsec The Boltzmann Machine as a Classifier
+
+One application of a Boltzmann machine is its use as a classifier. 
+However it is not as fast as the Multi-Layer Perceptron, but this example
+shows how a simple classification task can be achieved.
+This demonstration program is located in
+@file{demos/boltzmann/boltzmann-char.cc} and the data which we'll use
+are found in 
+@file{demos/data/glyphs/xo} which are a number of bitmaps representing
+the characters `+', `o' and `x'.
+The program creates Boltzmann machine which recognises what each of
+these characters look like, and then presents it with another similar
+glyph from each class.
+
+Like the Multi-Layer Perceptron example, the program creates a
+@code{ann::FeatureMap} with the glyphs it is to be trained with.
+
+@example
+
+   for (CRI ci = de.rbegin() ; ci != de.rend() ; ++ci ) @{
+     const string pathname(*ci);
+
+     // Get the filename from the pathname
+     const string filename(pathname.substr(pathname.rfind("/")+1,
+					   string::npos));
+
+     // Save these ones for recall purposes
+     if ( filename.find_first_of("23") != std::string::npos)
+       continue;
+
+     // The classname is the first letter of the filename
+     const string className(filename.substr(0,1));
+
+     // Create the glyph and add it to the map
+     const Glyph g(pathname,true);
+
+     fm.addFeature(className,g);
+
+   @}
+
+@end example
+
+@noindent
+Note that files which have a `2' or a `3' in them are not added to the
+feature map, because they will not be used in training, but only for
+recall.
+
+Now the Boltzmann machine itself is created:
+
+@example
+
+   ann::Boltzmann net(fm,10,10,0.9);
+
+@end example
+
+@noindent
+The parameters after @code{fm} are the number of hidden units, the
+initial temperature and the cooling rate respectively.
+
+Looking up values in the Boltzmann machine is simply a matter of
+presenting the value to the @code{recall} method;
+This method will return a string representing the class to which the
+feature belongs.
+
+In this case, all 9 glyphs in @file{demos/data/glyphs/xo} are correctly
+classified, despite the network having been trained with only one from
+each class.
+
+
+@node Copying, , Example Programs, Top
+
+@appendix Copying
+
+The library itself is licensed under the GNU General Public License
+(@url{http://www.gnu.org/licenses/gpl.txt}).
+This manual however is licensed under the GNU Free Documentation
+License which is reproduced below.
+
+@include fdl.texinfo
+
+@bye
+@c  LocalWords:  perceptron Hopfield

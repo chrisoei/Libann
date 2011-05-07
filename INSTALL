@@ -1,0 +1,19 @@
+1. To compile the library:
+
+ ./configure
+ make
+
+2. (optional) If you want to run some tests before installing the library, type:
+
+ make demo
+ make test
+
+3. Become root on your system, then type:
+
+ make install
+
+
+4. (optional) If you want demonstration programs installed:
+
+ make demo
+ make demo-install

@@ -40,6 +40,7 @@ cat << EOF > $TEMPDIR/test.cc
 #line $[$LINENO +2]
 
 #include "demos/hspell/word.h"
+#include <assert.h>
 using namespace std;
 
 int 

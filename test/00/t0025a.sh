@@ -38,6 +38,7 @@ cat <<EOF > $TEMPDIR/test.cc
 #line $[$LINENO+2]  "$0"
 
 #include "ann/ann.h"
+#include <assert.h>
 
 using namespace std;
 

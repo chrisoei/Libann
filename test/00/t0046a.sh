@@ -49,7 +49,8 @@ cat << EOF > $TEMPDIR/test.cc
 #include <ann/fm.h>
 #include <ann/mlp.h>
 
-
+#include <assert.h>
+#include <string.h>
 #include <stdexcept>
 
 using namespace ann;

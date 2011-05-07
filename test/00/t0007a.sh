@@ -39,6 +39,7 @@ cat << EOF > $TEMPDIR/test.cc
 
 #include <ann/log.h>
 #include <iostream>
+#include <string.h>
 
 int
 main(int argc, char **argv)

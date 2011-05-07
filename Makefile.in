@@ -170,7 +170,7 @@ demos/parse.cc: @top_srcdir@/demos/parse.y
 demos/%.cc: @top_srcdir@/demos/%.y
 	@$(RM) $@
 	@mkdir -p `dirname $@`
-	$(YACC) -d $< -o $@
+	$(YACC) -o $@ -d $<
 
 demos/tokenise.o: demos/tokenise.c
 	@$(RM) $@

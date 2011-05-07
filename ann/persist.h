@@ -27,9 +27,9 @@
 
 namespace ann {
 
-void _write(std::ostream &os, unsigned char *data, int size);
+void _mywrite(std::ostream &os, unsigned char *data, int size);
 
-void _read(std::istream &is, unsigned char *data, int size);
+void _myread(std::istream &is, unsigned char *data, int size);
 
 };
 
@@ -46,12 +46,15 @@ void _read(std::istream &is, unsigned char *data, int size);
   Classes and structs will not work.
 */
 
+
+#ifndef PERSIST_CC
 /// Read a datum from a std::istream
-#define read(is,datum) _read(is,(unsigned char*) (&datum),sizeof(datum))
+#define read(is,datum) _myread(is,(unsigned char*) (&datum),sizeof(datum))
 
 /// Write a datum to a std::ostream
-#define write(os,datum) _write(os,(unsigned char*) (&datum),sizeof(datum))
+#define write(os,datum) _mywrite(os,(unsigned char*) (&datum),sizeof(datum))
 
+#endif /* PERSIST_CC */
 //@}
 
 

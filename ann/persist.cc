@@ -19,6 +19,7 @@
 const static char RCSID[]="$Id: persist.cc,v 1.7 2003/05/14 05:50:16 john Exp $";
 
 #include <iostream>
+#define PERSIST_CC
 #include "persist.h"
 
 
@@ -30,7 +31,7 @@ namespace ann {
     \param data A pointer to the bytes to be written.
     \param size The number of bytes to be written.
   */
-  void _write(std::ostream &os, unsigned char *data, int size)
+  void _mywrite(std::ostream &os, unsigned char *data, int size)
   {
     for (int i=0; i < size ; ++i )
       os.put(data[i]);
@@ -42,12 +43,10 @@ namespace ann {
     \param data A pointer to a location to store the bytes.
     \param size The number of bytes to be read.
   */
-/*
-  void _read(std::istream &is, unsigned char *data, int size)
+  void _myread(std::istream &is, unsigned char *data, int size)
   {
-    is.read(data, size);
+    is.read((char*)(data), size);
   }
-*/
 
 	
 };

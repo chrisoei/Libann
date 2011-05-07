@@ -42,11 +42,12 @@ namespace ann {
     \param data A pointer to a location to store the bytes.
     \param size The number of bytes to be read.
   */
+/*
   void _read(std::istream &is, unsigned char *data, int size)
   {
-    for (int i=0; i < size ; ++i )
-      is.get(static_cast<char>(data[i]));
+    is.read(data, size);
   }
+*/
 
 	
 };

@@ -24,6 +24,7 @@ const static char RCSID[]="$Id: boltzmann.cc,v 1.6 2003/05/14 05:50:16 john Exp 
 #include "layer.h"
 #include "log.h"
 
+#include <stdlib.h>
 #include <cmath>
 #include <stdexcept>
 

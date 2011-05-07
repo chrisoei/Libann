@@ -25,6 +25,7 @@ const static char RCSID[]="$Id: mesh.cc,v 1.9 2003/05/14 05:50:16 john Exp $";
 #include "ucount.h"
 
 #include <stdexcept>
+#include <stdlib.h>
 
 using namespace ann ;
 

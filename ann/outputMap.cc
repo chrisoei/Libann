@@ -24,6 +24,7 @@ const static char RCSID[]="$Id: outputMap.cc,v 1.5 2003/05/14 05:50:16 john Exp 
 #include "fm.h"
 
 #include <math.h>
+#include <assert.h>
 
 using namespace ann;
   

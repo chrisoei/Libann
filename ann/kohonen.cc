@@ -35,6 +35,7 @@ const static char RCSID[]="$Id: kohonen.cc,v 1.8 2003/05/14 05:50:16 john Exp $"
 using namespace ann;
 using namespace std;
 
+#define abs(x) ( ((x)>=0) ? (x) : (-x) )
 
 
 class Heaviside : public ActivationFunction { 

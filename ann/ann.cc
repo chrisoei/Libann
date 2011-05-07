@@ -18,7 +18,7 @@
 */
 const static char RCSID[]="$Id: ann.cc,v 1.7 2003/05/14 05:50:16 john Exp $";
 
-
+#include <assert.h>
 
 #include "ann.h"
 #include "vers.h"

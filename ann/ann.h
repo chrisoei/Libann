@@ -94,12 +94,12 @@ public:
 	/// save the vector
 	/// \param ofs Stream to write
 	void
-	  vector::save(std::ofstream &ofs) const ;
+	  save(std::ofstream &ofs) const ;
 
 	/// load from stream
 	/// \param ifs stream to read
 	void
-	  vector::load(std::ifstream &ifs) ;
+	  load(std::ifstream &ifs) ;
 
 
 

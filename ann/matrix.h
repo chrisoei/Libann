@@ -136,7 +136,7 @@ public:
  	operator*(const ann::vector &vec) const;
 
         matrix&
-	  ann::matrix::operator+=(const matrix &m2) ;
+	  operator+=(const matrix &m2) ;
  
  
 	// Return a matrix comprising the columns n...m of this matrix
@@ -178,13 +178,13 @@ public:
 	// Multiply all columns of the matrix
 	// by the vector vec, 
 	//
-	void  ann::matrix::multiplyColumns(const vector &vec) ;
+	void  multiplyColumns(const vector &vec) ;
 
 
 	// Multiply all rows of the matrix
 	// by the vector vec, 
 	//
-	void  ann::matrix::multiplyRows(const vector &vec) ;
+	void  multiplyRows(const vector &vec) ;
 
 
 	// Return the absolute maximum element
